@@ -18,7 +18,7 @@ generated. Every number below is a count of providers.
 | stage | 9 | 6 | id 83%, name 50%, updated_at 50% | stages 6, stage 2, pipeline-stages 1 |
 | interview | 8 | 7 | id 100%, created_at 71%, start_at 71%, status 71%, application_id 57%, end_at 57%, location 57% | interviews 6, scheduled-interviews 1, scheduled_interviews 1, interview 1 |
 
-Cohort: 67 providers with harvested OpenAPI, 32 crosswalks. Of the providers exposing a job: 59% create, 100% list, 84% fetch, 53% update, 31% delete. Generated 2026-11-10 by build.py.
+Cohort: 67 providers with harvested OpenAPI, 32 crosswalks. Of the providers exposing a job: 59% create, 100% list, 84% fetch, 53% update, 31% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
@@ -35,6 +35,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 - [openapi.yml](openapi.yml) -- OpenAPI 3.1 of the shared operations. No one serves it; it
   is the shape to map to. Lints clean against the
   [naming ruleset](https://github.com/api-commons/schema-commons/blob/main/ruleset/schema-commons-naming.yaml).
+- [arazzo.yml](arazzo.yml) -- reference workflows composed only of the shared operations (compositions, not measurements).
 - [schema/](schema) -- JSON Schema 2020-12 per concept; each property carries
   `x-commons-tier`, `x-commons-share`, `x-commons-providers` and the spellings seen.
 - [crosswalk/](crosswalk) -- one per provider, common name -> their name, with the harvested

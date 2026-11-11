@@ -1,0 +1,67 @@
+arazzo: 1.0.1
+info:
+  title: Recruiting workflows (API Commons)
+  version: 0.1.0-draft.20261111
+  summary: Reference workflows over the common Recruiting operations.
+  description: 'Reference compositions of the operations this context''s providers share. Not measured: every step
+    is a core- or extended-tier operation of the common OpenAPI, so the workflow runs against any provider that
+    implements those operations (see crosswalk/).'
+sourceDescriptions:
+- name: recruiting
+  url: ./openapi.yml
+  type: openapi
+workflows:
+- workflowId: apply-and-interview
+  summary: Add a candidate, apply them to a job, and schedule an interview
+  description: Add a candidate, apply them to a job, and schedule an interview.
+  inputs:
+    type: object
+    required:
+    - job_id
+    properties:
+      job_id:
+        type: string
+  steps:
+  - stepId: job
+    operationId: getJob
+    description: Get a job -- a core-tier operation (84% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    parameters:
+    - name: job_id
+      in: path
+      value: $inputs.job_id
+  - stepId: candidate
+    operationId: createCandidate
+    description: Create a candidate -- a core-tier operation (78% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+  - stepId: application
+    operationId: createApplication
+    description: Create an application -- a core-tier operation (60% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    requestBody:
+      contentType: application/json
+      payload:
+        job_id: $steps.job.outputs.id
+        candidate_id: $steps.candidate.outputs.id
+  - stepId: interview
+    operationId: createInterview
+    description: Create an interview -- a core-tier operation (62% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    requestBody:
+      contentType: application/json
+      payload:
+        application_id: $steps.application.outputs.id
+  x-commons-tiers:
+  - core

@@ -96,3 +96,12 @@ decisions:
   - "Offers were measured and dropped: three providers expose them as a resource."
   - "Everything but the job `requires: [job]`, so a provider's `/people` or `/profiles`
     counts as candidates only if it also posts jobs."
+
+workflows:
+  - id: apply-and-interview
+    summary: Add a candidate, apply them to a job, and schedule an interview
+    steps:
+      - {op: getJob, id: job, path: {"{job_id}": "$inputs.job_id"}}
+      - {op: createCandidate, id: candidate}
+      - {op: createApplication, id: application, link: {job_id: "$steps.job.outputs.id", candidate_id: "$steps.candidate.outputs.id"}}
+      - {op: createInterview, id: interview, link: {application_id: "$steps.application.outputs.id"}}
