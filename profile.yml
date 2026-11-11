@@ -100,16 +100,6 @@ concepts:
       - status
       - state
       - job_status
-    - name: description
-      tier: core
-      providers: 17
-      share: 0.654
-      type: string
-      spellings:
-      - description
-      - content
-      - details
-      - notes
     - name: created_at
       tier: core
       providers: 16
@@ -121,6 +111,16 @@ concepts:
       - remote_created_at
       - date_created
       - createdOn
+    - name: description
+      tier: core
+      providers: 16
+      share: 0.615
+      type: string
+      spellings:
+      - description
+      - details
+      - notes
+      - content
     - name: location
       tier: core
       providers: 14
@@ -186,7 +186,7 @@ concepts:
       - closed_at
       - expiresAt
       - closedAt
-    long_tail_count: 398
+    long_tail_count: 395
     long_tail_sample:
     - company
     - job_id
@@ -195,13 +195,13 @@ concepts:
     - hiring_team
     - salary
     - url
+    - code
     - hiring_manager_id
     - language
     - location_id
     - remote
     - categories
     - close_reason
-    - code
     - company_id
     - country
     - created_by
@@ -439,7 +439,7 @@ concepts:
       type: string
       spellings:
       - title
-    long_tail_count: 214
+    long_tail_count: 211
     long_tail_sample:
     - candidate_id
     - city
@@ -449,13 +449,11 @@ concepts:
     - addresses
     - application_id
     - current_company
-    - description
     - education
     - employments
     - external_id
     - gender
     - is_private
-    - pagination
     - relationships
     - remote_updated_at
     - screening_question_answers
@@ -472,6 +470,7 @@ concepts:
     - agent_summary
     - anonymized_at
     - answers
+    - applied_on
     - ats_data
     - ats_entity_id
     - attachments_info
@@ -481,6 +480,7 @@ concepts:
     - birth_date
     - birthday
     - can_email
+    - candidate_status
   application:
     segments_seen:
       applications: 15
@@ -515,24 +515,13 @@ concepts:
     properties:
     - name: id
       tier: core
-      providers: 10
-      share: 0.909
+      providers: 11
+      share: 1.0
       type: string
       spellings:
       - id
       - remote_id
       - remoteId
-    - name: job_id
-      tier: core
-      providers: 8
-      share: 0.727
-      type: string
-      spellings:
-      - job_id
-      - job
-      - job_posting_id
-      - jobId
-      - vacancyId
     - name: candidate_id
       tier: core
       providers: 7
@@ -544,6 +533,17 @@ concepts:
       - candidateId
       - applicant
       - applicant_id
+    - name: job_id
+      tier: core
+      providers: 7
+      share: 0.636
+      type: string
+      spellings:
+      - job
+      - job_id
+      - job_posting_id
+      - jobId
+      - vacancyId
     - name: metadata
       tier: core
       providers: 7
@@ -589,6 +589,22 @@ concepts:
       spellings:
       - status
       - currentStatus
+    - name: type
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: string
+      spellings:
+      - type
+    - name: description
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: string
+      spellings:
+      - notes
+      - description
+      - content
     - name: rejected_at
       tier: extended
       providers: 3
@@ -604,23 +620,13 @@ concepts:
       spellings:
       - current_stage
       - stage_id
-    - name: type
-      tier: extended
-      providers: 3
-      share: 0.273
-      type: string
-      spellings:
-      - type
-    long_tail_count: 144
+    long_tail_count: 143
     long_tail_sample:
     - answers
-    - attachments
     - credited_to
     - current_stage_id
-    - description
     - job_title
     - location
-    - referrer
     - rejection_reason
     - relationships
     - all_application_interview_plan_stages
@@ -636,6 +642,7 @@ concepts:
     - apply_mode
     - archivation_reason
     - archivation_reason_id
+    - attachments
     - auto_retry_stopped
     - auto_retry_stopped_reason
     - browserbase_debug_url
@@ -648,11 +655,13 @@ concepts:
     - company_domain
     - company_logo_url
     - content_locked
+    - content_type
     - country
     - cover_letter_content
     - cover_letter_doc_id
     - cover_letter_pdf_r2_key
     - created_by
+    - created_by_hris_organization_user_id
   stage:
     segments_seen:
       stages: 6
@@ -843,7 +852,7 @@ concepts:
       - modified_at
       - updated_at
       - date_modified
-    long_tail_count: 57
+    long_tail_count: 60
     long_tail_sample:
     - candidate_id
     - remote_updated_at
@@ -881,7 +890,7 @@ concepts:
     - only_coding_round
     - organizer
     - organizer_user_id
+    - question
     - questions
     - raw_data
     - remote_data
-    - remote_deleted_at

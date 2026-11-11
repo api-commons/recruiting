@@ -12,8 +12,8 @@ concepts:
       - remote_id
       name: name
       status: status
-      description: description
       created_at: remote_created_at
+      description: description
       location: offices
       updated_at: modified_at
       department: departments
@@ -54,8 +54,8 @@ concepts:
       id:
       - id
       - remote_id
-      job_id: job
       candidate_id: candidate
+      job_id: job
       metadata: custom_fields
       updated_at: modified_at
       created_at: applied_at

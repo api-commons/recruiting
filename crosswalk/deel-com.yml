@@ -13,8 +13,8 @@ concepts:
       id: id
       name: title
       status: status
-      description: description
       created_at: created_at
+      description: description
       location:
       - location
       - locations
@@ -72,15 +72,16 @@ concepts:
     - applications
     properties:
       id: id
+      candidate_id:
+      - candidate
+      - candidate_id
       job_id:
       - job
       - job_id
       - job_posting_id
-      candidate_id:
-      - candidate
-      - candidate_id
       updated_at: updated_at
       created_at: created_at
+      description: notes
     core_coverage: 0.625
     evidence:
     - openapi/_original/deel-com-openapi.yml#GET /ats/applications

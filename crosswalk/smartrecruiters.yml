@@ -13,12 +13,11 @@ concepts:
       - uuid
       name: title
       status: status
-      description: content
       created_at: createdOn
       location: location
       employment_type: employmentType
       department: department
-    core_coverage: 1.0
+    core_coverage: 0.857
     evidence:
     - openapi/_original/smartrecruiters-jobs-openapi.yml#GET /jobs
     - openapi/_original/smartrecruiters-jobs-openapi.yml#GET /jobs/{jobId}
@@ -53,8 +52,8 @@ concepts:
     - applications
     properties:
       id: id
-      job_id: jobId
       candidate_id: candidateId
+      job_id: jobId
       source: source
       status: status
     core_coverage: 0.625

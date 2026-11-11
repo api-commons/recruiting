@@ -10,8 +10,8 @@ concepts:
       id: id
       name: title
       status: status
-      description: description
       created_at: createdAt
+      description: description
       location: location
       updated_at: updatedAt
     core_coverage: 0.857

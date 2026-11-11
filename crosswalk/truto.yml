@@ -12,8 +12,8 @@ concepts:
       - remoteId
       name: title
       status: status
-      description: description
       created_at: createdAt
+      description: description
       employment_type: jobType
       updated_at: updatedAt
       department: departmentId
@@ -49,8 +49,8 @@ concepts:
       id:
       - id
       - remoteId
-      job_id: jobId
       candidate_id: candidateId
+      job_id: jobId
       updated_at: updatedAt
       created_at:
       - appliedAt

@@ -12,8 +12,8 @@ concepts:
       - title
       - name
       status: status
-      description: description
       created_at: created_at
+      description: description
       updated_at: updated_at
       metadata: metadata
     core_coverage: 0.714

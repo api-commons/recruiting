@@ -10,8 +10,8 @@ concepts:
       id: id
       name: title
       status: status
-      description: description
       created_at: created_at
+      description: description
       location: location
       employment_type: employment_type
       department: team

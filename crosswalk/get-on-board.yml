@@ -30,6 +30,7 @@ concepts:
       job_id: job_id
       metadata: attributes
       type: type
+      description: description
     core_coverage: 0.375
     evidence:
     - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/applications

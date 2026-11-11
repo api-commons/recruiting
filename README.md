@@ -12,9 +12,9 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| job | 32 | 26 | id 81%, name 81%, status 69%, description 65%, created_at 62%, location 54%, employment_type 50% | jobs 20, positions 6, postings 4, openings 3 |
+| job | 32 | 26 | id 81%, name 81%, status 69%, created_at 62%, description 62%, location 54%, employment_type 50% | jobs 20, positions 6, postings 4, openings 3 |
 | candidate | 23 | 19 | id 84%, phone 84%, email 79%, first_name 68%, last_name 68%, created_at 63%, resume_url 53% | candidates 17, applicants 7, people 2, profiles 2 |
-| application | 15 | 11 | id 91%, job_id 73%, candidate_id 64%, metadata 64%, updated_at 64%, created_at 55%, source 55%, status 55% | applications 15, application 1 |
+| application | 15 | 11 | id 100%, candidate_id 64%, job_id 64%, metadata 64%, updated_at 64%, created_at 55%, source 55%, status 55% | applications 15, application 1 |
 | stage | 9 | 6 | id 83%, name 50%, updated_at 50% | stages 6, stage 2, pipeline-stages 1 |
 | interview | 8 | 7 | id 100%, created_at 71%, start_at 71%, status 71%, application_id 57%, end_at 57%, location 57% | interviews 6, scheduled-interviews 1, scheduled_interviews 1, interview 1 |
 

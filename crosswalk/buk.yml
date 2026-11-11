@@ -47,12 +47,13 @@ concepts:
     path_segment:
     - applications
     properties:
+      id: id
       candidate_id:
       - applicant
       - applicant_id
       metadata: custom_attributes
       updated_at: updated_at
-    core_coverage: 0.375
+    core_coverage: 0.5
     evidence:
     - openapi/_original/buk-data-access-api-brasil-openapi.json#GET /recruiting/applicants/{id}/applications
     - openapi/_original/buk-data-access-api-brasil-openapi.json#GET /recruiting/applications

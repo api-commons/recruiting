@@ -9,8 +9,8 @@ concepts:
     properties:
       id: id
       name: title
-      description: description
       created_at: created_at
+      description: description
       location: city
       updated_at: updated_at
     core_coverage: 0.714

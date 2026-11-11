@@ -9,8 +9,8 @@ concepts:
     properties:
       name: title
       status: status
-      description: description
       created_at: createdAt
+      description: description
       location: location
       employment_type: employmentType
       updated_at: updatedAt

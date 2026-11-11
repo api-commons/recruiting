@@ -9,8 +9,8 @@ concepts:
     properties:
       id: id
       name: title
-      description: description
       created_at: created_at
+      description: description
     core_coverage: 0.571
     evidence:
     - openapi/_original/vcv-openapi.yml#DELETE /api/v3/vacancies

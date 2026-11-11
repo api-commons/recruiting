@@ -38,18 +38,6 @@
         "job_status"
       ]
     },
-    "description": {
-      "type": "string",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.654,
-      "x-commons-providers": 17,
-      "x-commons-spellings": [
-        "description",
-        "content",
-        "details",
-        "notes"
-      ]
-    },
     "created_at": {
       "type": "string",
       "x-commons-tier": "core",
@@ -63,6 +51,18 @@
         "createdOn"
       ],
       "format": "date-time"
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.615,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "description",
+        "details",
+        "notes",
+        "content"
+      ]
     },
     "location": {
       "type": "object",

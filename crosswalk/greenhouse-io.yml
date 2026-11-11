@@ -13,10 +13,10 @@ concepts:
       - name
       - title
       status: status
+      created_at: created_at
       description:
       - notes
       - content
-      created_at: created_at
       location:
       - offices
       - location
@@ -64,16 +64,17 @@ concepts:
     - applications
     properties:
       id: id
-      job_id: job_id
       candidate_id: candidate_id
       metadata: custom_fields
       updated_at: last_activity_at
       created_at: applied_at
       source: source
       status: status
+      type: type
+      description: content
       rejected_at: rejected_at
       stage: current_stage
-    core_coverage: 1.0
+    core_coverage: 0.875
     evidence:
     - openapi/_original/greenhouse-harvest-api-openapi.yml#DELETE /applications/{id}
     - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /applications
