@@ -1,0 +1,47 @@
+provider: harver
+apis_io: https://apis.io/providers/harver/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - vacancies
+    properties:
+      id: id
+      location: locations
+      employment_type: type
+      metadata: attributes
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/harver-openapi-original.json#GET /accounts/{accountId}/channels/{channelId}/vacancies
+    - openapi/_original/harver-openapi-original.json#GET /accounts/{accountId}/vacancies
+    - openapi/_original/harver-openapi-original.json#GET /vacancies/{vacancyId}
+    - openapi/_original/harver-openapi-original.json#PATCH /vacancies/{vacancyId}
+  candidate:
+    path_segment:
+    - candidates
+    properties:
+      id: id
+      metadata: attributes
+    core_coverage: 0.143
+    evidence:
+    - openapi/_original/harver-openapi-original.json#GET /accounts/{accountId}/candidates
+    - openapi/_original/harver-openapi-original.json#GET /vacancies/{vacancyId}/candidates
+  application:
+    path_segment:
+    - applications
+    properties:
+      id: id
+      job_id: vacancyId
+      metadata: attributes
+      status:
+      - currentStatus
+      - status
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/harver-openapi-original.json#DELETE /applications/{applicationId}
+    - openapi/_original/harver-openapi-original.json#GET /accounts/{accountId}/candidates/{candidateId}/applications
+    - openapi/_original/harver-openapi-original.json#GET /applications
+    - openapi/_original/harver-openapi-original.json#GET /applications/{applicationId}
+    - openapi/_original/harver-openapi-original.json#PATCH /applications/{applicationId}

@@ -1,0 +1,44 @@
+provider: pinpoint
+apis_io: https://apis.io/providers/pinpoint/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      employment_type: type
+      metadata: attributes
+    core_coverage: 0.286
+    evidence:
+    - openapi/_original/pinpoint-openapi.yml#DELETE /jobs/{id}
+    - openapi/_original/pinpoint-openapi.yml#GET /jobs
+    - openapi/_original/pinpoint-openapi.yml#GET /jobs/{id}
+    - openapi/_original/pinpoint-openapi.yml#PATCH /jobs/{id}
+    - openapi/_original/pinpoint-openapi.yml#POST /jobs
+  candidate:
+    path_segment:
+    - candidates
+    properties:
+      id: id
+      metadata: attributes
+    core_coverage: 0.143
+    evidence:
+    - openapi/_original/pinpoint-openapi.yml#GET /candidates
+    - openapi/_original/pinpoint-openapi.yml#GET /candidates/{id}
+    - openapi/_original/pinpoint-openapi.yml#PATCH /candidates/{id}
+  application:
+    path_segment:
+    - applications
+    properties:
+      id: id
+      metadata: attributes
+      type: type
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/pinpoint-openapi.yml#DELETE /applications/{id}
+    - openapi/_original/pinpoint-openapi.yml#GET /applications
+    - openapi/_original/pinpoint-openapi.yml#GET /applications/{id}
+    - openapi/_original/pinpoint-openapi.yml#PATCH /applications/{id}
+    - openapi/_original/pinpoint-openapi.yml#POST /applications

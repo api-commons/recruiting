@@ -1,0 +1,46 @@
+provider: fountain-com
+apis_io: https://apis.io/providers/fountain-com/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - positions
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.286
+    evidence:
+    - openapi/_original/fountain-com-openapi.yml#DELETE /positions/{id}
+    - openapi/_original/fountain-com-openapi.yml#GET /positions
+    - openapi/_original/fountain-com-openapi.yml#GET /positions/{id}
+    - openapi/_original/fountain-com-openapi.yml#POST /positions
+    - openapi/_original/fountain-com-openapi.yml#PUT /positions/{id}
+  candidate:
+    path_segment:
+    - applicants
+    properties:
+      id: id
+      phone: phone_number
+      email: email
+      created_at: created_at
+      full_name: name
+      updated_at: updated_at
+      status: status
+    core_coverage: 0.571
+    evidence:
+    - openapi/_original/fountain-com-openapi.yml#DELETE /applicants/{id}
+    - openapi/_original/fountain-com-openapi.yml#GET /applicants
+    - openapi/_original/fountain-com-openapi.yml#GET /applicants/{id}
+    - openapi/_original/fountain-com-openapi.yml#POST /applicants
+    - openapi/_original/fountain-com-openapi.yml#PUT /applicants/{id}
+  stage:
+    path_segment:
+    - stages
+    properties:
+      id: id
+      name: title
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/fountain-com-openapi.yml#GET /funnels/{funnel_id}/stages
+    - openapi/_original/fountain-com-openapi.yml#GET /stages/{id}

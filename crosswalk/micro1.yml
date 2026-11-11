@@ -1,0 +1,54 @@
+provider: micro1
+apis_io: https://apis.io/providers/micro1/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties:
+      status: job_status
+      created_at: date_created
+      updated_at: date_modified
+    core_coverage: 0.286
+    evidence:
+    - openapi/_original/micro1-ai-recruiter-openapi-original.json#GET /jobs
+    - openapi/_original/micro1-ai-recruiter-openapi.yml#GET /jobs
+  candidate:
+    path_segment:
+    - applicant
+    - applicants
+    properties:
+      phone: phone_number
+      first_name: first_name
+      last_name: last_name
+      created_at: date_created
+      resume_url: resume_url
+      updated_at: date_modified
+      source: source_name
+      status: status
+      job_id: job_id
+      linkedin_url: linkedin_url
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/micro1-ai-recruiter-openapi-original.json#GET /job/applicant/{jobApplicantId}
+    - openapi/_original/micro1-ai-recruiter-openapi-original.json#GET /job/{jobId}/applicants
+    - openapi/_original/micro1-ai-recruiter-openapi-original.json#POST /job/{jobId}/applicant
+    - openapi/_original/micro1-ai-recruiter-openapi.yml#GET /job/applicant/{jobApplicantId}
+    - openapi/_original/micro1-ai-recruiter-openapi.yml#GET /job/{jobId}/applicants
+  interview:
+    path_segment:
+    - interview
+    - interviews
+    properties:
+      id: interview_id
+      created_at: date_created
+      status: status
+      updated_at: date_modified
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/micro1-ai-recruiter-openapi-original.json#DELETE /interview/{interviewId}
+    - openapi/_original/micro1-ai-recruiter-openapi-original.json#GET /interviews
+    - openapi/_original/micro1-ai-recruiter-openapi-original.json#POST /custom/interview
+    - openapi/_original/micro1-ai-recruiter-openapi-original.json#POST /interview
+    - openapi/_original/micro1-ai-recruiter-openapi-original.json#POST /mock/interview

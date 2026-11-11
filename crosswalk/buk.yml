@@ -1,0 +1,61 @@
+provider: buk
+apis_io: https://apis.io/providers/buk/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      status: status
+      employment_type: contract_type
+      metadata: custom_attributes
+      closed_at: end_date
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#GET /employees/{id}/jobs
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#PATCH /employees/{employee_id}/jobs/{id}
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#POST /employees/{id}/jobs
+    - openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /employees/{id}/jobs
+    - openapi/_original/buk-data-access-api-brasil-openapi.yml#PATCH /employees/{employee_id}/jobs/{id}
+  candidate:
+    path_segment:
+    - applicants
+    - people
+    properties:
+      id: id
+      phone: phone
+      email: email
+      first_name: first_name
+      last_name:
+      - surname
+      - last_name
+      resume_url: cv_url
+      metadata: custom_attributes
+      location: location
+      address: address
+      linkedin_url: linkedin_url
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#GET /people/{id}
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#GET /recruiting/applicants/
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#GET /recruiting/applicants/{id}
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#PATCH /recruiting/applicants/{id}
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#POST /recruiting/applicants
+  application:
+    path_segment:
+    - applications
+    properties:
+      candidate_id:
+      - applicant
+      - applicant_id
+      metadata: custom_attributes
+      updated_at: updated_at
+    core_coverage: 0.375
+    evidence:
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#GET /recruiting/applicants/{id}/applications
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#GET /recruiting/applications
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#PATCH /recruiting/applications/{id}
+    - openapi/_original/buk-data-access-api-brasil-openapi.json#POST /recruiting/applications
+    - openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /recruiting/applicants/{id}/applications

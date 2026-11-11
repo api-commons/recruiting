@@ -1,0 +1,103 @@
+provider: deel-com
+apis_io: https://apis.io/providers/deel-com/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - job-postings
+    - jobs
+    - openings
+    - requisitions
+    properties:
+      id: id
+      name: title
+      status: status
+      description: description
+      created_at: created_at
+      location:
+      - location
+      - locations
+      employment_type:
+      - employment_type
+      - contract_type
+      updated_at: updated_at
+      department:
+      - team
+      - team_id
+      closed_at: end_date
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/deel-com-openapi.yml#GET /ats/job-boards/{job_board_id}/job-postings
+    - openapi/_original/deel-com-openapi.yml#GET /ats/job-postings
+    - openapi/_original/deel-com-openapi.yml#GET /ats/job-postings/{job_posting_id}
+    - openapi/_original/deel-com-openapi.yml#GET /ats/jobs
+    - openapi/_original/deel-com-openapi.yml#GET /ats/openings
+  candidate:
+    path_segment:
+    - candidates
+    - people
+    - profiles
+    properties:
+      id: id
+      phone:
+      - phone_number
+      - phone
+      email:
+      - email
+      - emails
+      first_name: first_name
+      last_name: last_name
+      created_at:
+      - created_at
+      - created
+      resume_url: attachments
+      metadata: custom_fields
+      full_name: full_name
+      updated_at: updated_at
+      source: source
+      status:
+      - state
+      - status
+      applications: applications
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/deel-com-openapi.yml#GET /ats/candidates
+    - openapi/_original/deel-com-openapi.yml#GET /ats/candidates/{candidate_id}
+    - openapi/_original/deel-com-openapi.yml#GET /people
+    - openapi/_original/deel-com-openapi.yml#GET /people/{hris_profile_id}
+    - openapi/_original/deel-com-openapi.yml#PATCH /ats/candidates/{candidate_id}
+  application:
+    path_segment:
+    - applications
+    properties:
+      id: id
+      job_id:
+      - job
+      - job_id
+      - job_posting_id
+      candidate_id:
+      - candidate
+      - candidate_id
+      updated_at: updated_at
+      created_at: created_at
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/deel-com-openapi.yml#GET /ats/applications
+    - openapi/_original/deel-com-openapi.yml#GET /ats/applications/{application_id}
+    - openapi/_original/deel-com-openapi.yml#PATCH /ats/applications/{application_id}
+    - openapi/_original/deel-com-openapi.yml#POST /ats/applications
+  interview:
+    path_segment:
+    - interviews
+    properties:
+      id: id
+      created_at: created_at
+      start_at: starts_at
+      application_id: application
+      end_at: ends_at
+      location: meeting_url
+      updated_at: updated_at
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/deel-com-openapi.yml#GET /ats/interviews

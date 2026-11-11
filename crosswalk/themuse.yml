@@ -1,0 +1,17 @@
+provider: themuse
+apis_io: https://apis.io/providers/themuse/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      name: name
+      location: locations
+      employment_type: type
+    core_coverage: 0.571
+    evidence:
+    - openapi/_original/themuse-openapi.yml#GET /jobs
+    - openapi/_original/themuse-openapi.yml#GET /jobs/{id}

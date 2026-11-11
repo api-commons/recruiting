@@ -1,0 +1,887 @@
+context: recruiting
+name: Recruiting
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Recruiting
+  - Hiring
+  - Applicant Tracking
+  - Applicant Tracking System
+  - ATS
+  - Talent Acquisition
+  - Recruitment
+  providers_with_harvested_openapi: 67
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded:
+  job:
+    harri: /employees/{id}/locations/{id}/positions are an employee's positions (HR)
+    hr-partner: /positions are employee position history (HR)
+  application:
+    drippay: /integrations/{id}/submissions are integration sync jobs
+duplicates: {}
+shared_specs: {}
+concepts:
+  job:
+    segments_seen:
+      jobs: 20
+      positions: 6
+      postings: 4
+      openings: 3
+      requisitions: 3
+      vacancies: 3
+      job-postings: 1
+      job_postings: 1
+      job: 1
+    providers_exposing: 32
+    providers_with_readable_schema: 26
+    operations:
+    - operation: GET collection
+      providers: 32
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 27
+      share: 0.844
+      tier: core
+    - operation: POST collection
+      providers: 19
+      share: 0.594
+      tier: core
+    - operation: UPDATE item
+      providers: 17
+      share: 0.531
+      tier: core
+    - operation: DELETE item
+      providers: 10
+      share: 0.312
+      tier: extended
+    - operation: POST item
+      providers: 3
+      share: 0.094
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 3
+      share: 0.094
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 2
+      share: 0.062
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 21
+      share: 0.808
+      type: string
+      spellings:
+      - id
+      - remote_id
+      - uuid
+      - remoteId
+    - name: name
+      tier: core
+      providers: 21
+      share: 0.808
+      type: string
+      spellings:
+      - title
+      - name
+    - name: status
+      tier: core
+      providers: 18
+      share: 0.692
+      type: string
+      spellings:
+      - status
+      - state
+      - job_status
+    - name: description
+      tier: core
+      providers: 17
+      share: 0.654
+      type: string
+      spellings:
+      - description
+      - content
+      - details
+      - notes
+    - name: created_at
+      tier: core
+      providers: 16
+      share: 0.615
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - remote_created_at
+      - date_created
+      - createdOn
+    - name: location
+      tier: core
+      providers: 14
+      share: 0.538
+      type: object
+      spellings:
+      - location
+      - locations
+      - offices
+      - city
+    - name: employment_type
+      tier: core
+      providers: 13
+      share: 0.5
+      type: string
+      spellings:
+      - type
+      - employment_type
+      - contract_type
+      - employmentType
+      - jobType
+      - job_type
+    - name: updated_at
+      tier: extended
+      providers: 12
+      share: 0.462
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - modified_at
+      - date_modified
+    - name: department
+      tier: extended
+      providers: 10
+      share: 0.385
+      type: string
+      spellings:
+      - department
+      - departments
+      - team
+      - department_id
+      - team_id
+      - departmentId
+    - name: metadata
+      tier: extended
+      providers: 9
+      share: 0.346
+      type: object
+      spellings:
+      - custom_fields
+      - attributes
+      - metadata
+      - custom_attributes
+      - properties
+    - name: closed_at
+      tier: extended
+      providers: 6
+      share: 0.231
+      type: string
+      spellings:
+      - end_date
+      - closed_at
+      - expiresAt
+      - closedAt
+    long_tail_count: 398
+    long_tail_sample:
+    - company
+    - job_id
+    - opened_at
+    - confidential
+    - hiring_team
+    - salary
+    - url
+    - hiring_manager_id
+    - language
+    - location_id
+    - remote
+    - categories
+    - close_reason
+    - code
+    - company_id
+    - country
+    - created_by
+    - currency
+    - experience_level
+    - group_id
+    - job_code
+    - job_description
+    - job_title
+    - number_of_openings
+    - page_count
+    - remote_updated_at
+    - role
+    - salary_currency
+    - source
+    - user_id
+    - visibility
+    - weekly_hours
+    - absolute_url
+    - access
+    - active
+    - addresses
+    - admission_indicative
+    - admission_type
+    - aggregations
+    - allow_sms_comms
+  candidate:
+    segments_seen:
+      candidates: 17
+      applicants: 7
+      people: 2
+      profiles: 2
+      applicant: 1
+    providers_exposing: 23
+    providers_with_readable_schema: 19
+    operations:
+    - operation: GET collection
+      providers: 22
+      share: 0.957
+      tier: core
+    - operation: GET item
+      providers: 18
+      share: 0.783
+      tier: core
+    - operation: POST collection
+      providers: 18
+      share: 0.783
+      tier: core
+    - operation: UPDATE item
+      providers: 10
+      share: 0.435
+      tier: extended
+    - operation: DELETE item
+      providers: 4
+      share: 0.174
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.043
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.043
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 16
+      share: 0.842
+      type: string
+      spellings:
+      - id
+      - remote_id
+      - remoteId
+    - name: phone
+      tier: core
+      providers: 16
+      share: 0.842
+      type: string
+      spellings:
+      - phone
+      - phone_number
+      - phone_numbers
+      - phoneNumber
+      - mobile
+    - name: email
+      tier: core
+      providers: 15
+      share: 0.789
+      type: string
+      spellings:
+      - email
+      - email_addresses
+      - emails
+    - name: first_name
+      tier: core
+      providers: 13
+      share: 0.684
+      type: string
+      spellings:
+      - first_name
+      - firstName
+    - name: last_name
+      tier: core
+      providers: 13
+      share: 0.684
+      type: string
+      spellings:
+      - last_name
+      - lastName
+      - surname
+    - name: created_at
+      tier: core
+      providers: 12
+      share: 0.632
+      type: string
+      spellings:
+      - created_at
+      - remote_created_at
+      - created
+      - appliedAt
+      - date_created
+      - createdOn
+      - createdAt
+    - name: resume_url
+      tier: core
+      providers: 10
+      share: 0.526
+      type: object
+      spellings:
+      - attachments
+      - resume
+      - cv_url
+      - resume_url
+      - resume_file
+    - name: metadata
+      tier: extended
+      providers: 9
+      share: 0.474
+      type: object
+      spellings:
+      - custom_fields
+      - attributes
+      - custom_attributes
+      - customFields
+      - metadata
+    - name: full_name
+      tier: extended
+      providers: 8
+      share: 0.421
+      type: string
+      spellings:
+      - name
+      - full_name
+      - fullName
+    - name: updated_at
+      tier: extended
+      providers: 8
+      share: 0.421
+      type: string
+      spellings:
+      - updated_at
+      - modified_at
+      - date_modified
+      - updatedAt
+    - name: source
+      tier: extended
+      providers: 7
+      share: 0.368
+      type: string
+      spellings:
+      - source
+      - source_name
+    - name: status
+      tier: extended
+      providers: 7
+      share: 0.368
+      type: string
+      spellings:
+      - status
+      - state
+      - applicationStatus
+    - name: job_id
+      tier: extended
+      providers: 6
+      share: 0.316
+      type: string
+      spellings:
+      - job_id
+      - posting_id
+      - jobPostingId
+      - position_id
+      - postingId
+    - name: location
+      tier: extended
+      providers: 6
+      share: 0.316
+      type: object
+      spellings:
+      - location
+    - name: tags
+      tier: extended
+      providers: 6
+      share: 0.316
+      type: array
+      spellings:
+      - tags
+    - name: applications
+      tier: extended
+      providers: 5
+      share: 0.263
+      type: array
+      spellings:
+      - applications
+    - name: address
+      tier: extended
+      providers: 4
+      share: 0.211
+      type: string
+      spellings:
+      - address
+    - name: linkedin_url
+      tier: extended
+      providers: 4
+      share: 0.211
+      type: string
+      spellings:
+      - linkedin_url
+      - social_media_addresses
+      - linkedin
+    - name: name
+      tier: extended
+      providers: 4
+      share: 0.211
+      type: string
+      spellings:
+      - title
+    long_tail_count: 214
+    long_tail_sample:
+    - candidate_id
+    - city
+    - company
+    - country
+    - job_title
+    - addresses
+    - application_id
+    - current_company
+    - description
+    - education
+    - employments
+    - external_id
+    - gender
+    - is_private
+    - pagination
+    - relationships
+    - remote_updated_at
+    - screening_question_answers
+    - stage
+    - summary
+    - type
+    - urls
+    - about_you
+    - academic_degree
+    - active_worker_termination_status
+    - added_by
+    - additional_details
+    - additional_sections
+    - agent_summary
+    - anonymized_at
+    - answers
+    - ats_data
+    - ats_entity_id
+    - attachments_info
+    - avatar
+    - awards
+    - best_match
+    - birth_date
+    - birthday
+    - can_email
+  application:
+    segments_seen:
+      applications: 15
+      application: 1
+    providers_exposing: 15
+    providers_with_readable_schema: 11
+    operations:
+    - operation: GET collection
+      providers: 15
+      share: 1.0
+      tier: core
+    - operation: POST collection
+      providers: 9
+      share: 0.6
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.533
+      tier: core
+    - operation: UPDATE item
+      providers: 8
+      share: 0.533
+      tier: core
+    - operation: DELETE item
+      providers: 3
+      share: 0.2
+      tier: extended
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.067
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 10
+      share: 0.909
+      type: string
+      spellings:
+      - id
+      - remote_id
+      - remoteId
+    - name: job_id
+      tier: core
+      providers: 8
+      share: 0.727
+      type: string
+      spellings:
+      - job_id
+      - job
+      - job_posting_id
+      - jobId
+      - vacancyId
+    - name: candidate_id
+      tier: core
+      providers: 7
+      share: 0.636
+      type: string
+      spellings:
+      - candidate
+      - candidate_id
+      - candidateId
+      - applicant
+      - applicant_id
+    - name: metadata
+      tier: core
+      providers: 7
+      share: 0.636
+      type: object
+      spellings:
+      - custom_fields
+      - attributes
+      - custom_attributes
+    - name: updated_at
+      tier: core
+      providers: 7
+      share: 0.636
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - modified_at
+      - last_activity_at
+    - name: created_at
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - applied_at
+      - created_at
+      - appliedAt
+      - createdAt
+      - remote_created_at
+    - name: source
+      tier: core
+      providers: 6
+      share: 0.545
+      type: object
+      spellings:
+      - source
+    - name: status
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - status
+      - currentStatus
+    - name: rejected_at
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: string
+      spellings:
+      - rejected_at
+    - name: stage
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: object
+      spellings:
+      - current_stage
+      - stage_id
+    - name: type
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: string
+      spellings:
+      - type
+    long_tail_count: 144
+    long_tail_sample:
+    - answers
+    - attachments
+    - credited_to
+    - current_stage_id
+    - description
+    - job_title
+    - location
+    - referrer
+    - rejection_reason
+    - relationships
+    - all_application_interview_plan_stages
+    - application_automation_rule_executions
+    - application_date
+    - application_form_form_builder_form_submission_id
+    - application_form_submission
+    - application_form_submission_data
+    - application_id
+    - application_job_criterias_matchings
+    - application_stage
+    - applied_on
+    - apply_mode
+    - archivation_reason
+    - archivation_reason_id
+    - auto_retry_stopped
+    - auto_retry_stopped_reason
+    - browserbase_debug_url
+    - browserbase_session_id
+    - browserbase_session_url
+    - candidate_email
+    - changed_at
+    - city
+    - company
+    - company_domain
+    - company_logo_url
+    - content_locked
+    - country
+    - cover_letter_content
+    - cover_letter_doc_id
+    - cover_letter_pdf_r2_key
+    - created_by
+  stage:
+    segments_seen:
+      stages: 6
+      stage: 2
+      pipeline-stages: 1
+    providers_exposing: 9
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET collection
+      providers: 6
+      share: 0.667
+      tier: core
+    - operation: GET item
+      providers: 2
+      share: 0.222
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.222
+      tier: long-tail
+    - operation: POST collection
+      providers: 1
+      share: 0.111
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 5
+      share: 0.833
+      type: string
+      spellings:
+      - id
+      - stage_id
+      - remoteId
+    - name: name
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - name
+      - title
+    - name: updated_at
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - updatedAt
+      - updated_at
+    long_tail_count: 22
+    long_tail_sample:
+    - created_at
+    - order
+    - action_user_email
+    - application_answers
+    - application_creation_source
+    - application_id
+    - application_stage
+    - comment
+    - interviews
+    - is_reject
+    - job_id
+    - new_stage
+    - new_sub_stage
+    - prev_stage
+    - prev_sub_stage
+    - priority
+    - probability
+    - reason
+    - remote_fields
+    - scheduled_rejection_time
+    - status
+    - type
+  interview:
+    segments_seen:
+      interviews: 6
+      scheduled-interviews: 1
+      scheduled_interviews: 1
+      interview: 1
+    providers_exposing: 8
+    providers_with_readable_schema: 7
+    operations:
+    - operation: GET collection
+      providers: 7
+      share: 0.875
+      tier: core
+    - operation: POST collection
+      providers: 5
+      share: 0.625
+      tier: core
+    - operation: GET item
+      providers: 4
+      share: 0.5
+      tier: core
+    - operation: UPDATE item
+      providers: 4
+      share: 0.5
+      tier: core
+    - operation: DELETE item
+      providers: 3
+      share: 0.375
+      tier: extended
+    - operation: POST item
+      providers: 1
+      share: 0.125
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.125
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 7
+      share: 1.0
+      type: string
+      spellings:
+      - id
+      - remote_id
+      - interview_id
+    - name: created_at
+      tier: core
+      providers: 5
+      share: 0.714
+      type: string
+      spellings:
+      - remote_created_at
+      - created_at
+      - date_created
+    - name: start_at
+      tier: core
+      providers: 5
+      share: 0.714
+      type: string
+      spellings:
+      - starts_at
+      - start_at
+      - start_time
+      - scheduled_at
+    - name: status
+      tier: core
+      providers: 5
+      share: 0.714
+      type: string
+      spellings:
+      - status
+    - name: application_id
+      tier: core
+      providers: 4
+      share: 0.571
+      type: object
+      spellings:
+      - application
+      - application_id
+    - name: end_at
+      tier: core
+      providers: 4
+      share: 0.571
+      type: string
+      spellings:
+      - ends_at
+      - end_at
+      - end_time
+    - name: location
+      tier: core
+      providers: 4
+      share: 0.571
+      type: string
+      spellings:
+      - location
+      - video_conferencing_url
+      - meeting_url
+    - name: interviewer_ids
+      tier: extended
+      providers: 3
+      share: 0.429
+      type: array
+      spellings:
+      - interviewers
+      - interviewer
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.429
+      type: string
+      spellings:
+      - modified_at
+      - updated_at
+      - date_modified
+    long_tail_count: 57
+    long_tail_sample:
+    - candidate_id
+    - remote_updated_at
+    - timezone
+    - agreed_at
+    - application_activity
+    - application_activity_id
+    - application_interview_plan_stage_id
+    - can_change_interview_language
+    - canceled
+    - cancellation_reason
+    - cancellation_reason_id
+    - cancelled_at
+    - changed_at
+    - coding_exercise_details
+    - created_by_hris_organization_user_id
+    - custom_question_list
+    - custom_questions
+    - date_create
+    - embedded
+    - ending_at
+    - feedback
+    - has_happened
+    - interview_language
+    - interview_name
+    - interview_plan_stage
+    - interview_stage_id
+    - interviewer_user_ids
+    - invite_url
+    - is_coding_round_required
+    - is_proctoring_required
+    - job_interview_stage
+    - metadata
+    - name
+    - only_coding_round
+    - organizer
+    - organizer_user_id
+    - questions
+    - raw_data
+    - remote_data
+    - remote_deleted_at

@@ -1,0 +1,20 @@
+provider: google-cloud-talent-solution
+apis_io: https://apis.io/providers/google-cloud-talent-solution/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties:
+      name:
+      - name
+      - title
+      description: description
+    core_coverage: 0.286
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /projects/{projectId}/tenants/{tenantId}/jobs/{jobId}
+    - openapi/_original/openapi.yml#GET /projects/{projectId}/tenants/{tenantId}/jobs
+    - openapi/_original/openapi.yml#GET /projects/{projectId}/tenants/{tenantId}/jobs/{jobId}
+    - openapi/_original/openapi.yml#PATCH /projects/{projectId}/tenants/{tenantId}/jobs/{jobId}
+    - openapi/_original/openapi.yml#POST /projects/{projectId}/tenants/{tenantId}/jobs

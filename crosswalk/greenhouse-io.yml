@@ -1,0 +1,112 @@
+provider: greenhouse-io
+apis_io: https://apis.io/providers/greenhouse-io/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    - openings
+    properties:
+      id: id
+      name:
+      - name
+      - title
+      status: status
+      description:
+      - notes
+      - content
+      created_at: created_at
+      location:
+      - offices
+      - location
+      updated_at: updated_at
+      department:
+      - departments
+      - department_id
+      metadata:
+      - custom_fields
+      - metadata
+      closed_at: closed_at
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/greenhouse-candidate-ingestion-api-openapi.yml#GET /jobs
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#DELETE /openings
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /jobs
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /jobs/{id}
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /openings
+  candidate:
+    path_segment:
+    - candidates
+    properties:
+      id: id
+      phone: phone_numbers
+      email: emails
+      first_name: first_name
+      last_name: last_name
+      created_at: created_at
+      resume_url: attachments
+      metadata: custom_fields
+      updated_at: updated_at
+      tags: tags
+      applications: applications
+      linkedin_url: social_media_addresses
+      name: title
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/greenhouse-candidate-ingestion-api-openapi.yml#GET /candidates
+    - openapi/_original/greenhouse-candidate-ingestion-api-openapi.yml#POST /candidates
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#DELETE /candidates
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /candidates
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /candidates/{id}
+  application:
+    path_segment:
+    - applications
+    properties:
+      id: id
+      job_id: job_id
+      candidate_id: candidate_id
+      metadata: custom_fields
+      updated_at: last_activity_at
+      created_at: applied_at
+      source: source
+      status: status
+      rejected_at: rejected_at
+      stage: current_stage
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#DELETE /applications/{id}
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /applications
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /applications/{id}
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#PATCH /applications/{id}
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#POST /candidates/{id}/applications
+  stage:
+    path_segment:
+    - stages
+    properties:
+      id: id
+      name: name
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /jobs/{job_id}/stages
+  interview:
+    path_segment:
+    - scheduled_interviews
+    properties:
+      id: id
+      start_at: starts_at
+      status: status
+      application_id: application_id
+      end_at: ends_at
+      location:
+      - location
+      - video_conferencing_url
+      interviewer_ids: interviewers
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#DELETE /scheduled_interviews/{id}
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /applications/{id}/scheduled_interviews
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /scheduled_interviews
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#GET /scheduled_interviews/{id}
+    - openapi/_original/greenhouse-harvest-api-openapi.yml#PATCH /scheduled_interviews/{id}

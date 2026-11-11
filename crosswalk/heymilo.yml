@@ -1,0 +1,40 @@
+provider: heymilo
+apis_io: https://apis.io/providers/heymilo/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - postings
+    properties:
+      id: id
+      name:
+      - title
+      - name
+      status: status
+      description: description
+      created_at: created_at
+      updated_at: updated_at
+      metadata: metadata
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/heymilo-openapi-original.json#GET /api/v2/postings
+    - openapi/_original/heymilo-openapi-original.json#GET /api/v2/postings/{posting_id}
+    - openapi/_original/heymilo-openapi-original.json#PATCH /api/v2/postings/{posting_id}
+    - openapi/_original/heymilo-openapi-original.json#POST /api/v2/postings
+  candidate:
+    path_segment:
+    - candidates
+    properties:
+      phone: phone_number
+      email: email
+      created_at: created_at
+      metadata: metadata
+      full_name: name
+      status: status
+      job_id: posting_id
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/heymilo-openapi-original.json#GET /api/v2/postings/{posting_id}/candidates
+    - openapi/_original/heymilo-openapi-original.json#POST /api/v2/postings/{posting_id}/candidates
+    - openapi/_original/heymilo-openapi-original.json#POST /api/v2/postings/{posting_id}/candidates/bulk

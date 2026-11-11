@@ -1,0 +1,74 @@
+provider: truto
+apis_io: https://apis.io/providers/truto/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties:
+      id:
+      - id
+      - remoteId
+      name: title
+      status: status
+      description: description
+      created_at: createdAt
+      employment_type: jobType
+      updated_at: updatedAt
+      department: departmentId
+      closed_at: closedAt
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/truto-unified-ats-openapi.yml#GET /jobs
+    - openapi/_original/truto-unified-ats-openapi.yml#GET /jobs/{id}
+  candidate:
+    path_segment:
+    - candidates
+    properties:
+      id:
+      - id
+      - remoteId
+      phone: phone
+      email: email
+      first_name: firstName
+      last_name: lastName
+      created_at: createdAt
+      updated_at: updatedAt
+      source: source
+      location: location
+      tags: tags
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/truto-unified-ats-openapi.yml#GET /candidates
+    - openapi/_original/truto-unified-ats-openapi.yml#GET /candidates/{id}
+  application:
+    path_segment:
+    - applications
+    properties:
+      id:
+      - id
+      - remoteId
+      job_id: jobId
+      candidate_id: candidateId
+      updated_at: updatedAt
+      created_at:
+      - appliedAt
+      - createdAt
+      source: source
+      status: status
+    core_coverage: 0.875
+    evidence:
+    - openapi/_original/truto-unified-ats-openapi.yml#GET /applications
+  stage:
+    path_segment:
+    - stages
+    properties:
+      id:
+      - id
+      - remoteId
+      name: name
+      updated_at: updatedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/truto-unified-crm-openapi.yml#GET /stages

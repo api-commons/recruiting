@@ -1,0 +1,16 @@
+provider: directhireagents-com
+apis_io: https://apis.io/providers/directhireagents-com/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/directhireagents-com-openapi-original.json#DELETE /organizations/{id}/jobs/{jobId}
+    - openapi/_original/directhireagents-com-openapi-original.json#GET /jobs
+    - openapi/_original/directhireagents-com-openapi-original.json#GET /organizations/{id}/jobs
+    - openapi/_original/directhireagents-com-openapi-original.json#POST /organizations/{id}/jobs/{jobId}
+    - openapi/_original/directhireagents-com-openapi.yml#DELETE /organizations/{id}/jobs/{jobId}

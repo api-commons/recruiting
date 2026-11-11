@@ -1,0 +1,498 @@
+[
+ {
+  "slug": "affinda",
+  "specs": [
+   "openapi/_original/affinda-document-splitters-api-openapi.yml",
+   "openapi/_original/affinda-extractors-api-openapi.yml",
+   "openapi/_original/affinda-invitations-api-openapi.yml",
+   "openapi/_original/affinda-v3-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ashby",
+  "specs": [
+   "openapi/_original/ashby-api-openapi.json",
+   "openapi/_original/ashby-assessments-partner-openapi.json"
+  ]
+ },
+ {
+  "slug": "ashby-hq",
+  "specs": [
+   "openapi/_original/ashby-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bamboohr",
+  "specs": [
+   "openapi/_original/bamboohr-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bindbee",
+  "specs": [
+   "openapi/_original/bindbee-openapi.json"
+  ]
+ },
+ {
+  "slug": "buk",
+  "specs": [
+   "openapi/_original/buk-asistencia-api-openapi.json",
+   "openapi/_original/buk-asistencia-api-openapi.yml",
+   "openapi/_original/buk-attendance-biometrics-api-openapi.json",
+   "openapi/_original/buk-attendance-biometrics-api-openapi.yml",
+   "openapi/_original/buk-data-access-api-brasil-openapi.json",
+   "openapi/_original/buk-data-access-api-brasil-openapi.yml",
+   "openapi/_original/buk-data-access-api-chile-openapi.json",
+   "openapi/_original/buk-data-access-api-chile-openapi.yml",
+   "openapi/_original/buk-data-access-api-colombia-openapi.json",
+   "openapi/_original/buk-data-access-api-colombia-openapi.yml",
+   "openapi/_original/buk-data-access-api-mexico-openapi.json",
+   "openapi/_original/buk-data-access-api-mexico-openapi.yml",
+   "openapi/_original/buk-data-access-api-peru-openapi.json",
+   "openapi/_original/buk-data-access-api-peru-openapi.yml"
+  ]
+ },
+ {
+  "slug": "checkr",
+  "specs": [
+   "openapi/_original/checkr-openapi.yml"
+  ]
+ },
+ {
+  "slug": "codesignal",
+  "specs": [
+   "openapi/_original/codesignal-learn-openapi.json"
+  ]
+ },
+ {
+  "slug": "comeet",
+  "specs": [
+   "openapi/_original/comeet-careers-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "contra",
+  "specs": [
+   "openapi/_original/contra-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "deel-com",
+  "specs": [
+   "openapi/_original/deel-com-openapi.yml",
+   "openapi/_original/deel-global-payroll-api-openapi.yml",
+   "openapi/_original/deel-platform-extensions-api-openapi.yml",
+   "openapi/_original/deel-subpackage-employees-api-openapi.yml",
+   "openapi/_original/deel-subpackage-enrollments-api-openapi.yml",
+   "openapi/_original/deel-subpackage-payroll-api-openapi.yml",
+   "openapi/_original/deel-subpackage-paystubs-api-openapi.yml",
+   "openapi/_original/deel-subpackage-plans401k-api-openapi.yml",
+   "openapi/_original/deel-subpackage-serviceproviderconfig-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "directhireagents-com",
+  "specs": [
+   "openapi/_original/directhireagents-com-openapi-original.json",
+   "openapi/_original/directhireagents-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "drippay",
+  "specs": [
+   "openapi/_original/drippay-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "eightfold-ai",
+  "specs": [
+   "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml",
+   "openapi/_original/eightfold-ai-api-server-v2-service-service-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "employ-inc",
+  "specs": [
+   "openapi/_original/employ-inc-events-calendar-rest-api-openapi.json",
+   "openapi/_original/employ-inc-tec-events-rest-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "employment-hero",
+  "specs": [
+   "openapi/_original/employment-hero-openapi.yml",
+   "openapi/_original/employment-hero-payroll-au-swagger.json",
+   "openapi/_original/employment-hero-payroll-my-swagger.json",
+   "openapi/_original/employment-hero-payroll-nz-swagger.json",
+   "openapi/_original/employment-hero-payroll-sg-swagger.json",
+   "openapi/_original/employment-hero-payroll-uk-swagger.json"
+  ]
+ },
+ {
+  "slug": "factorial-hr",
+  "specs": [
+   "openapi/_original/factorial-openapi.yml",
+   "openapi/_original/factorial-resources-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fountain-com",
+  "specs": [
+   "openapi/_original/fountain-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "freshteam",
+  "specs": [
+   "openapi/_original/freshteam-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gatiflow",
+  "specs": [
+   "openapi/_original/gatiflow-openapi.json",
+   "openapi/_original/gatiflow-openapi.yml"
+  ]
+ },
+ {
+  "slug": "get-on-board",
+  "specs": [
+   "openapi/_original/get-on-board-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "getmattered",
+  "specs": [
+   "openapi/_original/getmattered-openapi.json"
+  ]
+ },
+ {
+  "slug": "google-cloud-talent-solution",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "greenhouse",
+  "specs": [
+   "openapi/_original/greenhouse-harvest-openapi.yml",
+   "openapi/_original/greenhouse-ingestion-openapi.yml",
+   "openapi/_original/greenhouse-job-board-openapi.yml",
+   "openapi/_original/greenhouse-onboarding-openapi.yml"
+  ]
+ },
+ {
+  "slug": "greenhouse-io",
+  "specs": [
+   "openapi/_original/greenhouse-assessment-api-openapi.yml",
+   "openapi/_original/greenhouse-audit-log-api-openapi.yml",
+   "openapi/_original/greenhouse-candidate-ingestion-api-openapi.yml",
+   "openapi/_original/greenhouse-harvest-api-openapi.yml",
+   "openapi/_original/greenhouse-job-board-api-openapi.yml",
+   "openapi/_original/greenhouse-onboarding-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "harri",
+  "specs": [
+   "openapi/_original/harri-employee-openapi.yml",
+   "openapi/_original/harri-employer-openapi.json"
+  ]
+ },
+ {
+  "slug": "harver",
+  "specs": [
+   "openapi/_original/harver-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "heymilo",
+  "specs": [
+   "openapi/_original/heymilo-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "hr-partner",
+  "specs": [
+   "openapi/_original/hr-partner-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "icims",
+  "specs": [
+   "openapi/_original/icims-openapi.yml"
+  ]
+ },
+ {
+  "slug": "indeed",
+  "specs": [
+   "openapi/_original/indeed-employer-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kolayik",
+  "specs": [
+   "openapi/_original/kolayik-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kombo",
+  "specs": [
+   "openapi/_original/kombo-openapi.json"
+  ]
+ },
+ {
+  "slug": "lever-co",
+  "specs": [
+   "openapi/_original/lever-data-api-openapi.yml",
+   "openapi/_original/lever-postings-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "linkedin",
+  "specs": [
+   "openapi/_original/linkedin-compliance-events.yml",
+   "openapi/_original/linkedin-learning-activity-reports.yml",
+   "openapi/_original/linkedin-marketing-audience-insights.yml",
+   "openapi/_original/linkedin-marketing-audience.yml",
+   "openapi/_original/linkedin-marketing-campaigns.yml",
+   "openapi/_original/linkedin-marketing-community.yml",
+   "openapi/_original/linkedin-marketing-content.yml",
+   "openapi/_original/linkedin-marketing-conversions.yml",
+   "openapi/_original/linkedin-marketing-leads.yml",
+   "openapi/_original/linkedin-marketing-media-planning.yml",
+   "openapi/_original/linkedin-marketing-reporting-roi.yml",
+   "openapi/_original/linkedin-regulations-data-portability.yml",
+   "openapi/_original/linkedin-regulatory-ads-transparency.yml",
+   "openapi/_original/linkedin-sales-navigator.yml",
+   "openapi/_original/linkedin-talent-job-posting.yml",
+   "openapi/_original/linkedin-talent-learning-parent-application.yml",
+   "openapi/_original/linkedin-talent-recruiter-system-connect.yml"
+  ]
+ },
+ {
+  "slug": "litmus-hiring",
+  "specs": [
+   "openapi/_original/litmus-hiring-openapi.yml"
+  ]
+ },
+ {
+  "slug": "micro1",
+  "specs": [
+   "openapi/_original/micro1-ai-recruiter-openapi-original.json",
+   "openapi/_original/micro1-ai-recruiter-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-linkedin",
+  "specs": [
+   "openapi/_original/microsoft-linkedin-openapi.yml"
+  ]
+ },
+ {
+  "slug": "namely",
+  "specs": [
+   "openapi/_original/namely-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "nobueno",
+  "specs": [
+   "openapi/_original/nobueno-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "nomad-health",
+  "specs": [
+   "openapi/_original/nomad-health-api-openapi.yml",
+   "openapi/_original/nomad-health-api-swagger-original.json",
+   "openapi/_original/nomad-health-platform-openapi.yml",
+   "openapi/_original/nomad-health-platform-swagger-original.json"
+  ]
+ },
+ {
+  "slug": "offendersearch-api",
+  "specs": [
+   "openapi/_original/offendersearch-api-openapi.json",
+   "openapi/_original/offendersearch-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "paradox",
+  "specs": [
+   "openapi/_original/paradox-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "peopleforce",
+  "specs": [
+   "openapi/_original/peopleforce-openapi.yml"
+  ]
+ },
+ {
+  "slug": "personio",
+  "specs": [
+   "openapi/_original/personio-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pinpoint",
+  "specs": [
+   "openapi/_original/pinpoint-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ploid",
+  "specs": [
+   "openapi/_original/ploid-openapi.json",
+   "openapi/_original/ploid-openapi.yml"
+  ]
+ },
+ {
+  "slug": "popp",
+  "specs": [
+   "openapi/_original/popp-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "recal",
+  "specs": [
+   "openapi/_original/recal-openapi.json"
+  ]
+ },
+ {
+  "slug": "recruitee",
+  "specs": [
+   "openapi/_original/recruitee-ats-api-readme-slices.json",
+   "openapi/_original/recruitee-careers-site-api-readme-slices.json",
+   "openapi/_original/recruitee-partners-production-secret-readme-slices.json",
+   "openapi/_original/recruitee-partners-release-candidate-secret-openapi.yml",
+   "openapi/_original/recruitee-partners-release-candidate-secret-readme-slices.json",
+   "openapi/_original/recruitee-partners-release-candidate-token-openapi.yml",
+   "openapi/_original/recruitee-partners-release-candidate-token-readme-slices.json",
+   "openapi/_original/recruitee-private-api-staging-openapi.yml",
+   "openapi/_original/recruitee-private-api-staging-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "remote-com",
+  "specs": [
+   "openapi/_original/remote-benefits-api-openapi.yml",
+   "openapi/_original/remote-companies-api-openapi.yml",
+   "openapi/_original/remote-contractors-api-openapi.yml",
+   "openapi/_original/remote-employments-api-openapi.yml",
+   "openapi/_original/remote-files-api-openapi.yml",
+   "openapi/_original/remote-oauth-api-openapi.yml",
+   "openapi/_original/remote-payroll-billing-api-openapi.yml",
+   "openapi/_original/remote-time-attendance-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rocketreach",
+  "specs": [
+   "openapi/_original/rocketreach-api-openapi.json",
+   "openapi/_original/rocketreach-company-lookup-api-openapi.yml",
+   "openapi/_original/rocketreach-company-search-api-openapi.yml",
+   "openapi/_original/rocketreach-people-lookup-api-openapi.yml",
+   "openapi/_original/rocketreach-people-search-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sage-hr",
+  "specs": [
+   "openapi/_original/sage-hr-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sense-talent-labs",
+  "specs": [
+   "openapi/_original/sense-talent-labs-sense-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "smartrecruiters",
+  "specs": [
+   "openapi/_original/smartrecruiters-candidates-openapi.yml",
+   "openapi/_original/smartrecruiters-jobs-openapi.yml",
+   "openapi/_original/smartrecruiters-posting-openapi.yml"
+  ]
+ },
+ {
+  "slug": "talkpush",
+  "specs": [
+   "openapi/_original/talkpush-openapi.json"
+  ]
+ },
+ {
+  "slug": "teamohana",
+  "specs": [
+   "openapi/_original/teamohana-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "themuse",
+  "specs": [
+   "openapi/_original/themuse-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trakstar",
+  "specs": [
+   "openapi/_original/trakstar-hire-api-openapi.yml",
+   "openapi/_original/trakstar-learn-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "truto",
+  "specs": [
+   "openapi/_original/truto-admin-openapi.yml",
+   "openapi/_original/truto-unified-ats-openapi.yml",
+   "openapi/_original/truto-unified-crm-openapi.yml",
+   "openapi/_original/truto-unified-hris-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vcv",
+  "specs": [
+   "openapi/_original/vcv-openapi-original.yml",
+   "openapi/_original/vcv-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wizehire",
+  "specs": [
+   "openapi/_original/wizehire-scout-service-openapi.json",
+   "openapi/_original/wizehire-scout-service-openapi.yml"
+  ]
+ },
+ {
+  "slug": "workable",
+  "specs": [
+   "openapi/_original/workable-openapi.yml"
+  ]
+ },
+ {
+  "slug": "workday-recruiting",
+  "specs": [
+   "openapi/_original/v1.2.json"
+  ]
+ },
+ {
+  "slug": "worklittle",
+  "specs": [
+   "openapi/_original/worklittle-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "workstream",
+  "specs": [
+   "openapi/_original/workstream-public-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "zoho-recruit",
+  "specs": [
+   "openapi/_original/zoho-recruit-openapi.yml"
+  ]
+ }
+]

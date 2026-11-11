@@ -1,0 +1,98 @@
+context: recruiting
+name: Recruiting
+intro: >-
+  The common recruiting vocabulary -- the jobs a company opens, the candidates who apply,
+  their applications as they move through stages, the interviews and offers along the way
+  -- distilled from the APIs that already exist.
+tags: [Recruiting, Hiring, Applicant Tracking, Applicant Tracking System, ATS, Talent Acquisition, Recruitment]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, remote_id]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, remote_created_at, applied_at]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified, last_activity_at]
+  metadata: [meta_data, custom_fields, custom, attributes, properties, custom_attributes]
+  status: [state, job_status, application_status, current_status]
+  name: [title, display_name, label]
+  description: [notes, note, details, body, content]
+  job_id: [job, posting_id, requisition_id, job_posting_id, opening_id, position_id, vacancy_id]
+  candidate_id: [candidate, applicant_id, applicant, person_id, prospect_id, profile_id]
+  application_id: [application, submission_id]
+
+concepts:
+  job:
+    segments: [jobs, job, job_postings, job-postings, jobpostings, postings, openings, requisitions, job_requisitions, vacancies, positions]
+    aliases:
+      location: [locations, office, offices, city, job_location, work_location]
+      department: [departments, team, department_id, team_id]
+      employment_type: [job_type, type, commitment, contract_type, work_type]
+      remote: [is_remote, workplace_type, remote_policy, location_type]
+      salary: [salary_range, compensation, pay_range, salary_min, salary_max]
+      hiring_manager_id: [hiring_manager, hiring_managers, owner_id, recruiter_id, recruiter]
+      opened_at: [published_at, posted_at, open_date, opened, published_date, start_date]
+      closed_at: [closed, close_date, end_date, expires_at]
+      url: [apply_url, job_url, application_url, hosted_url, public_url]
+  candidate:
+    segments: [candidates, candidate, applicants, applicant, prospects, talents, people, profiles]
+    requires: [job]
+    aliases:
+      first_name: [firstname, given_name]
+      last_name: [lastname, surname, family_name]
+      full_name: [display_name, name]
+      email: [emails, email_address, email_addresses, primary_email]
+      phone: [phones, phone_number, phone_numbers, mobile]
+      resume_url: [resume, cv, cv_url, resume_file, attachments]
+      linkedin_url: [linkedin, social_profiles, social_media_addresses, links]
+      source: [origin, sourced_from, application_source, source_name]
+      tags: [labels]
+  application:
+    requires: [job]
+    segments: [applications, application, submissions, candidacies, job_applications, job-applications]
+    aliases:
+      stage: [current_stage, stage_id, pipeline_stage, step, status_step, current_step]
+      rejected_at: [rejected, rejection_date, archived_at, disqualified_at]
+      rejection_reason: [reject_reason, archive_reason, disqualification_reason]
+      source: [origin, source_name, sourced_from]
+  stage:
+    requires: [job]
+    segments: [stages, stage, pipeline_stages, pipeline-stages, interview_stages, interview-stages, steps, workflow_states]
+    aliases:
+      order: [position, sort_order, index, rank]
+      type: [stage_type, category, kind]
+  interview:
+    requires: [job]
+    segments: [interviews, interview, scheduled_interviews, scheduled-interviews, interview_events]
+    aliases:
+      start_at: [start, start_time, starts_at, scheduled_at, date]
+      end_at: [end, end_time, ends_at]
+      interviewer_ids: [interviewers, interviewer, panel, participants, attendees]
+      location: [video_conferencing_url, meeting_url, room]
+      feedback: [scorecards, scorecard, notes]
+  # offer was measured and dropped: 3 providers expose offers, 1 with a readable schema.
+
+exclude:
+  job:
+    harri: /employees/{id}/locations/{id}/positions are an employee's positions (HR)
+    hr-partner: /positions are employee position history (HR)
+  application:
+    drippay: /integrations/{id}/submissions are integration sync jobs
+
+findings:
+  - "Candidates agree well: name, email, phone, resume and created_at are all core, so a
+    candidate moves between applicant-tracking systems with little loss."
+  - "Applications agree on the join itself -- candidate, job, status, source -- which is
+    what every ATS integration actually needs."
+  - "Interviews agree on start, end, location and the application they belong to;
+    Greenhouse's scheduled_interviews set the shape."
+decisions:
+  - "A job is a posting or requisition: `/jobs` (and postings, openings, requisitions,
+    vacancies, positions in this cohort). In the HR context the same word is an employee's
+    job record, which is why HR uses `/employments`."
+  - "`/positions` that are an employee's position history (Harri, HR Partner) are HR, not
+    recruiting, and excluded by name."
+  - "Offers were measured and dropped: three providers expose them as a resource."
+  - "Everything but the job `requires: [job]`, so a provider's `/people` or `/profiles`
+    counts as candidates only if it also posts jobs."

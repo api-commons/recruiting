@@ -1,0 +1,32 @@
+provider: freshteam
+apis_io: https://apis.io/providers/freshteam/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - job_postings
+    properties:
+      id: id
+      name: title
+      status: status
+      description: description
+      employment_type: type
+      department: department_id
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/freshteam-openapi.yml#GET /job_postings
+    - openapi/_original/freshteam-openapi.yml#GET /job_postings/{id}
+  candidate:
+    path_segment:
+    - applicants
+    properties:
+      id: id
+      phone: mobile
+      email: email
+      first_name: first_name
+      last_name: last_name
+      resume_url: resume
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/freshteam-openapi.yml#POST /job_postings/{id}/applicants

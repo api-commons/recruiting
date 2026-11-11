@@ -1,0 +1,218 @@
+context: recruiting
+generated: '2026-11-10'
+adopters:
+- provider: bindbee
+  apis_io: https://apis.io/providers/bindbee/
+  crosswalk: crosswalk/bindbee.yml
+  concepts:
+  - application
+  - candidate
+  - interview
+  - job
+- provider: buk
+  apis_io: https://apis.io/providers/buk/
+  crosswalk: crosswalk/buk.yml
+  concepts:
+  - application
+  - candidate
+  - job
+- provider: comeet
+  apis_io: https://apis.io/providers/comeet/
+  crosswalk: crosswalk/comeet.yml
+  concepts:
+  - job
+- provider: deel-com
+  apis_io: https://apis.io/providers/deel-com/
+  crosswalk: crosswalk/deel-com.yml
+  concepts:
+  - application
+  - candidate
+  - interview
+  - job
+- provider: directhireagents-com
+  apis_io: https://apis.io/providers/directhireagents-com/
+  crosswalk: crosswalk/directhireagents-com.yml
+  concepts:
+  - job
+- provider: eightfold-ai
+  apis_io: https://apis.io/providers/eightfold-ai/
+  crosswalk: crosswalk/eightfold-ai.yml
+  concepts:
+  - candidate
+  - job
+  - stage
+- provider: fountain-com
+  apis_io: https://apis.io/providers/fountain-com/
+  crosswalk: crosswalk/fountain-com.yml
+  concepts:
+  - candidate
+  - job
+  - stage
+- provider: freshteam
+  apis_io: https://apis.io/providers/freshteam/
+  crosswalk: crosswalk/freshteam.yml
+  concepts:
+  - candidate
+  - job
+- provider: get-on-board
+  apis_io: https://apis.io/providers/get-on-board/
+  crosswalk: crosswalk/get-on-board.yml
+  concepts:
+  - application
+  - job
+- provider: getmattered
+  apis_io: https://apis.io/providers/getmattered/
+  crosswalk: crosswalk/getmattered.yml
+  concepts:
+  - application
+  - job
+  - stage
+- provider: google-cloud-talent-solution
+  apis_io: https://apis.io/providers/google-cloud-talent-solution/
+  crosswalk: crosswalk/google-cloud-talent-solution.yml
+  concepts:
+  - job
+- provider: greenhouse
+  apis_io: https://apis.io/providers/greenhouse/
+  crosswalk: crosswalk/greenhouse.yml
+  concepts:
+  - application
+  - candidate
+  - job
+- provider: greenhouse-io
+  apis_io: https://apis.io/providers/greenhouse-io/
+  crosswalk: crosswalk/greenhouse-io.yml
+  concepts:
+  - application
+  - candidate
+  - interview
+  - job
+  - stage
+- provider: harver
+  apis_io: https://apis.io/providers/harver/
+  crosswalk: crosswalk/harver.yml
+  concepts:
+  - application
+  - candidate
+  - job
+- provider: heymilo
+  apis_io: https://apis.io/providers/heymilo/
+  crosswalk: crosswalk/heymilo.yml
+  concepts:
+  - candidate
+  - job
+- provider: indeed
+  apis_io: https://apis.io/providers/indeed/
+  crosswalk: crosswalk/indeed.yml
+  concepts:
+  - candidate
+  - job
+- provider: kombo
+  apis_io: https://apis.io/providers/kombo/
+  crosswalk: crosswalk/kombo.yml
+  concepts:
+  - application
+  - candidate
+  - interview
+  - job
+  - stage
+- provider: lever-co
+  apis_io: https://apis.io/providers/lever-co/
+  crosswalk: crosswalk/lever-co.yml
+  concepts:
+  - application
+  - interview
+  - job
+  - stage
+- provider: micro1
+  apis_io: https://apis.io/providers/micro1/
+  crosswalk: crosswalk/micro1.yml
+  concepts:
+  - candidate
+  - interview
+  - job
+- provider: nobueno
+  apis_io: https://apis.io/providers/nobueno/
+  crosswalk: crosswalk/nobueno.yml
+  concepts:
+  - candidate
+  - job
+- provider: nomad-health
+  apis_io: https://apis.io/providers/nomad-health/
+  crosswalk: crosswalk/nomad-health.yml
+  concepts:
+  - application
+  - candidate
+  - job
+- provider: peopleforce
+  apis_io: https://apis.io/providers/peopleforce/
+  crosswalk: crosswalk/peopleforce.yml
+  concepts:
+  - candidate
+  - job
+- provider: pinpoint
+  apis_io: https://apis.io/providers/pinpoint/
+  crosswalk: crosswalk/pinpoint.yml
+  concepts:
+  - application
+  - candidate
+  - job
+- provider: sage-hr
+  apis_io: https://apis.io/providers/sage-hr/
+  crosswalk: crosswalk/sage-hr.yml
+  concepts:
+  - candidate
+  - job
+- provider: smartrecruiters
+  apis_io: https://apis.io/providers/smartrecruiters/
+  crosswalk: crosswalk/smartrecruiters.yml
+  concepts:
+  - application
+  - candidate
+  - job
+- provider: themuse
+  apis_io: https://apis.io/providers/themuse/
+  crosswalk: crosswalk/themuse.yml
+  concepts:
+  - job
+- provider: trakstar
+  apis_io: https://apis.io/providers/trakstar/
+  crosswalk: crosswalk/trakstar.yml
+  concepts:
+  - candidate
+  - interview
+  - job
+- provider: truto
+  apis_io: https://apis.io/providers/truto/
+  crosswalk: crosswalk/truto.yml
+  concepts:
+  - application
+  - candidate
+  - job
+  - stage
+- provider: vcv
+  apis_io: https://apis.io/providers/vcv/
+  crosswalk: crosswalk/vcv.yml
+  concepts:
+  - interview
+  - job
+- provider: workable
+  apis_io: https://apis.io/providers/workable/
+  crosswalk: crosswalk/workable.yml
+  concepts:
+  - candidate
+  - job
+  - stage
+- provider: worklittle
+  apis_io: https://apis.io/providers/worklittle/
+  crosswalk: crosswalk/worklittle.yml
+  concepts:
+  - application
+  - candidate
+  - job
+  - stage
+- provider: workstream
+  apis_io: https://apis.io/providers/workstream/
+  crosswalk: crosswalk/workstream.yml
+  concepts:
+  - job

@@ -1,0 +1,36 @@
+provider: nomad-health
+apis_io: https://apis.io/providers/nomad-health/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/campaign/jobs
+    - openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/campaign/jobs
+  candidate:
+    path_segment:
+    - candidates
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/fx/candidates/
+    - openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/fx/candidates/{id}/
+    - openapi/_original/nomad-health-platform-openapi.yml#POST /api/v1/admin/credential-candidate-group/{group_id}/candidates/
+    - openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/fx/candidates/
+    - openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/fx/candidates/{id}/
+  application:
+    path_segment:
+    - applications
+    - application
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/application/
+    - openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/application_center/applications/
+    - openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/applications/{id}/
+    - openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/quick-apply/application/{application_id}/
+    - openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/quick-apply/applications/

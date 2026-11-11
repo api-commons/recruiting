@@ -1,0 +1,18 @@
+provider: comeet
+apis_io: https://apis.io/providers/comeet/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - positions
+    properties:
+      name: name
+      status: status
+      description: details
+      location: location
+      department: department
+    core_coverage: 0.571
+    evidence:
+    - openapi/_original/comeet-careers-api-openapi.yml#GET /company/{company_uid}/positions
+    - openapi/_original/comeet-careers-api-openapi.yml#GET /company/{company_uid}/positions/{position_uid}

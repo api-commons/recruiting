@@ -1,0 +1,49 @@
+provider: worklittle
+apis_io: https://apis.io/providers/worklittle/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/worklittle-openapi.yaml#GET /business/jobs
+    - openapi/_original/worklittle-openapi.yaml#GET /job-boards/{company}/jobs
+    - openapi/_original/worklittle-openapi.yaml#GET /job-boards/{company}/jobs/{idOrSlug}
+    - openapi/_original/worklittle-openapi.yaml#GET /jobs
+    - openapi/_original/worklittle-openapi.yaml#GET /jobs/{id}
+  candidate:
+    path_segment:
+    - applicants
+    - candidates
+    properties:
+      phone: phone
+      email: email
+      resume_url: resume_file
+      full_name: name
+      status: state
+      address: address
+      linkedin_url: linkedin
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/worklittle-openapi.yaml#GET /business/candidates
+    - openapi/_original/worklittle-openapi.yaml#GET /business/candidates/{id}
+    - openapi/_original/worklittle-openapi.yaml#GET /v1/applicants
+    - openapi/_original/worklittle-openapi.yaml#POST /v1/applicants
+  application:
+    path_segment:
+    - applications
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/worklittle-openapi.yaml#GET /business/jobs/{id}/applications
+    - openapi/_original/worklittle-openapi.yaml#GET /v1/applications
+  stage:
+    path_segment:
+    - pipeline-stages
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/worklittle-openapi.yaml#GET /business/jobs/pipeline-stages

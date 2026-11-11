@@ -1,0 +1,53 @@
+provider: trakstar
+apis_io: https://apis.io/providers/trakstar/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - openings
+    properties:
+      id: id
+      name: title
+      status: status
+      description: description
+      created_at: created_at
+      location: location
+      updated_at: updated_at
+      department: department
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/trakstar-hire-api-openapi.yml#GET /openings
+    - openapi/_original/trakstar-hire-api-openapi.yml#GET /openings/{id}
+    - openapi/_original/trakstar-hire-api-openapi.yml#POST /openings
+  candidate:
+    path_segment:
+    - candidates
+    properties:
+      id: id
+      phone: phone
+      email: email
+      first_name: first_name
+      last_name: last_name
+      created_at: created_at
+      updated_at: updated_at
+      source: source
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/trakstar-hire-api-openapi.yml#DELETE /candidates/{id}
+    - openapi/_original/trakstar-hire-api-openapi.yml#GET /candidates
+    - openapi/_original/trakstar-hire-api-openapi.yml#GET /candidates/{id}
+    - openapi/_original/trakstar-hire-api-openapi.yml#PATCH /candidates/{id}
+    - openapi/_original/trakstar-hire-api-openapi.yml#POST /candidates
+  interview:
+    path_segment:
+    - interviews
+    properties:
+      id: id
+      created_at: created_at
+      start_at: scheduled_at
+      interviewer_ids: interviewer
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/trakstar-hire-api-openapi.yml#GET /interviews
+    - openapi/_original/trakstar-hire-api-openapi.yml#GET /interviews/{id}

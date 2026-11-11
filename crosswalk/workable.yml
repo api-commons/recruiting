@@ -1,0 +1,36 @@
+provider: workable
+apis_io: https://apis.io/providers/workable/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - requisitions
+    - jobs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/workable-openapi.yml#GET /jobs
+    - openapi/_original/workable-openapi.yml#GET /jobs/{shortcode}
+    - openapi/_original/workable-openapi.yml#GET /requisitions
+    - openapi/_original/workable-openapi.yml#GET /requisitions/{code}
+    - openapi/_original/workable-openapi.yml#PATCH /requisitions
+  candidate:
+    path_segment:
+    - candidates
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/workable-openapi.yml#GET /candidates
+    - openapi/_original/workable-openapi.yml#GET /candidates/{id}
+    - openapi/_original/workable-openapi.yml#POST /jobs/{shortcode}/candidates
+    - openapi/_original/workable-openapi.yml#POST /talent_pool/candidates
+    - openapi/_original/workable-openapi.yml#PUT /candidates/{id}
+  stage:
+    path_segment:
+    - stages
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/workable-openapi.yml#GET /jobs/{shortcode}/stages
+    - openapi/_original/workable-openapi.yml#GET /stages

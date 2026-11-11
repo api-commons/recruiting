@@ -1,0 +1,57 @@
+aid: common-recruiting
+name: Recruiting
+type: Common
+description: 'The common Recruiting vocabulary, distilled from the harvested OpenAPI of 67 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Recruiting
+- Hiring
+- Applicant Tracking
+- Applicant Tracking System
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/recruiting/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-recruiting:recruiting
+  name: Common Recruiting Interface
+  description: The Recruiting interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/recruiting
+  tags:
+  - Recruiting
+  - Hiring
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/recruiting/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/recruiting/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/recruiting/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: job
+    url: https://raw.githubusercontent.com/api-commons/recruiting/main/schema/job.json
+  - type: JSONSchema
+    name: candidate
+    url: https://raw.githubusercontent.com/api-commons/recruiting/main/schema/candidate.json
+  - type: JSONSchema
+    name: application
+    url: https://raw.githubusercontent.com/api-commons/recruiting/main/schema/application.json
+  - type: JSONSchema
+    name: stage
+    url: https://raw.githubusercontent.com/api-commons/recruiting/main/schema/stage.json
+  - type: JSONSchema
+    name: interview
+    url: https://raw.githubusercontent.com/api-commons/recruiting/main/schema/interview.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/recruiting/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

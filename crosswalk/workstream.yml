@@ -1,0 +1,19 @@
+provider: workstream
+apis_io: https://apis.io/providers/workstream/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - positions
+    properties:
+      id: uuid
+      name: title
+      status: status
+      location: location
+      employment_type: job_type
+      metadata: custom_fields
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/workstream-public-api-openapi-original.json#GET /positions
+    - openapi/_original/workstream-public-api-openapi-original.json#GET /positions/{uuid}

@@ -1,0 +1,24 @@
+provider: peopleforce
+apis_io: https://apis.io/providers/peopleforce/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - vacancies
+    - positions
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/peopleforce-openapi.yml#GET /positions
+    - openapi/_original/peopleforce-openapi.yml#GET /vacancies
+    - openapi/_original/peopleforce-openapi.yml#GET /vacancies/{id}
+  candidate:
+    path_segment:
+    - candidates
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/peopleforce-openapi.yml#GET /candidates
+    - openapi/_original/peopleforce-openapi.yml#GET /candidates/{id}
+    - openapi/_original/peopleforce-openapi.yml#POST /candidates

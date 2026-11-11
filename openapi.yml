@@ -1,0 +1,431 @@
+openapi: 3.1.0
+info:
+  title: Recruiting (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Recruiting interface, distilled from the harvested OpenAPI of 67 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /jobs:
+    get:
+      operationId: listJobs
+      summary: List jobs
+      tags:
+      - Jobs
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Job'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createJob
+      summary: Create a job
+      tags:
+      - Jobs
+      x-commons-tier: core
+      x-commons-share: 0.594
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /jobs/{job_id}:
+    parameters:
+    - $ref: '#/components/parameters/job_id'
+    get:
+      operationId: getJob
+      summary: Get a job
+      tags:
+      - Jobs
+      x-commons-tier: core
+      x-commons-share: 0.844
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateJob
+      summary: Update a job
+      tags:
+      - Jobs
+      x-commons-tier: core
+      x-commons-share: 0.531
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+    delete:
+      operationId: deleteJob
+      summary: Delete a job
+      tags:
+      - Jobs
+      x-commons-tier: extended
+      x-commons-share: 0.312
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /candidates:
+    get:
+      operationId: listCandidates
+      summary: List candidates
+      tags:
+      - Candidates
+      x-commons-tier: core
+      x-commons-share: 0.957
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Candidate'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createCandidate
+      summary: Create a candidate
+      tags:
+      - Candidates
+      x-commons-tier: core
+      x-commons-share: 0.783
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /candidates/{candidate_id}:
+    parameters:
+    - $ref: '#/components/parameters/candidate_id'
+    get:
+      operationId: getCandidate
+      summary: Get a candidate
+      tags:
+      - Candidates
+      x-commons-tier: core
+      x-commons-share: 0.783
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateCandidate
+      summary: Update a candidate
+      tags:
+      - Candidates
+      x-commons-tier: extended
+      x-commons-share: 0.435
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /applications:
+    get:
+      operationId: listApplications
+      summary: List applications
+      tags:
+      - Applications
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Application'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createApplication
+      summary: Create an application
+      tags:
+      - Applications
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /applications/{application_id}:
+    parameters:
+    - $ref: '#/components/parameters/application_id'
+    get:
+      operationId: getApplication
+      summary: Get an application
+      tags:
+      - Applications
+      x-commons-tier: core
+      x-commons-share: 0.533
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateApplication
+      summary: Update an application
+      tags:
+      - Applications
+      x-commons-tier: core
+      x-commons-share: 0.533
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+    delete:
+      operationId: deleteApplication
+      summary: Delete an application
+      tags:
+      - Applications
+      x-commons-tier: extended
+      x-commons-share: 0.2
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+  /stages:
+    get:
+      operationId: listStages
+      summary: List stages
+      tags:
+      - Stages
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Stage'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /interviews:
+    get:
+      operationId: listInterviews
+      summary: List interviews
+      tags:
+      - Interviews
+      x-commons-tier: core
+      x-commons-share: 0.875
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Interview'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createInterview
+      summary: Create an interview
+      tags:
+      - Interviews
+      x-commons-tier: core
+      x-commons-share: 0.625
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /interviews/{interview_id}:
+    parameters:
+    - $ref: '#/components/parameters/interview_id'
+    get:
+      operationId: getInterview
+      summary: Get an interview
+      tags:
+      - Interviews
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    patch:
+      operationId: updateInterview
+      summary: Update an interview
+      tags:
+      - Interviews
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+    delete:
+      operationId: deleteInterview
+      summary: Delete an interview
+      tags:
+      - Interviews
+      x-commons-tier: extended
+      x-commons-share: 0.375
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+components:
+  schemas:
+    Job:
+      $ref: ./schema/job.json
+    Candidate:
+      $ref: ./schema/candidate.json
+    Application:
+      $ref: ./schema/application.json
+    Stage:
+      $ref: ./schema/stage.json
+    Interview:
+      $ref: ./schema/interview.json
+  parameters:
+    job_id:
+      name: job_id
+      in: path
+      required: true
+      schema:
+        type: string
+    candidate_id:
+      name: candidate_id
+      in: path
+      required: true
+      schema:
+        type: string
+    application_id:
+      name: application_id
+      in: path
+      required: true
+      schema:
+        type: string
+    stage_id:
+      name: stage_id
+      in: path
+      required: true
+      schema:
+        type: string
+    interview_id:
+      name: interview_id
+      in: path
+      required: true
+      schema:
+        type: string

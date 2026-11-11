@@ -1,0 +1,38 @@
+provider: get-on-board
+apis_io: https://apis.io/providers/get-on-board/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      name: title
+      status:
+      - state
+      - status
+      description: description
+      employment_type: type
+      metadata: attributes
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/get-on-board-openapi-original.yml#DELETE /api/v0/jobs/{id}
+    - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/categories/{category_id}/jobs
+    - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/companies/{company_id}/jobs
+    - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/jobs
+    - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/jobs/{id}
+  application:
+    path_segment:
+    - applications
+    properties:
+      id: id
+      job_id: job_id
+      metadata: attributes
+      type: type
+    core_coverage: 0.375
+    evidence:
+    - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/applications
+    - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/applications/{id}
+    - openapi/_original/get-on-board-openapi-original.yml#POST /api/v0/applications
+    - openapi/_original/get-on-board-openapi-original.yml#PUT /api/v0/applications/{id}

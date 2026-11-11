@@ -1,0 +1,50 @@
+provider: eightfold-ai
+apis_io: https://apis.io/providers/eightfold-ai/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - positions
+    properties:
+      name: name
+      created_at: createdAt
+    core_coverage: 0.286
+    evidence:
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#GET /api/v2/core/positions
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#GET /api/v2/core/positions/{positionId}
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#PATCH /api/v2/core/positions/{positionId}
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#POST /api/v2/core/positions
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#PUT /api/v2/core/positions/{positionId}
+  candidate:
+    path_segment:
+    - profiles
+    - applicants
+    properties:
+      id: id
+      phone: phone
+      email: email
+      first_name: firstName
+      last_name: lastName
+      resume_url: resume
+      metadata: customFields
+      full_name: fullName
+      location: location
+      tags: tags
+      applications: applications
+      address: address
+      name: title
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#DELETE /api/v2/core/profiles/{profileId}
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#GET /api/v2/core/position/{positionId}/applicants
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#GET /api/v2/core/profiles
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#GET /api/v2/core/profiles/{profileId}
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#PATCH /api/v2/core/profiles/{profileId}
+  stage:
+    path_segment:
+    - stages
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#POST /api/v2/core/profiles/{profileId}/application/stages

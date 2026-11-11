@@ -1,0 +1,44 @@
+provider: indeed
+apis_io: https://apis.io/providers/indeed/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties:
+      name: title
+      status: status
+      description: description
+      created_at: createdAt
+      location: location
+      employment_type: employmentType
+      updated_at: updatedAt
+      closed_at: expiresAt
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/indeed-employer-api-openapi.yml#DELETE /v1/jobs/{jobPostingId}
+    - openapi/_original/indeed-employer-api-openapi.yml#GET /v1/employers/{employerId}/jobs
+    - openapi/_original/indeed-employer-api-openapi.yml#GET /v1/jobs/{jobPostingId}
+    - openapi/_original/indeed-employer-api-openapi.yml#POST /v1/jobs
+    - openapi/_original/indeed-employer-api-openapi.yml#PUT /v1/jobs/{jobPostingId}
+  candidate:
+    path_segment:
+    - candidates
+    properties:
+      id: id
+      phone: phoneNumber
+      email: email
+      first_name: firstName
+      last_name: lastName
+      created_at: appliedAt
+      resume_url: resume
+      full_name: name
+      source: source
+      status: applicationStatus
+      job_id: jobPostingId
+      location: location
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/indeed-employer-api-openapi.yml#GET /v1/employers/{employerId}/candidates
+    - openapi/_original/indeed-employer-api-openapi.yml#GET /v1/employers/{employerId}/candidates/{candidateId}

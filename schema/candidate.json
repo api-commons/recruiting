@@ -1,0 +1,233 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/recruiting/main/schema/candidate.json",
+  "title": "Candidate",
+  "description": "The common candidate in Recruiting, distilled from 19 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.842,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "id",
+        "remote_id",
+        "remoteId"
+      ]
+    },
+    "phone": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.842,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "phone",
+        "phone_number",
+        "phone_numbers",
+        "phoneNumber",
+        "mobile"
+      ]
+    },
+    "email": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.789,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "email",
+        "email_addresses",
+        "emails"
+      ],
+      "format": "email"
+    },
+    "first_name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.684,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "first_name",
+        "firstName"
+      ]
+    },
+    "last_name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.684,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "last_name",
+        "lastName",
+        "surname"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.632,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "created_at",
+        "remote_created_at",
+        "created",
+        "appliedAt",
+        "date_created",
+        "createdOn",
+        "createdAt"
+      ],
+      "format": "date-time"
+    },
+    "resume_url": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.526,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "attachments",
+        "resume",
+        "cv_url",
+        "resume_url",
+        "resume_file"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.474,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "custom_fields",
+        "attributes",
+        "custom_attributes",
+        "customFields",
+        "metadata"
+      ]
+    },
+    "full_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.421,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "name",
+        "full_name",
+        "fullName"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.421,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "updated_at",
+        "modified_at",
+        "date_modified",
+        "updatedAt"
+      ],
+      "format": "date-time"
+    },
+    "source": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.368,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "source",
+        "source_name"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.368,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "applicationStatus"
+      ]
+    },
+    "job_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.316,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "job_id",
+        "posting_id",
+        "jobPostingId",
+        "position_id",
+        "postingId"
+      ]
+    },
+    "location": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.316,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "location"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.316,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "tags"
+      ]
+    },
+    "applications": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.263,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "applications"
+      ]
+    },
+    "address": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.211,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "address"
+      ]
+    },
+    "linkedin_url": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.211,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "linkedin_url",
+        "social_media_addresses",
+        "linkedin"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.211,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "title"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "recruiting",
+    "concept": "candidate",
+    "providers": 19,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

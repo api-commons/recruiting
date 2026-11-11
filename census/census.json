@@ -1,0 +1,5140 @@
+{
+ "cohort_size": 67,
+ "unreadable": [],
+ "concepts": {
+  "job": {
+   "bindbee": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "remote_id": null,
+     "modified_at": "string",
+     "raw_data": null,
+     "custom_fields": null,
+     "name": null,
+     "description": null,
+     "code": null,
+     "status": null,
+     "job_posting_urls": null,
+     "remote_created_at": null,
+     "remote_updated_at": null,
+     "confidential": null,
+     "departments": null,
+     "offices": null,
+     "hiring_managers": null,
+     "recruiters": null,
+     "template_id": null,
+     "remote_user_id": null,
+     "openings": null
+    },
+    "evidence": [
+     "openapi/_original/bindbee-openapi.json#GET /api/ats/v1/jobs",
+     "openapi/_original/bindbee-openapi.json#GET /api/ats/v1/jobs/{id}",
+     "openapi/_original/bindbee-openapi.json#POST /api/ats/v1/jobs"
+    ]
+   },
+   "buk": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "company_id": "integer",
+     "start_date": "string",
+     "type_of_contract": "string",
+     "end_of_contract": "string",
+     "notice_date": "string",
+     "regular_hours": "number",
+     "end_date": "string",
+     "cost_center": "string",
+     "vinculation": "string",
+     "tipo_jornada": "string",
+     "otros_tipo_jornada": "string",
+     "regimen_laboral": "string",
+     "admission_indicative": "string",
+     "admission_type": "string",
+     "regimen_previsional": "string",
+     "wage_type": "string",
+     "work_day_description": "string",
+     "position_of_trust": "boolean",
+     "function_of_trust": "string",
+     "experience_contract": "boolean",
+     "unhealthiness_additional": "string",
+     "dangerousness_additional": "string",
+     "night_shift": "boolean",
+     "esocial_code": "string",
+     "periodicity": "string",
+     "custom_attributes": "object",
+     "area_id": "integer",
+     "role_id": "integer",
+     "leader_id": "integer",
+     "currency_code": "string",
+     "wage": "float",
+     "boss": "object",
+     "without_wage": "boolean",
+     "days": "object",
+     "centro_costos_attributes": "array",
+     "contract_type": "string",
+     "contract_finishing_date_1": "string",
+     "contract_finishing_date_2": "string",
+     "weekly_hours": "integer",
+     "frequency": "string",
+     "role": "string",
+     "working_schedule_type": "string",
+     "other_type_of_working_day": "string",
+     "cost_centers": "object",
+     "location_id": "string",
+     "zone_assignment": "string",
+     "base_wage": "integer",
+     "contract_subscription_date": "string",
+     "reward": "boolean",
+     "reward_concept": "string",
+     "reward_payment_period": "string",
+     "reward_description": "string",
+     "contractual_stipulation": "object",
+     "contractual_detail": "object",
+     "grado_sector_publico_chile": "string",
+     "estamento_sector_publico_chile": "string",
+     "termination_fundaments": "string",
+     "end_of_contract_2": "string",
+     "type_of_working_day": "string",
+     "currency": "string",
+     "contractual_stipulation_attributes": "object",
+     "contractual_detail_attributes": "object",
+     "cost_centers_attributes": "array",
+     "risk_type": "string",
+     "retention_taxes": "string",
+     "retention_taxes_type": "string",
+     "retention_taxes_rate": "float",
+     "employee_id": "integer",
+     "type_of_regime": "string",
+     "company_registration": "integer",
+     "union_id": "integer",
+     "status": "string",
+     "worker_kind": "string",
+     "employment_regimen": "string",
+     "worker_type": "string",
+     "fola_insurance": "string",
+     "fola_plan": "integer",
+     "ria_regimen": "boolean",
+     "t_register_kind": "string",
+     "t_register_special_regimen": "string",
+     "fiscalizado_peru": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#GET /employees/{id}/jobs",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#PATCH /employees/{employee_id}/jobs/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#POST /employees/{id}/jobs",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /employees/{id}/jobs",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#PATCH /employees/{employee_id}/jobs/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#POST /employees/{id}/jobs",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#GET /employees/{id}/jobs",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#PATCH /employees/{employee_id}/jobs/{id}",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#POST /employees/{id}/jobs",
+     "openapi/_original/buk-data-access-api-chile-openapi.yml#GET /employees/{id}/jobs",
+     "openapi/_original/buk-data-access-api-chile-openapi.yml#PATCH /employees/{employee_id}/jobs/{id}",
+     "openapi/_original/buk-data-access-api-chile-openapi.yml#POST /employees/{id}/jobs"
+    ]
+   },
+   "comeet": {
+    "segments": [
+     "positions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "uid": "string",
+     "name": "string",
+     "department": "string",
+     "location": "object",
+     "company_department": "string",
+     "url_active_after": "string",
+     "url_comeet_hosted_page": "string",
+     "time_id": "string",
+     "details": "object",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/comeet-careers-api-openapi.yml#GET /company/{company_uid}/positions",
+     "openapi/_original/comeet-careers-api-openapi.yml#GET /company/{company_uid}/positions/{position_uid}"
+    ]
+   },
+   "deel-com": {
+    "segments": [
+     "job-postings",
+     "jobs",
+     "openings",
+     "requisitions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "team": null,
+     "title": "string",
+     "status": "string",
+     "job_ids": "array",
+     "team_id": [
+      "string",
+      "null"
+     ],
+     "location": null,
+     "created_at": "string",
+     "updated_at": "string",
+     "location_id": [
+      "string",
+      "null"
+     ],
+     "opening_prefix": "string",
+     "employment_type": null,
+     "filled_by_offer": null,
+     "is_confidential": "boolean",
+     "target_hire_date": [
+      "string",
+      "null"
+     ],
+     "opening_type_slug": "string",
+     "target_start_date": [
+      "string",
+      "null"
+     ],
+     "employment_type_id": [
+      "string",
+      "null"
+     ],
+     "opening_numeric_id": "integer",
+     "compensation_period": [
+      "string",
+      "null"
+     ],
+     "filled_by_application": null,
+     "max_compensation_amount": [
+      "string",
+      "null"
+     ],
+     "min_compensation_amount": [
+      "string",
+      "null"
+     ],
+     "filled_by_application_id": [
+      "string",
+      "null"
+     ],
+     "compensation_currency_iso_code": [
+      "string",
+      "null"
+     ],
+     "created_by_hris_organization_user_id": [
+      "string",
+      "null"
+     ],
+     "updated_by_hris_organization_user_id": [
+      "string",
+      "null"
+     ],
+     "job": "object",
+     "job_id": "string",
+     "publications": "array",
+     "application_form": null,
+     "richtext_description": [
+      "string",
+      "null"
+     ],
+     "is_compensation_visible": "boolean",
+     "job_teams": [
+      "array",
+      "null"
+     ],
+     "job_locations": "array",
+     "hiring_members": [
+      "array",
+      "null"
+     ],
+     "job_departments": [
+      "array",
+      "null"
+     ],
+     "approval_rule_id": [
+      "string",
+      "null"
+     ],
+     "applications_count": [
+      "integer",
+      "null"
+     ],
+     "approval_request_id": [
+      "string",
+      "null"
+     ],
+     "current_compensation": null,
+     "job_employment_types": "array",
+     "interview_plan_stages": [
+      "array",
+      "null"
+     ],
+     "work_arrangement_enum": null,
+     "approval_request_stringified": [
+      "string",
+      "null"
+     ],
+     "hiring_member_job_permissions_by_type_slug": null,
+     "team_ids": "array",
+     "location_ids": "array",
+     "department_ids": "array",
+     "interview_plan_id": "string",
+     "employment_type_ids": "array",
+     "vendors": "array",
+     "yoe_min": [
+      "integer",
+      "null"
+     ],
+     "currency": [
+      "string",
+      "null"
+     ],
+     "end_date": [
+      "string",
+      "null"
+     ],
+     "quantity": "integer",
+     "rate_max": [
+      "number",
+      "null"
+     ],
+     "rate_min": [
+      "number",
+      "null"
+     ],
+     "locations": [
+      "array",
+      "null"
+     ],
+     "work_mode": null,
+     "close_note": [
+      "string",
+      "null"
+     ],
+     "job_family": [
+      "string",
+      "null"
+     ],
+     "rate_scale": null,
+     "start_date": [
+      "string",
+      "null"
+     ],
+     "description": [
+      "string",
+      "null"
+     ],
+     "close_reason": [
+      "string",
+      "null"
+     ],
+     "organization": "object",
+     "contract_type": null,
+     "total_vendors": "integer",
+     "service_status": null,
+     "approval_status": "string",
+     "candidate_count": "integer",
+     "candidate_limit": [
+      "integer",
+      "null"
+     ],
+     "hours_per_month": [
+      "integer",
+      "null"
+     ],
+     "approval_policy_id": [
+      "string",
+      "null"
+     ],
+     "contract_length_type": null,
+     "marked_as_inactive_at": [
+      "string",
+      "null"
+     ],
+     "total_hired_candidates": "integer",
+     "total_vendors_per_status": "object",
+     "has_non_vendor_candidates": "boolean",
+     "ready_to_hire_candidates_count": "integer",
+     "ready_for_offer_candidates_count": "integer",
+     "pending_interview_candidates_count": "integer",
+     "pending_initial_screening_candidates_count": "integer"
+    },
+    "evidence": [
+     "openapi/_original/deel-com-openapi.yml#GET /ats/job-boards/{job_board_id}/job-postings",
+     "openapi/_original/deel-com-openapi.yml#GET /ats/job-postings",
+     "openapi/_original/deel-com-openapi.yml#GET /ats/job-postings/{job_posting_id}",
+     "openapi/_original/deel-com-openapi.yml#GET /ats/jobs",
+     "openapi/_original/deel-com-openapi.yml#GET /ats/openings",
+     "openapi/_original/deel-com-openapi.yml#GET /vms/requisitions",
+     "openapi/_original/deel-com-openapi.yml#POST /ats/jobs"
+    ]
+   },
+   "directhireagents-com": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/directhireagents-com-openapi-original.json#DELETE /organizations/{id}/jobs/{jobId}",
+     "openapi/_original/directhireagents-com-openapi-original.json#GET /jobs",
+     "openapi/_original/directhireagents-com-openapi-original.json#GET /organizations/{id}/jobs",
+     "openapi/_original/directhireagents-com-openapi-original.json#POST /organizations/{id}/jobs/{jobId}",
+     "openapi/_original/directhireagents-com-openapi.yml#DELETE /organizations/{id}/jobs/{jobId}",
+     "openapi/_original/directhireagents-com-openapi.yml#GET /jobs",
+     "openapi/_original/directhireagents-com-openapi.yml#GET /organizations/{id}/jobs",
+     "openapi/_original/directhireagents-com-openapi.yml#POST /organizations/{id}/jobs/{jobId}"
+    ]
+   },
+   "eightfold-ai": {
+    "segments": [
+     "positions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "createdAt": "integer",
+     "jobDescriptionUpdatedAt": "integer",
+     "confidential": "boolean",
+     "hiringManager": null,
+     "groupId": "string",
+     "name": "string",
+     "followers": "array",
+     "jobDescription": "string",
+     "systemId": "string",
+     "positionDisplayId": "string",
+     "recruiter": null,
+     "calibrationConfirmedBy": "string",
+     "open": "boolean",
+     "createdBy": "string",
+     "calibrationConfirmedAt": "integer",
+     "atsData": null,
+     "calibrationData": null,
+     "role": null,
+     "positionId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#GET /api/v2/core/positions",
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#GET /api/v2/core/positions/{positionId}",
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#PATCH /api/v2/core/positions/{positionId}",
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#POST /api/v2/core/positions",
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#PUT /api/v2/core/positions/{positionId}"
+    ]
+   },
+   "fountain-com": {
+    "segments": [
+     "positions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "positions": "array",
+     "pagination": "object",
+     "id": "string",
+     "name": "string",
+     "external_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/fountain-com-openapi.yml#DELETE /positions/{id}",
+     "openapi/_original/fountain-com-openapi.yml#GET /positions",
+     "openapi/_original/fountain-com-openapi.yml#GET /positions/{id}",
+     "openapi/_original/fountain-com-openapi.yml#POST /positions",
+     "openapi/_original/fountain-com-openapi.yml#PUT /positions/{id}"
+    ]
+   },
+   "freshteam": {
+    "segments": [
+     "job_postings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "string",
+     "status": "string",
+     "type": "string",
+     "remote": "boolean",
+     "description": "string",
+     "branch_id": "integer",
+     "department_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/freshteam-openapi.yml#GET /job_postings",
+     "openapi/_original/freshteam-openapi.yml#GET /job_postings/{id}"
+    ]
+   },
+   "get-on-board": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "links": "object",
+     "title": "string",
+     "description": "string",
+     "projects": "string",
+     "category_id": "string",
+     "min_salary": "string",
+     "max_salary": "string",
+     "modality_id": "string",
+     "seniority_id": "string",
+     "remote_modality": "string",
+     "questions": "array",
+     "expand": "array",
+     "functions": "string",
+     "perks": "string",
+     "state": "string",
+     "location_region_ids": "array",
+     "location_country_ids": "array",
+     "location_city_ids": "array",
+     "company_shell_id": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/get-on-board-openapi-original.yml#DELETE /api/v0/jobs/{id}",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/categories/{category_id}/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/companies/{company_id}/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/jobs/{id}",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/search/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/tags/{tag_id}/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#POST /api/v0/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#PUT /api/v0/jobs/{id}"
+    ]
+   },
+   "getmattered": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "company": [
+      "string",
+      "null"
+     ],
+     "companyLogoUrl": [
+      "string",
+      "null"
+     ],
+     "companyDomain": [
+      "string",
+      "null"
+     ],
+     "location": [
+      "string",
+      "null"
+     ],
+     "salary": [
+      "string",
+      "null"
+     ],
+     "sourceUrl": [
+      "string",
+      "null"
+     ],
+     "title": "string",
+     "createdAt": [
+      "string",
+      "null"
+     ],
+     "id": "integer",
+     "jobMatchId": [
+      "integer",
+      "null"
+     ],
+     "status": "string",
+     "updatedAt": [
+      "string",
+      "null"
+     ],
+     "source": [
+      "string",
+      "null"
+     ],
+     "resolvedApplyUrl": [
+      "string",
+      "null"
+     ],
+     "linkedinApplyMethod": [
+      "string",
+      "null"
+     ],
+     "atsScoreCount": "integer",
+     "latestAtsScore": [
+      "integer",
+      "null"
+     ],
+     "preparationStatus": [
+      "string",
+      "null"
+     ],
+     "autoRetryStopped": "boolean",
+     "autoRetryStoppedReason": [
+      "string",
+      "null"
+     ],
+     "employerReceiptConfirmed": "boolean",
+     "submitEvidenceTier": "string",
+     "nextAutoRetryAt": [
+      "string",
+      "null"
+     ],
+     "statusDisplay": null,
+     "errorCode": [
+      "string",
+      "null"
+     ],
+     "applicationResultStatus": [
+      "string",
+      "null"
+     ],
+     "legitimacyTier": [
+      "string",
+      "null"
+     ],
+     "legitimacySignals": null,
+     "freshnessStatus": [
+      "string",
+      "null"
+     ],
+     "repostedCount": [
+      "integer",
+      "null"
+     ],
+     "lastRepostDate": [
+      "string",
+      "null"
+     ],
+     "description": "string",
+     "keywords": "array",
+     "requirements": "array",
+     "userId": "string",
+     "interviewPrepContent": [
+      "string",
+      "null"
+     ],
+     "interviewPrepStatus": [
+      "string",
+      "null"
+     ],
+     "careerPageData": [
+      "string",
+      "null"
+     ],
+     "careerPageStatus": [
+      "string",
+      "null"
+     ],
+     "compIntelligenceContent": [
+      "string",
+      "null"
+     ],
+     "compIntelligenceStatus": [
+      "string",
+      "null"
+     ],
+     "offerComparisonContent": [
+      "string",
+      "null"
+     ],
+     "offerComparisonKey": [
+      "string",
+      "null"
+     ],
+     "offerComparisonStatus": [
+      "string",
+      "null"
+     ],
+     "success": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/getmattered-openapi.json#DELETE /jobs/{id}",
+     "openapi/_original/getmattered-openapi.json#GET /jobs",
+     "openapi/_original/getmattered-openapi.json#GET /jobs/{id}",
+     "openapi/_original/getmattered-openapi.json#POST /jobs",
+     "openapi/_original/getmattered-openapi.json#PUT /jobs/{id}"
+    ]
+   },
+   "google-cloud-talent-solution": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "company": "string",
+     "title": "string",
+     "description": "string",
+     "addresses": "array",
+     "employmentTypes": "array",
+     "compensationInfo": "object",
+     "postingExpireTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#DELETE /projects/{projectId}/tenants/{tenantId}/jobs/{jobId}",
+     "openapi/_original/openapi.yml#GET /projects/{projectId}/tenants/{tenantId}/jobs",
+     "openapi/_original/openapi.yml#GET /projects/{projectId}/tenants/{tenantId}/jobs/{jobId}",
+     "openapi/_original/openapi.yml#PATCH /projects/{projectId}/tenants/{tenantId}/jobs/{jobId}",
+     "openapi/_original/openapi.yml#POST /projects/{projectId}/tenants/{tenantId}/jobs"
+    ]
+   },
+   "greenhouse": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/greenhouse-harvest-openapi.yml#GET /jobs",
+     "openapi/_original/greenhouse-harvest-openapi.yml#GET /jobs/{id}",
+     "openapi/_original/greenhouse-harvest-openapi.yml#PATCH /jobs/{id}",
+     "openapi/_original/greenhouse-ingestion-openapi.yml#GET /jobs",
+     "openapi/_original/greenhouse-job-board-openapi.yml#GET /jobs",
+     "openapi/_original/greenhouse-job-board-openapi.yml#GET /jobs/{job_id}",
+     "openapi/_original/greenhouse-job-board-openapi.yml#POST /jobs/{job_id}"
+    ]
+   },
+   "greenhouse-io": {
+    "segments": [
+     "jobs",
+     "openings"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "requisition_id": "string",
+     "departments": "array",
+     "offices": "array",
+     "notes": "string",
+     "confidential": "boolean",
+     "status": "string",
+     "created_at": "string",
+     "opened_at": "string",
+     "closed_at": "string",
+     "updated_at": "string",
+     "hiring_team": "object",
+     "custom_fields": "object",
+     "openings": "array",
+     "template_job_id": "integer",
+     "department_id": "integer",
+     "office_ids": "array",
+     "number_of_openings": "integer",
+     "opening_id": "string",
+     "application_id": "integer",
+     "close_reason": "object",
+     "title": "string",
+     "location": "object",
+     "absolute_url": "string",
+     "internal_job_id": "integer",
+     "company_name": "string",
+     "first_published": "string",
+     "data_compliance": "array",
+     "metadata": "array",
+     "content": "string",
+     "success": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "email": "string",
+     "phone": "string",
+     "resume_text": "string",
+     "resume_text_file": "string",
+     "resume_content_filename": "string",
+     "resume_content_type": "string",
+     "cover_letter_text": "string",
+     "cover_letter_content": "string",
+     "cover_letter_content_filename": "string",
+     "question_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/greenhouse-candidate-ingestion-api-openapi.yml#GET /jobs",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#DELETE /openings",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /jobs",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /jobs/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /openings",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /openings/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#PATCH /jobs/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#PATCH /openings/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#POST /jobs",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#POST /openings",
+     "openapi/_original/greenhouse-job-board-api-openapi.yml#GET /jobs",
+     "openapi/_original/greenhouse-job-board-api-openapi.yml#GET /jobs/{id}"
+    ]
+   },
+   "harri": {
+    "segments": [
+     "positions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "code": "string",
+     "name": "string",
+     "category": "object",
+     "id": "string",
+     "location_id": "integer",
+     "is_primary": "boolean",
+     "cost_centers": "array",
+     "hourly_rate": "object",
+     "tipped_status": "object",
+     "pay_type_id": "integer",
+     "position": "object",
+     "pay_rate": "object",
+     "is_tipped": "boolean",
+     "employee_id": "string",
+     "pay_rates": "array"
+    },
+    "evidence": [
+     "openapi/_original/harri-employee-openapi.yml#DELETE /api/v1/employees/{employeeId}/locations/{locationId}/positions/{positionCode}",
+     "openapi/_original/harri-employee-openapi.yml#DELETE /api/v1/employees/{employeeId}/positions/{positionCode}",
+     "openapi/_original/harri-employee-openapi.yml#DELETE /api/v1/franchisees/{franchiseeId}/employees/{employeeId}/locations/{locationId}/positions/{positionCode}",
+     "openapi/_original/harri-employee-openapi.yml#DELETE /api/v1/franchisees/{franchiseeId}/employees/{employeeId}/positions/{positionCode}",
+     "openapi/_original/harri-employee-openapi.yml#DELETE /api/v2/employees/{employeeId}/locations/{locationId}/positions/{positionCode}",
+     "openapi/_original/harri-employee-openapi.yml#DELETE /api/v2/franchisees/{franchiseeId}/employees/{employeeId}/locations/{locationId}/positions/{positionCode}",
+     "openapi/_original/harri-employee-openapi.yml#GET /api/v1/employees/{employeeId}/positions",
+     "openapi/_original/harri-employee-openapi.yml#GET /api/v1/franchisees/{franchiseeId}/employees/{employeeId}/positions",
+     "openapi/_original/harri-employee-openapi.yml#GET /api/v1/franchisees/{franchiseeId}/positions",
+     "openapi/_original/harri-employee-openapi.yml#GET /api/v1/positions",
+     "openapi/_original/harri-employee-openapi.yml#GET /api/v2/employees/{employeeId}/positions",
+     "openapi/_original/harri-employee-openapi.yml#GET /api/v2/franchisees/{franchiseeId}/employees/{employeeId}/positions"
+    ]
+   },
+   "harver": {
+    "segments": [
+     "vacancies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "meta": "object",
+     "regions": "object",
+     "locations": "object",
+     "jobFunctions": "object"
+    },
+    "evidence": [
+     "openapi/_original/harver-openapi-original.json#GET /accounts/{accountId}/channels/{channelId}/vacancies",
+     "openapi/_original/harver-openapi-original.json#GET /accounts/{accountId}/vacancies",
+     "openapi/_original/harver-openapi-original.json#GET /vacancies/{vacancyId}",
+     "openapi/_original/harver-openapi-original.json#PATCH /vacancies/{vacancyId}"
+    ]
+   },
+   "heymilo": {
+    "segments": [
+     "postings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "object": "string",
+     "id": "string",
+     "company_id": "string",
+     "title": "string",
+     "name": null,
+     "description": "string",
+     "language": null,
+     "interviewer_name": null,
+     "status": "string",
+     "finalized": "boolean",
+     "archived": "boolean",
+     "test_posting": "boolean",
+     "workflow": "array",
+     "urls": null,
+     "deadline": null,
+     "redirect_url": null,
+     "scheduling_url": null,
+     "max_retakes": null,
+     "allow_sms_comms": null,
+     "instructions": null,
+     "company_overview": null,
+     "job_overview": null,
+     "interview_process_overview": null,
+     "company_overview_delivery_mode": null,
+     "job_overview_delivery_mode": null,
+     "interview_process_overview_delivery_mode": null,
+     "phone_number_id": null,
+     "sender_email_id": null,
+     "email_template_group_id": null,
+     "design_template_group_id": null,
+     "retake_cooldown_days": null,
+     "email_report_to_candidate": null,
+     "ats_metadata": null,
+     "metadata": null,
+     "created_at": null,
+     "updated_at": null,
+     "posting": null,
+     "interview_template_id": null
+    },
+    "evidence": [
+     "openapi/_original/heymilo-openapi-original.json#GET /api/v2/postings",
+     "openapi/_original/heymilo-openapi-original.json#GET /api/v2/postings/{posting_id}",
+     "openapi/_original/heymilo-openapi-original.json#PATCH /api/v2/postings/{posting_id}",
+     "openapi/_original/heymilo-openapi-original.json#POST /api/v2/postings"
+    ]
+   },
+   "hr-partner": {
+    "segments": [
+     "positions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "position": "string",
+     "commence_date": "string",
+     "completion_date": "string",
+     "pay_level": "string",
+     "remuneration": "number",
+     "remuneration_period": "string",
+     "employee": "object"
+    },
+    "evidence": [
+     "openapi/_original/hr-partner-rest-api-openapi.yml#GET /positions"
+    ]
+   },
+   "indeed": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "jobPostingId": "string",
+     "status": "string",
+     "errors": "array",
+     "title": "string",
+     "description": "string",
+     "location": "object",
+     "salary": "object",
+     "benefits": "array",
+     "qualifications": "array",
+     "workingHours": "object",
+     "employmentType": "string",
+     "remoteWorkPolicy": "string",
+     "employer": "object",
+     "source": "object",
+     "indeedApply": "object",
+     "applicationUrl": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "expiresAt": "string",
+     "jobPostings": "array",
+     "totalCount": "integer",
+     "pageInfo": "object"
+    },
+    "evidence": [
+     "openapi/_original/indeed-employer-api-openapi.yml#DELETE /v1/jobs/{jobPostingId}",
+     "openapi/_original/indeed-employer-api-openapi.yml#GET /v1/employers/{employerId}/jobs",
+     "openapi/_original/indeed-employer-api-openapi.yml#GET /v1/jobs/{jobPostingId}",
+     "openapi/_original/indeed-employer-api-openapi.yml#POST /v1/jobs",
+     "openapi/_original/indeed-employer-api-openapi.yml#PUT /v1/jobs/{jobPostingId}"
+    ]
+   },
+   "kombo": {
+    "segments": [
+     "job",
+     "jobs",
+     "postings"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "properties": "object",
+     "id": "string",
+     "remote_id": "string",
+     "name": [
+      "string",
+      "null"
+     ],
+     "job_code": [
+      "string",
+      "null"
+     ],
+     "description": [
+      "string",
+      "null"
+     ],
+     "confidential": [
+      "boolean",
+      "null"
+     ],
+     "weekly_hours": [
+      "number",
+      "null"
+     ],
+     "employment_type": null,
+     "status": null,
+     "visibility": null,
+     "category": [
+      "string",
+      "null"
+     ],
+     "department": [
+      "string",
+      "null"
+     ],
+     "post_url": [
+      "string",
+      "null"
+     ],
+     "experience_level": [
+      "string",
+      "null"
+     ],
+     "remote_work_status": null,
+     "salary_amount": [
+      "number",
+      "null"
+     ],
+     "salary_amount_from": [
+      "number",
+      "null"
+     ],
+     "salary_amount_to": [
+      "number",
+      "null"
+     ],
+     "salary_currency": [
+      "string",
+      "null"
+     ],
+     "salary_period": null,
+     "location": [
+      "object",
+      "null"
+     ],
+     "custom_fields": [
+      "object",
+      "null"
+     ],
+     "integration_fields": "array",
+     "remote_url": [
+      "string",
+      "null"
+     ],
+     "opened_at": [
+      "string",
+      "null"
+     ],
+     "closed_at": [
+      "string",
+      "null"
+     ],
+     "remote_created_at": [
+      "string",
+      "null"
+     ],
+     "remote_updated_at": [
+      "string",
+      "null"
+     ],
+     "contact_id": [
+      "string",
+      "null"
+     ],
+     "remote_data": [
+      "object",
+      "null"
+     ],
+     "changed_at": "string",
+     "remote_deleted_at": [
+      "string",
+      "null"
+     ],
+     "stages": "array",
+     "screening_questions": "array",
+     "job_postings": "array",
+     "hiring_team": "array",
+     "career_site": "object",
+     "url": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "archived_at": [
+      "string",
+      "null"
+     ],
+     "archived_reason": [
+      "string",
+      "null"
+     ],
+     "availability": "string",
+     "career_site_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/kombo-openapi.json#GET /ai-apply/postings",
+     "openapi/_original/kombo-openapi.json#GET /ai-apply/unified-api/jobs",
+     "openapi/_original/kombo-openapi.json#GET /ats/jobs",
+     "openapi/_original/kombo-openapi.json#GET /hris/employments/{employment_id}/form/job",
+     "openapi/_original/kombo-openapi.json#PATCH /hris/employments/{employment_id}/form/job",
+     "openapi/_original/kombo-openapi.json#POST /ai-apply/postings"
+    ]
+   },
+   "lever-co": {
+    "segments": [
+     "postings",
+     "requisitions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "text": "string",
+     "state": "string",
+     "categories": "object",
+     "country": "string",
+     "createdAt": "integer",
+     "updatedAt": "integer",
+     "hostedUrl": "string",
+     "applyUrl": "string",
+     "workplaceType": "string",
+     "salaryRange": "object",
+     "owner": "string"
+    },
+    "evidence": [
+     "openapi/_original/lever-data-api-openapi.yml#DELETE /requisitions/{id}",
+     "openapi/_original/lever-data-api-openapi.yml#GET /postings",
+     "openapi/_original/lever-data-api-openapi.yml#GET /postings/{id}",
+     "openapi/_original/lever-data-api-openapi.yml#GET /requisitions",
+     "openapi/_original/lever-data-api-openapi.yml#POST /postings",
+     "openapi/_original/lever-data-api-openapi.yml#POST /requisitions",
+     "openapi/_original/lever-data-api-openapi.yml#PUT /postings/{id}",
+     "openapi/_original/lever-data-api-openapi.yml#PUT /requisitions/{id}"
+    ]
+   },
+   "micro1": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "job_id": "string",
+     "job_title": "string",
+     "job_description": "string",
+     "job_code": "string",
+     "ats_job_id": "string",
+     "interview_id": "string",
+     "job_apply_url": "string",
+     "job_status": "string",
+     "date_created": "string",
+     "date_modified": "string"
+    },
+    "evidence": [
+     "openapi/_original/micro1-ai-recruiter-openapi-original.json#GET /jobs",
+     "openapi/_original/micro1-ai-recruiter-openapi.yml#GET /jobs"
+    ]
+   },
+   "nobueno": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "object",
+     "country": "object",
+     "city": "object",
+     "updated_at": "string",
+     "technical_skills": "array",
+     "soft_skills": "array",
+     "languages": "array",
+     "working_years": "integer",
+     "salary": "string",
+     "salary_currency": "string",
+     "review": "string",
+     "location_type": "string",
+     "opportunity_type": "string",
+     "company_jobs": "string",
+     "created_by": "object",
+     "company": "object",
+     "created_at": "string",
+     "matches_count": "string",
+     "total_matches": "string",
+     "is_active": "boolean",
+     "description": "string",
+     "matches": "object",
+     "values": "string",
+     "personalities": "string",
+     "is_public": "boolean",
+     "talents": "string",
+     "compensation": "object",
+     "job_title": "string",
+     "job_role_title": "string",
+     "is_highlighted": "string"
+    },
+    "evidence": [
+     "openapi/_original/nobueno-openapi-original.json#DELETE /admin/jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#DELETE /jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#GET /admin/companies/jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#GET /admin/companies/{id}/jobs",
+     "openapi/_original/nobueno-openapi-original.json#GET /admin/jobs",
+     "openapi/_original/nobueno-openapi-original.json#GET /admin/jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#GET /jobs",
+     "openapi/_original/nobueno-openapi-original.json#GET /jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#GET /public/jobs",
+     "openapi/_original/nobueno-openapi-original.json#GET /public/jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#PATCH /admin/jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#PATCH /jobs/{id}"
+    ]
+   },
+   "nomad-health": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/campaign/jobs",
+     "openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/campaign/jobs"
+    ]
+   },
+   "peopleforce": {
+    "segments": [
+     "vacancies",
+     "positions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/peopleforce-openapi.yml#GET /positions",
+     "openapi/_original/peopleforce-openapi.yml#GET /vacancies",
+     "openapi/_original/peopleforce-openapi.yml#GET /vacancies/{id}"
+    ]
+   },
+   "pinpoint": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/pinpoint-openapi.yml#DELETE /jobs/{id}",
+     "openapi/_original/pinpoint-openapi.yml#GET /jobs",
+     "openapi/_original/pinpoint-openapi.yml#GET /jobs/{id}",
+     "openapi/_original/pinpoint-openapi.yml#PATCH /jobs/{id}",
+     "openapi/_original/pinpoint-openapi.yml#POST /jobs"
+    ]
+   },
+   "sage-hr": {
+    "segments": [
+     "positions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "title": "string",
+     "description": "string",
+     "id": "number",
+     "code": "string",
+     "status": "string",
+     "visibility": "string",
+     "created_at": "string",
+     "internal_date": "string",
+     "completed_at": "string",
+     "link": "string",
+     "team": "string",
+     "applicants_required": "number",
+     "applicants_count": "number",
+     "employment_type": "string",
+     "location": "string",
+     "location_id": "number",
+     "group": "string",
+     "group_id": "number",
+     "priority": "number",
+     "description_blocks": "array",
+     "applicants": "array",
+     "hiring_team": "array"
+    },
+    "evidence": [
+     "openapi/_original/sage-hr-openapi.yml#GET /positions",
+     "openapi/_original/sage-hr-openapi.yml#GET /recruitment/positions",
+     "openapi/_original/sage-hr-openapi.yml#GET /recruitment/positions/{id}"
+    ]
+   },
+   "smartrecruiters": {
+    "segments": [
+     "jobs",
+     "postings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "limit": "integer",
+     "offset": "integer",
+     "totalFound": "integer",
+     "content": "array",
+     "id": "string",
+     "title": "string",
+     "refNumber": "string",
+     "createdOn": "string",
+     "updatedOn": "string",
+     "status": "string",
+     "department": "object",
+     "location": "object",
+     "industry": "object",
+     "function": "object",
+     "experienceLevel": "object",
+     "typeOfEmployment": "object",
+     "hiringTeam": "object",
+     "numberOfOpenings": "integer",
+     "jobAd": "object",
+     "uuid": "string",
+     "releasedDate": "string",
+     "applyUrl": "string",
+     "employmentType": "object",
+     "company": "object",
+     "questionnaire": "object",
+     "language": "string"
+    },
+    "evidence": [
+     "openapi/_original/smartrecruiters-jobs-openapi.yml#GET /jobs",
+     "openapi/_original/smartrecruiters-jobs-openapi.yml#GET /jobs/{jobId}",
+     "openapi/_original/smartrecruiters-jobs-openapi.yml#PATCH /jobs/{jobId}",
+     "openapi/_original/smartrecruiters-jobs-openapi.yml#POST /jobs",
+     "openapi/_original/smartrecruiters-posting-openapi.yml#GET /v1/companies/{companyIdentifier}/postings",
+     "openapi/_original/smartrecruiters-posting-openapi.yml#GET /v1/companies/{companyIdentifier}/postings/{postingId}"
+    ]
+   },
+   "themuse": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "page": "integer",
+     "page_count": "integer",
+     "items_per_page": "integer",
+     "total": "integer",
+     "took": "integer",
+     "timed_out": "boolean",
+     "aggregations": "array",
+     "id": "integer",
+     "name": "string",
+     "contents": "string",
+     "type": "string",
+     "publication_date": "string",
+     "short_name": "string",
+     "model_type": "string",
+     "locations": "array",
+     "categories": "array",
+     "levels": "array",
+     "tags": "array",
+     "refs": "object",
+     "company": "object"
+    },
+    "evidence": [
+     "openapi/_original/themuse-openapi.yml#GET /jobs",
+     "openapi/_original/themuse-openapi.yml#GET /jobs/{id}"
+    ]
+   },
+   "trakstar": {
+    "segments": [
+     "openings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "string",
+     "status": "string",
+     "department": "string",
+     "location": "string",
+     "description": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/trakstar-hire-api-openapi.yml#GET /openings",
+     "openapi/_original/trakstar-hire-api-openapi.yml#GET /openings/{id}",
+     "openapi/_original/trakstar-hire-api-openapi.yml#POST /openings"
+    ]
+   },
+   "truto": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "remoteId": "string",
+     "title": "string",
+     "status": "string",
+     "departmentId": "string",
+     "officeId": "string",
+     "description": "string",
+     "jobType": "string",
+     "remoteAllowed": "boolean",
+     "hiringManagerId": "string",
+     "openedAt": "string",
+     "closedAt": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/truto-unified-ats-openapi.yml#GET /jobs",
+     "openapi/_original/truto-unified-ats-openapi.yml#GET /jobs/{id}"
+    ]
+   },
+   "vcv": {
+    "segments": [
+     "vacancies"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "_total_items": "integer",
+     "_page": "integer",
+     "_page_count": "integer",
+     "_links": "object",
+     "_embedded": "object",
+     "id": "integer",
+     "token": "string",
+     "title": "string",
+     "active": "boolean",
+     "user_id": "integer",
+     "language_id": "integer",
+     "created_at": "string",
+     "description": "string",
+     "countries": "array",
+     "published": "boolean",
+     "vacancies": "array",
+     "language": "object",
+     "is_resume_required": "boolean",
+     "is_private": "boolean",
+     "is_disable_record_videointerview": "boolean",
+     "is_video_landing": "boolean",
+     "disable_duplicate_responses": "boolean",
+     "is_resume_mandatory": "boolean",
+     "is_permanent_response_link": "boolean",
+     "video_link": "string",
+     "logo_url": "string",
+     "landing_url_path": "string"
+    },
+    "evidence": [
+     "openapi/_original/vcv-openapi.yml#DELETE /api/v3/vacancies",
+     "openapi/_original/vcv-openapi.yml#DELETE /api/v3/vacancies/{id}",
+     "openapi/_original/vcv-openapi.yml#GET /api/v3/vacancies",
+     "openapi/_original/vcv-openapi.yml#GET /api/v3/vacancies/{id}",
+     "openapi/_original/vcv-openapi.yml#PATCH /api/v3/vacancies",
+     "openapi/_original/vcv-openapi.yml#PATCH /api/v3/vacancies/{id}",
+     "openapi/_original/vcv-openapi.yml#POST /api/v3/vacancies"
+    ]
+   },
+   "workable": {
+    "segments": [
+     "requisitions",
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/workable-openapi.yml#GET /jobs",
+     "openapi/_original/workable-openapi.yml#GET /jobs/{shortcode}",
+     "openapi/_original/workable-openapi.yml#GET /requisitions",
+     "openapi/_original/workable-openapi.yml#GET /requisitions/{code}",
+     "openapi/_original/workable-openapi.yml#PATCH /requisitions",
+     "openapi/_original/workable-openapi.yml#POST /requisitions"
+    ]
+   },
+   "worklittle": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/worklittle-openapi.yaml#GET /business/jobs",
+     "openapi/_original/worklittle-openapi.yaml#GET /job-boards/{company}/jobs",
+     "openapi/_original/worklittle-openapi.yaml#GET /job-boards/{company}/jobs/{idOrSlug}",
+     "openapi/_original/worklittle-openapi.yaml#GET /jobs",
+     "openapi/_original/worklittle-openapi.yaml#GET /jobs/{id}",
+     "openapi/_original/worklittle-openapi.yaml#PATCH /business/jobs/{id}"
+    ]
+   },
+   "workstream": {
+    "segments": [
+     "positions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "uuid": "string",
+     "digest_key": "string",
+     "title": "string",
+     "overview": "string",
+     "status": "string",
+     "number": "string",
+     "access": "string",
+     "pay_amount": "string",
+     "pay_frequency": "string",
+     "job_type": "string",
+     "normalized_titles": "string",
+     "remote_type": "string",
+     "job_url": "string",
+     "location": "object",
+     "custom_fields": "array"
+    },
+    "evidence": [
+     "openapi/_original/workstream-public-api-openapi-original.json#GET /positions",
+     "openapi/_original/workstream-public-api-openapi-original.json#GET /positions/{uuid}"
+    ]
+   }
+  },
+  "candidate": {
+   "bindbee": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "remote_id": null,
+     "modified_at": "string",
+     "raw_data": null,
+     "custom_fields": null,
+     "first_name": null,
+     "last_name": null,
+     "company": null,
+     "title": null,
+     "last_interaction_at": null,
+     "is_private": null,
+     "can_email": null,
+     "locations": null,
+     "phone_numbers": null,
+     "email_addresses": null,
+     "urls": null,
+     "tags": null,
+     "applications": null,
+     "attachments": null,
+     "remote_created_at": null,
+     "remote_updated_at": null,
+     "avatar": null,
+     "job_interview_stage_id": null,
+     "job_id": null
+    },
+    "evidence": [
+     "openapi/_original/bindbee-openapi.json#GET /api/ats/v1/candidates",
+     "openapi/_original/bindbee-openapi.json#GET /api/ats/v1/candidates/{id}",
+     "openapi/_original/bindbee-openapi.json#POST /api/ats/v1/candidates"
+    ]
+   },
+   "buk": {
+    "segments": [
+     "applicants",
+     "people"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "first_name": "string",
+     "surname": "string",
+     "second_surname": "string",
+     "birthday": "string",
+     "email": "string",
+     "phone": "string",
+     "address": "string",
+     "gender": "string",
+     "university": "string",
+     "academic_degree": "string",
+     "experience_years": "integer",
+     "linkedin_url": "string",
+     "cv_url": "object",
+     "seleccion_processes": "array",
+     "custom_attributes": "object",
+     "location": "object",
+     "id": "integer",
+     "studies_level": "string",
+     "document_number": "string",
+     "document_type": "string",
+     "location_id": "string",
+     "pagination": "object",
+     "applicants": "array",
+     "last_name": "string",
+     "dni": "string",
+     "rut": "string",
+     "rfc": "string"
+    },
+    "evidence": [
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#GET /people/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#GET /recruiting/applicants/",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#GET /recruiting/applicants/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#PATCH /recruiting/applicants/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#POST /recruiting/applicants",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /people/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /recruiting/applicants/",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /recruiting/applicants/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#PATCH /recruiting/applicants/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#POST /recruiting/applicants",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#GET /people/{id}",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#GET /recruiting/applicants/"
+    ]
+   },
+   "checkr": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "object": "string",
+     "uri": null,
+     "first_name": "string",
+     "middle_name": "string",
+     "no_middle_name": "boolean",
+     "last_name": "string",
+     "mother_maiden_name": "string",
+     "email": "string",
+     "phone": "string",
+     "zipcode": "string",
+     "dob": "string",
+     "ssn": "string",
+     "driver_license_number": "string",
+     "driver_license_state": "string",
+     "previous_driver_license_number": "string",
+     "previous_driver_license_state": "string",
+     "copy_requested": "boolean",
+     "custom_id": "string",
+     "report_ids": "array",
+     "geo_ids": "array",
+     "adjudication": "string",
+     "postal_address": "object",
+     "metadata": "object",
+     "work_locations": "array"
+    },
+    "evidence": [
+     "openapi/_original/checkr-openapi.yml#GET /candidates",
+     "openapi/_original/checkr-openapi.yml#GET /candidates/{id}",
+     "openapi/_original/checkr-openapi.yml#POST /candidates",
+     "openapi/_original/checkr-openapi.yml#POST /candidates/{id}"
+    ]
+   },
+   "deel-com": {
+    "segments": [
+     "candidates",
+     "people",
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "city": [
+      "string",
+      "null"
+     ],
+     "email": "string",
+     "pic_url": [
+      "string",
+      "null"
+     ],
+     "last_name": "string",
+     "created_at": "string",
+     "first_name": "string",
+     "numeric_id": "integer",
+     "updated_at": "string",
+     "attachments": "array",
+     "imported_id": [
+      "string",
+      "null"
+     ],
+     "applications": "array",
+     "country_code": [
+      "string",
+      "null"
+     ],
+     "phone_number": [
+      "string",
+      "null"
+     ],
+     "anonymized_at": [
+      "string",
+      "null"
+     ],
+     "candidate_tags": "array",
+     "import_session_id": [
+      "string",
+      "null"
+     ],
+     "origin_source_slug": [
+      "string",
+      "null"
+     ],
+     "final_archivation_at": [
+      "string",
+      "null"
+     ],
+     "linkedin_profile_url": [
+      "string",
+      "null"
+     ],
+     "referred_by_hris_organization_user_id": [
+      "string",
+      "null"
+     ],
+     "source": [
+      "string",
+      "null"
+     ],
+     "total_applications_count": "number",
+     "created": "boolean",
+     "link": "string",
+     "state": "string",
+     "status": "string",
+     "country": "string",
+     "job_title": "string",
+     "start_date": "string",
+     "nationality": "string",
+     "personal_email": "string",
+     "emails": [
+      "array",
+      "null"
+     ],
+     "is_pwac": "boolean",
+     "timezone": [
+      "string",
+      "null"
+     ],
+     "addresses": [
+      "array",
+      "null"
+     ],
+     "full_name": "string",
+     "seniority": [
+      "string",
+      "null"
+     ],
+     "worker_id": "string",
+     "birth_date": [
+      "string",
+      "null"
+     ],
+     "department": "object",
+     "employments": [
+      "array",
+      "null"
+     ],
+     "external_id": [
+      "string",
+      "null"
+     ],
+     "hiring_type": [
+      "string",
+      "null"
+     ],
+     "middle_name": [
+      "string",
+      "null"
+     ],
+     "hiring_status": "string",
+     "nationalities": "array",
+     "person_status": null,
+     "work_location": [
+      "string",
+      "null"
+     ],
+     "direct_manager": null,
+     "direct_reports": [
+      "array",
+      "null"
+     ],
+     "completion_date": [
+      "string",
+      "null"
+     ],
+     "new_hiring_status": [
+      "string",
+      "null"
+     ],
+     "additional_details": [
+      "array",
+      "null"
+     ],
+     "client_legal_entity": "object",
+     "preferred_last_name": [
+      "string",
+      "null"
+     ],
+     "direct_reports_count": "integer",
+     "preferred_first_name": [
+      "string",
+      "null"
+     ],
+     "hris_organization_user_id": [
+      "string",
+      "null"
+     ],
+     "active_worker_termination_status": null,
+     "direct_employee_termination_last_day": "string",
+     "employee": "object",
+     "employment": "object",
+     "compensation_details": "object",
+     "client": "object",
+     "profile_organizational_structures": "array",
+     "custom_fields": "array",
+     "phone": "string",
+     "currency": "string",
+     "preferred_name": "string"
+    },
+    "evidence": [
+     "openapi/_original/deel-com-openapi.yml#GET /ats/candidates",
+     "openapi/_original/deel-com-openapi.yml#GET /ats/candidates/{candidate_id}",
+     "openapi/_original/deel-com-openapi.yml#GET /people",
+     "openapi/_original/deel-com-openapi.yml#GET /people/{hris_profile_id}",
+     "openapi/_original/deel-com-openapi.yml#PATCH /ats/candidates/{candidate_id}",
+     "openapi/_original/deel-com-openapi.yml#PATCH /profiles",
+     "openapi/_original/deel-com-openapi.yml#POST /ats/candidates",
+     "openapi/_original/deel-com-openapi.yml#POST /candidates",
+     "openapi/_original/deel-com-openapi.yml#POST /people"
+    ]
+   },
+   "eightfold-ai": {
+    "segments": [
+     "profiles",
+     "applicants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "preferences": null,
+     "jtnSubmissions": "object",
+     "internalGroupAffiliation": "array",
+     "atsEntityId": "string",
+     "endorsements": "array",
+     "profileId": "integer",
+     "seniorityLevel": "string",
+     "skills": "array",
+     "location": "string",
+     "careerSiteQuestions": "array",
+     "firstName": "string",
+     "address": null,
+     "lastContact": null,
+     "resumeContent": null,
+     "employeeInfo": null,
+     "email": "string",
+     "lastUpdated": "integer",
+     "imageUrl": "string",
+     "roleId": "string",
+     "workExperienceYears": "number",
+     "resumeFileName": "string",
+     "awards": "array",
+     "education": "array",
+     "efRace": "string",
+     "fullName": "string",
+     "resume": "string",
+     "profileStagedSections": null,
+     "skillGoals": "array",
+     "customInfo": "object",
+     "experiences": "array",
+     "isConfidential": "boolean",
+     "isCurrentEmployee": "boolean",
+     "urls": "array",
+     "demandExperiences": "array",
+     "phone": "string",
+     "title": "string",
+     "tags": "array",
+     "id": "string",
+     "deletedAt": "integer",
+     "race": "string",
+     "jtnAnswers": "array",
+     "additionalSections": "object",
+     "sources": "array",
+     "currentCompany": "string",
+     "socialMediaLinks": "array",
+     "language": "string",
+     "educationLevel": "string",
+     "patents": "array",
+     "efCustomInfo": "object",
+     "dupeData": "object",
+     "highlights": "array",
+     "summary": "string",
+     "projects": "array",
+     "applications": "array",
+     "customFields": "object",
+     "certificates": "array",
+     "publications": "array",
+     "notes": "array",
+     "gender": "string",
+     "atsData": null,
+     "industries": "array",
+     "efGender": "string",
+     "inferredSkills": "array",
+     "attachmentsInfo": "array",
+     "lastName": "string",
+     "transactionId": "string"
+    },
+    "evidence": [
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#DELETE /api/v2/core/profiles/{profileId}",
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#GET /api/v2/core/position/{positionId}/applicants",
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#GET /api/v2/core/profiles",
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#GET /api/v2/core/profiles/{profileId}",
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#PATCH /api/v2/core/profiles/{profileId}",
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#POST /api/v2/core/profiles",
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#PUT /api/v2/core/profiles/{profileId}"
+    ]
+   },
+   "employment-hero": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "profileImageUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/employment-hero-payroll-au-swagger.json#GET /api/v2/ess/{employeeId}/shift/{rosterShiftId}/swap/candidates",
+     "openapi/_original/employment-hero-payroll-my-swagger.json#GET /api/v2/ess/{employeeId}/shift/{rosterShiftId}/swap/candidates",
+     "openapi/_original/employment-hero-payroll-nz-swagger.json#GET /api/v2/ess/{employeeId}/shift/{rosterShiftId}/swap/candidates",
+     "openapi/_original/employment-hero-payroll-sg-swagger.json#GET /api/v2/ess/{employeeId}/shift/{rosterShiftId}/swap/candidates",
+     "openapi/_original/employment-hero-payroll-uk-swagger.json#GET /api/v2/ess/{employeeId}/shift/{rosterShiftId}/swap/candidates"
+    ]
+   },
+   "fountain-com": {
+    "segments": [
+     "applicants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "applicants": "array",
+     "pagination": "object",
+     "id": "string",
+     "name": "string",
+     "email": "string",
+     "phone_number": "string",
+     "funnel_id": "string",
+     "stage_id": "string",
+     "status": "string",
+     "data": "object",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/fountain-com-openapi.yml#DELETE /applicants/{id}",
+     "openapi/_original/fountain-com-openapi.yml#GET /applicants",
+     "openapi/_original/fountain-com-openapi.yml#GET /applicants/{id}",
+     "openapi/_original/fountain-com-openapi.yml#POST /applicants",
+     "openapi/_original/fountain-com-openapi.yml#PUT /applicants/{id}"
+    ]
+   },
+   "freshteam": {
+    "segments": [
+     "applicants"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "first_name": "string",
+     "last_name": "string",
+     "email": "string",
+     "mobile": "string",
+     "source_id": "integer",
+     "resume": "string"
+    },
+    "evidence": [
+     "openapi/_original/freshteam-openapi.yml#POST /job_postings/{id}/applicants"
+    ]
+   },
+   "greenhouse": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/greenhouse-harvest-openapi.yml#DELETE /candidates/{id}",
+     "openapi/_original/greenhouse-harvest-openapi.yml#GET /candidates",
+     "openapi/_original/greenhouse-harvest-openapi.yml#GET /candidates/{id}",
+     "openapi/_original/greenhouse-harvest-openapi.yml#PATCH /candidates/{id}",
+     "openapi/_original/greenhouse-harvest-openapi.yml#POST /candidates",
+     "openapi/_original/greenhouse-ingestion-openapi.yml#GET /candidates",
+     "openapi/_original/greenhouse-ingestion-openapi.yml#POST /candidates"
+    ]
+   },
+   "greenhouse-io": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "external_id": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "company": "string",
+     "title": "string",
+     "emails": "array",
+     "phone_numbers": "array",
+     "social_media_addresses": "array",
+     "application": "object",
+     "prospect": "object",
+     "attachments": "array",
+     "id": "integer",
+     "created_at": "string",
+     "updated_at": "string",
+     "last_activity": "string",
+     "is_private": "boolean",
+     "photo_url": "string",
+     "addresses": "array",
+     "recruiter": "object",
+     "coordinator": "object",
+     "tags": "array",
+     "applications": "array",
+     "educations": "array",
+     "employments": "array",
+     "custom_fields": "object"
+    },
+    "evidence": [
+     "openapi/_original/greenhouse-candidate-ingestion-api-openapi.yml#GET /candidates",
+     "openapi/_original/greenhouse-candidate-ingestion-api-openapi.yml#POST /candidates",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#DELETE /candidates",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /candidates",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /candidates/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#PATCH /candidates/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#POST /candidates"
+    ]
+   },
+   "harver": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/harver-openapi-original.json#GET /accounts/{accountId}/candidates",
+     "openapi/_original/harver-openapi-original.json#GET /vacancies/{vacancyId}/candidates"
+    ]
+   },
+   "heymilo": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "object": "string",
+     "interview_id": "string",
+     "candidate_id": null,
+     "posting_id": "string",
+     "name": "string",
+     "email": "string",
+     "score": null,
+     "status": "string",
+     "interview_url": null,
+     "workflow": null,
+     "agent_summary": null,
+     "shortlisted": "boolean",
+     "dismissed": "boolean",
+     "metadata": null,
+     "data": null,
+     "interviewed_at": null,
+     "created_at": null,
+     "candidate": null,
+     "phone_number": null
+    },
+    "evidence": [
+     "openapi/_original/heymilo-openapi-original.json#GET /api/v2/postings/{posting_id}/candidates",
+     "openapi/_original/heymilo-openapi-original.json#POST /api/v2/postings/{posting_id}/candidates",
+     "openapi/_original/heymilo-openapi-original.json#POST /api/v2/postings/{posting_id}/candidates/bulk"
+    ]
+   },
+   "hr-partner": {
+    "segments": [
+     "applicants"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "first_names": "string",
+     "last_name": "string",
+     "email": "string",
+     "phone": "string",
+     "source": "string",
+     "notes": "string"
+    },
+    "evidence": [
+     "openapi/_original/hr-partner-rest-api-openapi.yml#GET /applicants",
+     "openapi/_original/hr-partner-rest-api-openapi.yml#GET /applicants/{id}",
+     "openapi/_original/hr-partner-rest-api-openapi.yml#POST /applicants",
+     "openapi/_original/hr-partner-rest-api-openapi.yml#POST /applicants/{id}"
+    ]
+   },
+   "indeed": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "candidates": "array",
+     "totalCount": "integer",
+     "pageInfo": "object",
+     "id": "string",
+     "name": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "email": "string",
+     "phoneNumber": "string",
+     "location": "string",
+     "resume": "object",
+     "coverLetter": "string",
+     "applicationStatus": "string",
+     "screenerQuestionResponses": "array",
+     "eeoResponses": "object",
+     "appliedAt": "string",
+     "source": "string",
+     "jobPostingId": "string"
+    },
+    "evidence": [
+     "openapi/_original/indeed-employer-api-openapi.yml#GET /v1/employers/{employerId}/candidates",
+     "openapi/_original/indeed-employer-api-openapi.yml#GET /v1/employers/{employerId}/candidates/{candidateId}"
+    ]
+   },
+   "kombo": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "remote_id": "string",
+     "first_name": [
+      "string",
+      "null"
+     ],
+     "last_name": [
+      "string",
+      "null"
+     ],
+     "company": [
+      "string",
+      "null"
+     ],
+     "title": [
+      "string",
+      "null"
+     ],
+     "confidential": [
+      "boolean",
+      "null"
+     ],
+     "source": [
+      "string",
+      "null"
+     ],
+     "phone_numbers": [
+      "array",
+      "null"
+     ],
+     "email_addresses": [
+      "array",
+      "null"
+     ],
+     "social_media": [
+      "array",
+      "null"
+     ],
+     "location": [
+      "object",
+      "null"
+     ],
+     "custom_fields": [
+      "object",
+      "null"
+     ],
+     "integration_fields": "array",
+     "remote_url": [
+      "string",
+      "null"
+     ],
+     "remote_created_at": [
+      "string",
+      "null"
+     ],
+     "remote_updated_at": [
+      "string",
+      "null"
+     ],
+     "remote_data": [
+      "object",
+      "null"
+     ],
+     "changed_at": "string",
+     "remote_deleted_at": [
+      "string",
+      "null"
+     ],
+     "applications": "array",
+     "tags": "array",
+     "candidate": "object",
+     "application": "object",
+     "screening_question_answers": "array",
+     "attachments": "array",
+     "sourced_by": "object",
+     "gdpr_consent": "object",
+     "remote_fields": null
+    },
+    "evidence": [
+     "openapi/_original/kombo-openapi.json#GET /ats/candidates",
+     "openapi/_original/kombo-openapi.json#POST /ats/candidates"
+    ]
+   },
+   "micro1": {
+    "segments": [
+     "applicant",
+     "applicants"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "job_application_id": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "email_id": "string",
+     "phone_number": "string",
+     "resume_url": "string",
+     "job_applicant_id": "string",
+     "job_id": "string",
+     "job_title": "string",
+     "phone_country_iso_code": "string",
+     "linkedin_url": "string",
+     "source_name": "string",
+     "resume_score": "number",
+     "parsed_resume_data": "object",
+     "date_created": "string",
+     "date_modified": "string",
+     "status": "string",
+     "screening_question_answers": "array"
+    },
+    "evidence": [
+     "openapi/_original/micro1-ai-recruiter-openapi-original.json#GET /job/applicant/{jobApplicantId}",
+     "openapi/_original/micro1-ai-recruiter-openapi-original.json#GET /job/{jobId}/applicants",
+     "openapi/_original/micro1-ai-recruiter-openapi-original.json#POST /job/{jobId}/applicant",
+     "openapi/_original/micro1-ai-recruiter-openapi.yml#GET /job/applicant/{jobApplicantId}",
+     "openapi/_original/micro1-ai-recruiter-openapi.yml#GET /job/{jobId}/applicants",
+     "openapi/_original/micro1-ai-recruiter-openapi.yml#POST /job/{jobId}/applicant"
+    ]
+   },
+   "namely": {
+    "segments": [
+     "profiles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "profiles": "array",
+     "meta": "object",
+     "links": "object",
+     "linked": "object",
+     "first_name": "string",
+     "last_name": "string",
+     "user_status": "string",
+     "start_date": "string",
+     "email": "string",
+     "personal_email": "string",
+     "reports_to": "string",
+     "job_title": "string"
+    },
+    "evidence": [
+     "openapi/_original/namely-api-openapi.json#GET /profiles",
+     "openapi/_original/namely-api-openapi.json#GET /profiles/{id}",
+     "openapi/_original/namely-api-openapi.json#POST /profiles",
+     "openapi/_original/namely-api-openapi.json#PUT /profiles/{id}"
+    ]
+   },
+   "nobueno": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "country": "object",
+     "job_title": "string",
+     "freelance_salary": "string",
+     "technical_score": "string",
+     "updated_at": "string",
+     "chat": "string",
+     "minimum_salaries": "string",
+     "value_score": "string",
+     "soft_score": "string",
+     "language_score": "string",
+     "personal_score": "string",
+     "candidate_status": "string",
+     "working_years": "integer",
+     "city": "object",
+     "best_match": "string",
+     "user_id": "integer",
+     "match_id": "string",
+     "nickname": "string",
+     "name": "string",
+     "matched_technical_skills": "array"
+    },
+    "evidence": [
+     "openapi/_original/nobueno-openapi-original.json#GET /jobs/{id}/candidates"
+    ]
+   },
+   "nomad-health": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/fx/candidates/",
+     "openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/fx/candidates/{id}/",
+     "openapi/_original/nomad-health-platform-openapi.yml#POST /api/v1/admin/credential-candidate-group/{group_id}/candidates/",
+     "openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/fx/candidates/",
+     "openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/fx/candidates/{id}/",
+     "openapi/_original/nomad-health-platform-swagger-original.json#POST /api/v1/admin/credential-candidate-group/{group_id}/candidates/"
+    ]
+   },
+   "paradox": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "success": "boolean",
+     "candidates": "array",
+     "limit": "integer",
+     "count": "integer",
+     "offset": "integer",
+     "candidate": "object",
+     "name": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "phone": "string",
+     "email": "string",
+     "ex_id": "string",
+     "hirevue_link": "string",
+     "pymetrics_link": "string",
+     "ex_step": "string",
+     "ex_status": "string",
+     "ex_reason": "string",
+     "job_req_id": "string",
+     "job_title": "string",
+     "job_loc_code": "string",
+     "primary_contact_method": "string",
+     "hired_date": "string",
+     "adp_link": "string",
+     "audience_type": "string",
+     "hm_cid": "string",
+     "external_group_id": "string",
+     "hirevue_instructions": "string",
+     "referrer_email": "string",
+     "referrer_name": "string",
+     "recruiter_email": "string",
+     "hiring_manager": "string",
+     "external_referrer": "string",
+     "language_preference": "string",
+     "candidate_journey": "string",
+     "candidate_journey_status": "string",
+     "candidate_attribute_data": "object",
+     "note": "string",
+     "job_application_id": "string",
+     "use_application_id_for_identity": "boolean",
+     "candidate_location_info": "string",
+     "external_source_id": "string",
+     "offer_file_name": "string",
+     "use_paradox_status_map": "boolean",
+     "status_map_name": "string",
+     "status_map_ex_id": "string",
+     "talent_community": "boolean",
+     "community_of_interest": "integer",
+     "skip_send_opt_in": "boolean",
+     "consent_to_marketing": "string"
+    },
+    "evidence": [
+     "openapi/_original/paradox-api-openapi.yml#DELETE /candidates/{id}",
+     "openapi/_original/paradox-api-openapi.yml#GET /candidates",
+     "openapi/_original/paradox-api-openapi.yml#GET /candidates/{id}",
+     "openapi/_original/paradox-api-openapi.yml#POST /candidates",
+     "openapi/_original/paradox-api-openapi.yml#PUT /candidates/{id}"
+    ]
+   },
+   "peopleforce": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/peopleforce-openapi.yml#GET /candidates",
+     "openapi/_original/peopleforce-openapi.yml#GET /candidates/{id}",
+     "openapi/_original/peopleforce-openapi.yml#POST /candidates"
+    ]
+   },
+   "pinpoint": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/pinpoint-openapi.yml#GET /candidates",
+     "openapi/_original/pinpoint-openapi.yml#GET /candidates/{id}",
+     "openapi/_original/pinpoint-openapi.yml#PATCH /candidates/{id}"
+    ]
+   },
+   "sage-hr": {
+    "segments": [
+     "applicants"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "summary": "string",
+     "id": "number",
+     "full_name": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "email": "string",
+     "address": "string",
+     "phone_number": "string",
+     "source": "string",
+     "created_at": "string",
+     "disqualified_date": "string",
+     "hired_date": "string",
+     "stage": "object",
+     "position_id": "number",
+     "added_by": "object",
+     "referrer": "object"
+    },
+    "evidence": [
+     "openapi/_original/sage-hr-openapi.yml#GET /recruitment/applicants/{id}",
+     "openapi/_original/sage-hr-openapi.yml#GET /recruitment/positions/{id}/applicants",
+     "openapi/_original/sage-hr-openapi.yml#POST /recruitment/positions/{id}/applicants"
+    ]
+   },
+   "sense-talent-labs": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "message": "string",
+     "request_id": "string",
+     "active": "boolean",
+     "address1": "string",
+     "address2": "string",
+     "categories": "array",
+     "city": "string",
+     "country": "string",
+     "custom_array1": "array",
+     "custom_array2": "array",
+     "custom_array3": "array",
+     "custom_array4": "array",
+     "custom_array5": "array",
+     "custom_boolean1": "boolean",
+     "custom_boolean10": "boolean",
+     "custom_boolean11": "boolean",
+     "custom_boolean12": "boolean",
+     "custom_boolean13": "boolean",
+     "custom_boolean14": "boolean",
+     "custom_boolean15": "boolean",
+     "custom_boolean2": "boolean",
+     "custom_boolean3": "boolean",
+     "custom_boolean4": "boolean",
+     "custom_boolean5": "boolean",
+     "custom_boolean6": "boolean",
+     "custom_boolean7": "boolean",
+     "custom_boolean8": "boolean",
+     "custom_boolean9": "boolean",
+     "custom_date1": "string",
+     "custom_date10": "string",
+     "custom_date11": "string",
+     "custom_date12": "string",
+     "custom_date13": "string",
+     "custom_date14": "string",
+     "custom_date15": "string",
+     "custom_date16": "string",
+     "custom_date17": "string",
+     "custom_date18": "string",
+     "custom_date19": "string",
+     "custom_date2": "string",
+     "custom_date20": "string",
+     "custom_date21": "string",
+     "custom_date22": "string",
+     "custom_date23": "string",
+     "custom_date24": "string",
+     "custom_date25": "string",
+     "custom_date26": "string",
+     "custom_date27": "string",
+     "custom_date28": "string",
+     "custom_date29": "string",
+     "custom_date3": "string",
+     "custom_date30": "string",
+     "custom_date31": "string",
+     "custom_date32": "string",
+     "custom_date33": "string",
+     "custom_date34": "string",
+     "custom_date35": "string",
+     "custom_date36": "string",
+     "custom_date37": "string",
+     "custom_date38": "string",
+     "custom_date39": "string",
+     "custom_date4": "string",
+     "custom_date40": "string",
+     "custom_date41": "string",
+     "custom_date42": "string",
+     "custom_date43": "string",
+     "custom_date44": "string",
+     "custom_date45": "string",
+     "custom_date46": "string",
+     "custom_date47": "string",
+     "custom_date48": "string",
+     "custom_date49": "string",
+     "custom_date5": "string",
+     "custom_date50": "string",
+     "custom_date6": "string",
+     "custom_date7": "string",
+     "custom_date8": "string",
+     "custom_date9": "string",
+     "custom_datetime1": "string",
+     "custom_datetime2": "string",
+     "custom_datetime3": "string",
+     "custom_datetime4": "string",
+     "custom_datetime5": "string",
+     "custom_datetime6": "string",
+     "custom_float1": "number",
+     "custom_float2": "number",
+     "custom_float3": "number",
+     "custom_float4": "number",
+     "custom_float5": "number",
+     "custom_float6": "number",
+     "custom_integer1": "integer",
+     "custom_integer2": "integer",
+     "custom_integer3": "integer",
+     "custom_integer4": "integer",
+     "custom_integer5": "integer",
+     "custom_integer6": "integer",
+     "custom_text1": "string",
+     "custom_text10": "string",
+     "custom_text11": "string",
+     "custom_text12": "string",
+     "custom_text13": "string",
+     "custom_text14": "string",
+     "custom_text15": "string",
+     "custom_text16": "string",
+     "custom_text17": "string",
+     "custom_text18": "string",
+     "custom_text19": "string",
+     "custom_text2": "string",
+     "custom_text20": "string",
+     "custom_text21": "string",
+     "custom_text22": "string",
+     "custom_text23": "string",
+     "custom_text24": "string",
+     "custom_text25": "string",
+     "custom_text26": "string",
+     "custom_text27": "string",
+     "custom_text28": "string",
+     "custom_text29": "string",
+     "custom_text3": "string",
+     "custom_text30": "string",
+     "custom_text31": "string",
+     "custom_text32": "string",
+     "custom_text33": "string",
+     "custom_text34": "string",
+     "custom_text35": "string",
+     "custom_text36": "string",
+     "custom_text37": "string",
+     "custom_text38": "string",
+     "custom_text39": "string",
+     "custom_text4": "string",
+     "custom_text40": "string",
+     "custom_text41": "string",
+     "custom_text42": "string",
+     "custom_text43": "string",
+     "custom_text44": "string",
+     "custom_text45": "string",
+     "custom_text46": "string",
+     "custom_text47": "string",
+     "custom_text48": "string",
+     "custom_text49": "string",
+     "custom_text5": "string",
+     "custom_text50": "string",
+     "custom_text6": "string",
+     "custom_text7": "string",
+     "custom_text8": "string",
+     "custom_text9": "string",
+     "custom_text_block1": "string",
+     "custom_text_block2": "string",
+     "custom_text_block3": "string",
+     "custom_text_block4": "string",
+     "custom_text_block5": "string",
+     "custom_text_block6": "string",
+     "date_added": "string",
+     "date_last_activity": "string",
+     "date_last_modified": "string",
+     "date_of_birth": "string",
+     "email": "string",
+     "email2": "string",
+     "email3": "string",
+     "ethnicity": "string",
+     "first_name": "string",
+     "gender": "string",
+     "home_phone": "string",
+     "id": "string",
+     "industries": "array",
+     "internal_user_id": "string",
+     "internal_user_id2": "string",
+     "internal_user_id3": "string",
+     "is_archived": "boolean",
+     "is_deleted": "boolean",
+     "last_name": "string",
+     "mobile_phone": "string",
+     "nick_name": "string",
+     "office": "string",
+     "opt_out_email": "boolean",
+     "opt_out_sms": "boolean",
+     "phone4": "string",
+     "phone5": "string",
+     "preferred_contact_method": "string",
+     "skills": "array",
+     "source": "string",
+     "specialties": "array",
+     "state": "string",
+     "status": "string",
+     "title": "string",
+     "work_phone": "string",
+     "zipcode": "string",
+     "data": "object",
+     "errors": "array",
+     "resource_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/sense-talent-labs-sense-api-openapi.json#GET /candidates/{id}",
+     "openapi/_original/sense-talent-labs-sense-api-openapi.json#PATCH /candidates/{id}",
+     "openapi/_original/sense-talent-labs-sense-api-openapi.json#POST /candidates"
+    ]
+   },
+   "smartrecruiters": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "limit": "integer",
+     "offset": "integer",
+     "totalFound": "integer",
+     "content": "array",
+     "id": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "email": "string",
+     "phoneNumber": "string",
+     "location": "object",
+     "web": "object",
+     "tags": "array",
+     "consent": "object",
+     "gdpr": "object",
+     "sourceDetails": "object",
+     "createdOn": "string",
+     "updatedOn": "string",
+     "candidateId": "string",
+     "postingId": "string",
+     "status": "string",
+     "phone": "string",
+     "answers": "array"
+    },
+    "evidence": [
+     "openapi/_original/smartrecruiters-candidates-openapi.yml#GET /candidates",
+     "openapi/_original/smartrecruiters-candidates-openapi.yml#GET /candidates/{candidateId}",
+     "openapi/_original/smartrecruiters-candidates-openapi.yml#PATCH /candidates/{candidateId}",
+     "openapi/_original/smartrecruiters-candidates-openapi.yml#POST /candidates",
+     "openapi/_original/smartrecruiters-jobs-openapi.yml#GET /jobs/{jobId}/candidates",
+     "openapi/_original/smartrecruiters-posting-openapi.yml#POST /v1/companies/{companyIdentifier}/postings/{postingId}/candidates"
+    ]
+   },
+   "trakstar": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "first_name": "string",
+     "last_name": "string",
+     "email": "string",
+     "phone": "string",
+     "opening": "integer",
+     "stage": "string",
+     "source": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/trakstar-hire-api-openapi.yml#DELETE /candidates/{id}",
+     "openapi/_original/trakstar-hire-api-openapi.yml#GET /candidates",
+     "openapi/_original/trakstar-hire-api-openapi.yml#GET /candidates/{id}",
+     "openapi/_original/trakstar-hire-api-openapi.yml#PATCH /candidates/{id}",
+     "openapi/_original/trakstar-hire-api-openapi.yml#POST /candidates"
+    ]
+   },
+   "truto": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "remoteId": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "email": "string",
+     "phone": "string",
+     "location": "string",
+     "source": "string",
+     "tags": "array",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/truto-unified-ats-openapi.yml#GET /candidates",
+     "openapi/_original/truto-unified-ats-openapi.yml#GET /candidates/{id}"
+    ]
+   },
+   "wizehire": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/wizehire-scout-service-openapi.json#GET /v1/candidates/{apply_id}",
+     "openapi/_original/wizehire-scout-service-openapi.yml#GET /v1/candidates/{apply_id}"
+    ]
+   },
+   "workable": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/workable-openapi.yml#GET /candidates",
+     "openapi/_original/workable-openapi.yml#GET /candidates/{id}",
+     "openapi/_original/workable-openapi.yml#POST /jobs/{shortcode}/candidates",
+     "openapi/_original/workable-openapi.yml#POST /talent_pool/candidates",
+     "openapi/_original/workable-openapi.yml#PUT /candidates/{id}"
+    ]
+   },
+   "worklittle": {
+    "segments": [
+     "applicants",
+     "candidates"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "email": "string",
+     "phone": "string",
+     "city": "string",
+     "state": "string",
+     "country": "string",
+     "address": "string",
+     "current_title": "string",
+     "current_company": "string",
+     "desired_role": "string",
+     "desired_salary": "string",
+     "work_authorization": "array",
+     "needs_sponsorship": "boolean",
+     "visa_status": "string",
+     "linkedin": "string",
+     "website": "string",
+     "github": "string",
+     "school": "string",
+     "degree": "string",
+     "years_experience": "number",
+     "languages": "array",
+     "about_you": "string",
+     "experience": "array",
+     "education": "array",
+     "resume_file": "object",
+     "resume_text": "string"
+    },
+    "evidence": [
+     "openapi/_original/worklittle-openapi.yaml#GET /business/candidates",
+     "openapi/_original/worklittle-openapi.yaml#GET /business/candidates/{id}",
+     "openapi/_original/worklittle-openapi.yaml#GET /v1/applicants",
+     "openapi/_original/worklittle-openapi.yaml#POST /v1/applicants"
+    ]
+   },
+   "zoho-recruit": {
+    "segments": [
+     "candidates"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/zoho-recruit-openapi.yml#POST /Candidates"
+    ]
+   }
+  },
+  "application": {
+   "bindbee": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "remote_id": null,
+     "modified_at": "string",
+     "raw_data": null,
+     "custom_fields": null,
+     "candidate": null,
+     "job": null,
+     "applied_at": null,
+     "rejected_at": null,
+     "source": null,
+     "credited_to": null,
+     "current_stage": null,
+     "reject_reason": null
+    },
+    "evidence": [
+     "openapi/_original/bindbee-openapi.json#GET /api/ats/v1/applications",
+     "openapi/_original/bindbee-openapi.json#GET /api/ats/v1/applications/{id}",
+     "openapi/_original/bindbee-openapi.json#POST /api/ats/v1/applications"
+    ]
+   },
+   "buk": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "pagination": "object",
+     "applications": "array",
+     "selection_process_id": "integer",
+     "referrer": "string",
+     "integration_url": "string",
+     "salary_expectation": "integer",
+     "custom_attributes": "object",
+     "application_date": "string",
+     "updated_at": "string",
+     "applicant": "object",
+     "process_stage": "object",
+     "applicant_id": "string",
+     "process_stage_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#GET /recruiting/applicants/{id}/applications",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#GET /recruiting/applications",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#PATCH /recruiting/applications/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.json#POST /recruiting/applications",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /recruiting/applicants/{id}/applications",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#GET /recruiting/applications",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#PATCH /recruiting/applications/{id}",
+     "openapi/_original/buk-data-access-api-brasil-openapi.yml#POST /recruiting/applications",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#GET /recruiting/applicants/{id}/applications",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#GET /recruiting/applications",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#PATCH /recruiting/applications/{id}",
+     "openapi/_original/buk-data-access-api-chile-openapi.json#POST /recruiting/applications"
+    ]
+   },
+   "deel-com": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "job": "object",
+     "notes": "array",
+     "hired_at": [
+      "string",
+      "null"
+     ],
+     "candidate": "object",
+     "job_board": null,
+     "created_at": "string",
+     "created_by": [
+      "string",
+      "null"
+     ],
+     "numeric_id": "integer",
+     "updated_at": "string",
+     "job_posting": null,
+     "referred_by": [
+      "string",
+      "null"
+     ],
+     "source_slug": [
+      "string",
+      "null"
+     ],
+     "archivation_reason": null,
+     "job_employment_type": null,
+     "submitter_ip_address": [
+      "string",
+      "null"
+     ],
+     "submitter_user_agent": [
+      "string",
+      "null"
+     ],
+     "archivation_reason_id": [
+      "string",
+      "null"
+     ],
+     "job_posting_publication": null,
+     "referral_form_submission": "object",
+     "moved_to_current_stage_at": "string",
+     "application_form_submission": null,
+     "job_posting_publication_state": null,
+     "application_job_criterias_matchings": "array",
+     "all_application_interview_plan_stages": "array",
+     "application_automation_rule_executions": "array",
+     "current_application_interview_plan_stage": null,
+     "stage_history": "array",
+     "created_by_hris_organization_user_id": [
+      "string",
+      "null"
+     ],
+     "current_application_interview_plan_stage_id": [
+      "string",
+      "null"
+     ],
+     "application_form_form_builder_form_submission_id": [
+      "string",
+      "null"
+     ],
+     "job_id": "string",
+     "candidate_id": "string",
+     "job_posting_id": [
+      "string",
+      "null"
+     ],
+     "job_employment_type_id": [
+      "string",
+      "null"
+     ],
+     "application_form_submission_data": [
+      "array",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/deel-com-openapi.yml#GET /ats/applications",
+     "openapi/_original/deel-com-openapi.yml#GET /ats/applications/{application_id}",
+     "openapi/_original/deel-com-openapi.yml#PATCH /ats/applications/{application_id}",
+     "openapi/_original/deel-com-openapi.yml#POST /ats/applications"
+    ]
+   },
+   "drippay": {
+    "segments": [
+     "submissions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/drippay-openapi-original.json#GET /v1/integrations/{id}/submissions"
+    ]
+   },
+   "get-on-board": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "job_id": "string",
+     "email": "string",
+     "name": "string",
+     "professional_background": "string",
+     "reason_to_apply": "string",
+     "answers": "string",
+     "github": "string",
+     "description": "string"
+    },
+    "evidence": [
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/applications",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/applications/{id}",
+     "openapi/_original/get-on-board-openapi-original.yml#POST /api/v0/applications",
+     "openapi/_original/get-on-board-openapi-original.yml#PUT /api/v0/applications/{id}"
+    ]
+   },
+   "getmattered": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "applicationStage": [
+      "string",
+      "null"
+     ],
+     "appliedAt": [
+      "string",
+      "null"
+     ],
+     "applyMode": [
+      "string",
+      "null"
+     ],
+     "submittingStartedAt": [
+      "string",
+      "null"
+     ],
+     "autoRetryStopped": "boolean",
+     "autoRetryStoppedReason": [
+      "string",
+      "null"
+     ],
+     "nextAutoRetryAt": [
+      "string",
+      "null"
+     ],
+     "updatedAt": [
+      "string",
+      "null"
+     ],
+     "submitEvidenceTier": "string",
+     "employerReceiptConfirmed": "boolean",
+     "employerConfirmation": "string",
+     "employerPageConfirmed": "boolean",
+     "landingProofs": "array",
+     "statusDisplay": null,
+     "browserbaseDebugUrl": [
+      "string",
+      "null"
+     ],
+     "browserbaseSessionId": [
+      "string",
+      "null"
+     ],
+     "browserbaseSessionUrl": [
+      "string",
+      "null"
+     ],
+     "city": [
+      "string",
+      "null"
+     ],
+     "company": [
+      "string",
+      "null"
+     ],
+     "companyLogoUrl": [
+      "string",
+      "null"
+     ],
+     "companyDomain": [
+      "string",
+      "null"
+     ],
+     "country": [
+      "string",
+      "null"
+     ],
+     "contentLocked": "boolean",
+     "revealPreviewChars": "integer",
+     "coverLetterContent": [
+      "string",
+      "null"
+     ],
+     "coverLetterDocId": [
+      "integer",
+      "null"
+     ],
+     "coverLetterPdfR2Key": [
+      "string",
+      "null"
+     ],
+     "createdAt": [
+      "string",
+      "null"
+     ],
+     "documentsOutdatedAt": [
+      "string",
+      "null"
+     ],
+     "errorCode": [
+      "string",
+      "null"
+     ],
+     "errorMessage": [
+      "string",
+      "null"
+     ],
+     "failurePhase": [
+      "string",
+      "null"
+     ],
+     "id": "integer",
+     "improvementSuggestions": [
+      "array",
+      "null"
+     ],
+     "jobListingId": [
+      "integer",
+      "null"
+     ],
+     "jobMatchId": [
+      "integer",
+      "null"
+     ],
+     "jobTitle": [
+      "string",
+      "null"
+     ],
+     "jobType": [
+      "string",
+      "null"
+     ],
+     "jobUrl": "string",
+     "location": [
+      "string",
+      "null"
+     ],
+     "matchConfidence": [
+      "integer",
+      "null"
+     ],
+     "outreachMessages": [
+      "string",
+      "null"
+     ],
+     "postedAt": [
+      "string",
+      "null"
+     ],
+     "salary": [
+      "string",
+      "null"
+     ],
+     "source": [
+      "string",
+      "null"
+     ],
+     "workArrangement": [
+      "string",
+      "null"
+     ],
+     "phase": [
+      "string",
+      "null"
+     ],
+     "preparationStatus": "string",
+     "retryCount": "integer",
+     "qualityGateAction": [
+      "string",
+      "null"
+     ],
+     "screenshotAfterUrl": [
+      "string",
+      "null"
+     ],
+     "screenshotBeforeUrl": [
+      "string",
+      "null"
+     ],
+     "screenshotKey": [
+      "string",
+      "null"
+     ],
+     "sessionLiveViewUrl": [
+      "string",
+      "null"
+     ],
+     "status": "string",
+     "submissionPlatform": [
+      "string",
+      "null"
+     ],
+     "submittedVia": [
+      "string",
+      "null"
+     ],
+     "tailoredResumeContent": [
+      "string",
+      "null"
+     ],
+     "tailoredResumeDocId": [
+      "integer",
+      "null"
+     ],
+     "tailoredResumePdfR2Key": [
+      "string",
+      "null"
+     ],
+     "tailoredResumeStructured": [
+      "object",
+      "null"
+     ],
+     "tokensRefunded": [
+      "integer",
+      "null"
+     ],
+     "refundReason": [
+      "string",
+      "null"
+     ],
+     "legitimacyTier": [
+      "string",
+      "null"
+     ],
+     "legitimacySignals": null,
+     "freshnessStatus": [
+      "string",
+      "null"
+     ],
+     "repostedCount": [
+      "integer",
+      "null"
+     ],
+     "lastRepostDate": [
+      "string",
+      "null"
+     ],
+     "linkedinApplyMethod": [
+      "string",
+      "null"
+     ],
+     "submissionInfo": "object"
+    },
+    "evidence": [
+     "openapi/_original/getmattered-openapi.json#GET /applications"
+    ]
+   },
+   "greenhouse": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/greenhouse-harvest-openapi.yml#GET /applications",
+     "openapi/_original/greenhouse-harvest-openapi.yml#GET /applications/{id}",
+     "openapi/_original/greenhouse-harvest-openapi.yml#PATCH /applications/{id}"
+    ]
+   },
+   "greenhouse-io": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "candidate_id": "integer",
+     "prospect": "boolean",
+     "applied_at": "string",
+     "rejected_at": "string",
+     "last_activity_at": "string",
+     "location": "object",
+     "source": "object",
+     "credited_to": "object",
+     "rejection_reason": "object",
+     "rejection_details": "object",
+     "jobs": "array",
+     "job_post_id": "integer",
+     "status": "string",
+     "current_stage": "object",
+     "answers": "array",
+     "custom_fields": "object",
+     "source_id": "integer",
+     "prospect_owner_id": "integer",
+     "prospect_pool_id": "integer",
+     "prospect_stage_id": "integer",
+     "job_id": "integer",
+     "initial_stage_id": "integer",
+     "referrer": "object",
+     "attachments": "array"
+    },
+    "evidence": [
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#DELETE /applications/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /applications",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /applications/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#PATCH /applications/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#POST /candidates/{id}/applications"
+    ]
+   },
+   "harver": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "magicLink": "string",
+     "applicationId": "string",
+     "currentStatus": "string",
+     "vacancyId": "string",
+     "status": "string",
+     "message": "object",
+     "rejectionReasonData": "object"
+    },
+    "evidence": [
+     "openapi/_original/harver-openapi-original.json#DELETE /applications/{applicationId}",
+     "openapi/_original/harver-openapi-original.json#GET /accounts/{accountId}/candidates/{candidateId}/applications",
+     "openapi/_original/harver-openapi-original.json#GET /applications",
+     "openapi/_original/harver-openapi-original.json#GET /applications/{applicationId}",
+     "openapi/_original/harver-openapi-original.json#PATCH /applications/{applicationId}",
+     "openapi/_original/harver-openapi-original.json#POST /vacancies/{vacancyId}/applications"
+    ]
+   },
+   "hr-partner": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "applicant_id": "string",
+     "job_listing_id": "string",
+     "stage": "string",
+     "applied_at": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/hr-partner-rest-api-openapi.yml#GET /applications",
+     "openapi/_original/hr-partner-rest-api-openapi.yml#GET /applications/{id}",
+     "openapi/_original/hr-partner-rest-api-openapi.yml#POST /applications",
+     "openapi/_original/hr-partner-rest-api-openapi.yml#POST /applications/{id}"
+    ]
+   },
+   "kombo": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "remote_id": [
+      "string",
+      "null"
+     ],
+     "outcome": [
+      "string",
+      "null"
+     ],
+     "rejection_reason_name": [
+      "string",
+      "null"
+     ],
+     "rejected_at": [
+      "string",
+      "null"
+     ],
+     "current_stage_id": [
+      "string",
+      "null"
+     ],
+     "job_id": [
+      "string",
+      "null"
+     ],
+     "candidate_id": [
+      "string",
+      "null"
+     ],
+     "screening_question_answers": [
+      "array",
+      "null"
+     ],
+     "custom_fields": [
+      "object",
+      "null"
+     ],
+     "integration_fields": "array",
+     "remote_url": [
+      "string",
+      "null"
+     ],
+     "changed_at": "string",
+     "remote_deleted_at": [
+      "string",
+      "null"
+     ],
+     "remote_created_at": [
+      "string",
+      "null"
+     ],
+     "remote_updated_at": [
+      "string",
+      "null"
+     ],
+     "remote_data": [
+      "object",
+      "null"
+     ],
+     "candidate": [
+      "object",
+      "null"
+     ],
+     "current_stage": [
+      "object",
+      "null"
+     ],
+     "job": [
+      "object",
+      "null"
+     ],
+     "interviews": "array",
+     "offers": "array",
+     "stage_id": "string",
+     "attachments": "array",
+     "source": "object",
+     "sourced_by": "object",
+     "gdpr_consent": "object",
+     "remote_fields": null,
+     "job_posting_id": "string",
+     "status": "string",
+     "candidate_email": "string",
+     "proxy_email": [
+      "string",
+      "null"
+     ],
+     "created_at": "string",
+     "updated_at": "string",
+     "query_params": "object"
+    },
+    "evidence": [
+     "openapi/_original/kombo-openapi.json#GET /ai-apply/applications",
+     "openapi/_original/kombo-openapi.json#GET /ats/applications",
+     "openapi/_original/kombo-openapi.json#POST /ai-apply/unified-api/jobs/{job_id}/applications",
+     "openapi/_original/kombo-openapi.json#POST /ats/jobs/{job_id}/applications"
+    ]
+   },
+   "lever-co": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/lever-data-api-openapi.yml#GET /opportunities/{id}/applications"
+    ]
+   },
+   "litmus-hiring": {
+    "segments": [
+     "submissions"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/litmus-hiring-openapi.yml#GET /submissions/{id}"
+    ]
+   },
+   "nomad-health": {
+    "segments": [
+     "applications",
+     "application"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/application/",
+     "openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/application_center/applications/",
+     "openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/applications/{id}/",
+     "openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/quick-apply/application/{application_id}/",
+     "openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/quick-apply/applications/",
+     "openapi/_original/nomad-health-platform-openapi.yml#PATCH /api/v1/application/",
+     "openapi/_original/nomad-health-platform-openapi.yml#PATCH /api/v1/applications/{id}/",
+     "openapi/_original/nomad-health-platform-openapi.yml#POST /api/v1/quick-apply/applications/",
+     "openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/application/",
+     "openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/application_center/applications/",
+     "openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/applications/{id}/",
+     "openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/quick-apply/application/{application_id}/"
+    ]
+   },
+   "pinpoint": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object"
+    },
+    "evidence": [
+     "openapi/_original/pinpoint-openapi.yml#DELETE /applications/{id}",
+     "openapi/_original/pinpoint-openapi.yml#GET /applications",
+     "openapi/_original/pinpoint-openapi.yml#GET /applications/{id}",
+     "openapi/_original/pinpoint-openapi.yml#PATCH /applications/{id}",
+     "openapi/_original/pinpoint-openapi.yml#POST /applications"
+    ]
+   },
+   "sense-talent-labs": {
+    "segments": [
+     "submissions"
+    ],
+    "operations": [
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "message": "string",
+     "request_id": "string",
+     "bill_rate": "number",
+     "candidate_id": "string",
+     "client_contact_id": "string",
+     "comments": "string",
+     "company_id": "string",
+     "custom_array1": "array",
+     "custom_array2": "array",
+     "custom_array3": "array",
+     "custom_array4": "array",
+     "custom_array5": "array",
+     "custom_date1": "string",
+     "custom_date2": "string",
+     "custom_date3": "string",
+     "custom_date4": "string",
+     "custom_date5": "string",
+     "custom_date6": "string",
+     "custom_datetime1": "string",
+     "custom_datetime2": "string",
+     "custom_datetime3": "string",
+     "custom_datetime4": "string",
+     "custom_datetime5": "string",
+     "custom_datetime6": "string",
+     "custom_float1": "number",
+     "custom_float2": "number",
+     "custom_float3": "number",
+     "custom_float4": "number",
+     "custom_float5": "number",
+     "custom_float6": "number",
+     "custom_integer1": "integer",
+     "custom_integer2": "integer",
+     "custom_integer3": "integer",
+     "custom_integer4": "integer",
+     "custom_integer5": "integer",
+     "custom_integer6": "integer",
+     "custom_text1": "string",
+     "custom_text10": "string",
+     "custom_text11": "string",
+     "custom_text12": "string",
+     "custom_text13": "string",
+     "custom_text14": "string",
+     "custom_text15": "string",
+     "custom_text16": "string",
+     "custom_text17": "string",
+     "custom_text18": "string",
+     "custom_text19": "string",
+     "custom_text2": "string",
+     "custom_text20": "string",
+     "custom_text21": "string",
+     "custom_text22": "string",
+     "custom_text23": "string",
+     "custom_text24": "string",
+     "custom_text25": "string",
+     "custom_text26": "string",
+     "custom_text27": "string",
+     "custom_text28": "string",
+     "custom_text29": "string",
+     "custom_text3": "string",
+     "custom_text30": "string",
+     "custom_text31": "string",
+     "custom_text32": "string",
+     "custom_text33": "string",
+     "custom_text34": "string",
+     "custom_text35": "string",
+     "custom_text36": "string",
+     "custom_text37": "string",
+     "custom_text38": "string",
+     "custom_text39": "string",
+     "custom_text4": "string",
+     "custom_text40": "string",
+     "custom_text41": "string",
+     "custom_text42": "string",
+     "custom_text43": "string",
+     "custom_text44": "string",
+     "custom_text45": "string",
+     "custom_text46": "string",
+     "custom_text47": "string",
+     "custom_text48": "string",
+     "custom_text49": "string",
+     "custom_text5": "string",
+     "custom_text50": "string",
+     "custom_text6": "string",
+     "custom_text7": "string",
+     "custom_text8": "string",
+     "custom_text9": "string",
+     "custom_text_block1": "string",
+     "custom_text_block2": "string",
+     "custom_text_block3": "string",
+     "custom_text_block4": "string",
+     "custom_text_block5": "string",
+     "custom_text_block6": "string",
+     "date_added": "string",
+     "date_application": "string",
+     "date_end": "string",
+     "date_last_modified": "string",
+     "date_start": "string",
+     "id": "string",
+     "internal_user_id": "string",
+     "internal_user_id2": "string",
+     "internal_user_id3": "string",
+     "is_archived": "boolean",
+     "is_deleted": "boolean",
+     "job_order_id": "string",
+     "owner_id": "string",
+     "pay_rate": "number",
+     "salary": "number",
+     "sending_user_id": "string",
+     "source": "string",
+     "status": "string",
+     "data": "object",
+     "errors": "array",
+     "resource_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/sense-talent-labs-sense-api-openapi.json#GET /submissions/{id}",
+     "openapi/_original/sense-talent-labs-sense-api-openapi.json#PATCH /submissions/{id}",
+     "openapi/_original/sense-talent-labs-sense-api-openapi.json#POST /submissions"
+    ]
+   },
+   "smartrecruiters": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "candidateId": "string",
+     "jobId": "string",
+     "jobTitle": "string",
+     "status": "string",
+     "appliedOn": "string",
+     "updatedOn": "string",
+     "source": "object"
+    },
+    "evidence": [
+     "openapi/_original/smartrecruiters-candidates-openapi.yml#GET /candidates/{candidateId}/applications"
+    ]
+   },
+   "truto": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "remoteId": "string",
+     "candidateId": "string",
+     "jobId": "string",
+     "status": "string",
+     "currentStageId": "string",
+     "rejectReasonId": "string",
+     "source": "string",
+     "appliedAt": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/truto-unified-ats-openapi.yml#GET /applications"
+    ]
+   },
+   "worklittle": {
+    "segments": [
+     "applications"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/worklittle-openapi.yaml#GET /business/jobs/{id}/applications",
+     "openapi/_original/worklittle-openapi.yaml#GET /v1/applications"
+    ]
+   }
+  },
+  "stage": {
+   "eightfold-ai": {
+    "segments": [
+     "stages"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "message": "string",
+     "isReject": "boolean",
+     "newStage": "string",
+     "actionUserEmail": "string",
+     "scheduledRejectionTime": "integer",
+     "applicationAnswers": "array",
+     "prevSubStage": "string",
+     "reason": "string",
+     "newSubStage": "string",
+     "prevStage": "string",
+     "applicationCreationSource": null,
+     "positionId": "string",
+     "comment": "string",
+     "applicationId": "string"
+    },
+    "evidence": [
+     "openapi/_original/eightfold-ai-api-server-v2-service-service-openapi.yml#POST /api/v2/core/profiles/{profileId}/application/stages"
+    ]
+   },
+   "fountain-com": {
+    "segments": [
+     "stages"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "type": "string",
+     "position": "integer"
+    },
+    "evidence": [
+     "openapi/_original/fountain-com-openapi.yml#GET /funnels/{funnel_id}/stages",
+     "openapi/_original/fountain-com-openapi.yml#GET /stages/{id}"
+    ]
+   },
+   "getmattered": {
+    "segments": [
+     "stage"
+    ],
+    "operations": [
+     "PATCH collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "applicationStage": "string",
+     "id": "integer",
+     "updatedAt": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/getmattered-openapi.json#PATCH /applications/{resultId}/stage",
+     "openapi/_original/getmattered-openapi.json#PUT /jobs/{id}/stage"
+    ]
+   },
+   "greenhouse-io": {
+    "segments": [
+     "stages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "priority": "integer",
+     "created_at": "string",
+     "updated_at": "string",
+     "interviews": "array"
+    },
+    "evidence": [
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /jobs/{job_id}/stages"
+    ]
+   },
+   "kombo": {
+    "segments": [
+     "stage"
+    ],
+    "operations": [
+     "PUT collection"
+    ],
+    "properties": {
+     "status": "string",
+     "data": "object",
+     "warnings": "array",
+     "stage_id": "string",
+     "remote_fields": null
+    },
+    "evidence": [
+     "openapi/_original/kombo-openapi.json#PUT /ats/applications/{application_id}/stage"
+    ]
+   },
+   "lever-co": {
+    "segments": [
+     "stages"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/lever-data-api-openapi.yml#GET /stages",
+     "openapi/_original/lever-data-api-openapi.yml#GET /stages/{id}"
+    ]
+   },
+   "truto": {
+    "segments": [
+     "stages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "remoteId": "string",
+     "name": "string",
+     "order": "integer",
+     "probability": "integer",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/truto-unified-crm-openapi.yml#GET /stages"
+    ]
+   },
+   "workable": {
+    "segments": [
+     "stages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/workable-openapi.yml#GET /jobs/{shortcode}/stages",
+     "openapi/_original/workable-openapi.yml#GET /stages"
+    ]
+   },
+   "worklittle": {
+    "segments": [
+     "pipeline-stages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/worklittle-openapi.yaml#GET /business/jobs/pipeline-stages"
+    ]
+   }
+  },
+  "interview": {
+   "bindbee": {
+    "segments": [
+     "scheduled-interviews"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "remote_id": null,
+     "modified_at": "string",
+     "raw_data": null,
+     "custom_fields": null,
+     "application": null,
+     "job_interview_stage": null,
+     "organizer": null,
+     "interviewers": null,
+     "location": null,
+     "start_at": null,
+     "end_at": null,
+     "remote_created_at": null,
+     "remote_updated_at": null,
+     "status": null
+    },
+    "evidence": [
+     "openapi/_original/bindbee-openapi.json#GET /api/ats/v1/scheduled-interviews",
+     "openapi/_original/bindbee-openapi.json#GET /api/ats/v1/scheduled-interviews/{id}",
+     "openapi/_original/bindbee-openapi.json#POST /api/ats/v1/scheduled-interviews"
+    ]
+   },
+   "deel-com": {
+    "segments": [
+     "interviews"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "ends_at": [
+      "string",
+      "null"
+     ],
+     "timezone": [
+      "string",
+      "null"
+     ],
+     "starts_at": [
+      "string",
+      "null"
+     ],
+     "created_at": "string",
+     "updated_at": "string",
+     "application": "object",
+     "meeting_url": [
+      "string",
+      "null"
+     ],
+     "status_enum": "string",
+     "cancelled_at": [
+      "string",
+      "null"
+     ],
+     "has_happened": "boolean",
+     "cancellation_reason": [
+      "string",
+      "null"
+     ],
+     "application_activity": "object",
+     "interview_plan_stage": null,
+     "cancellation_reason_id": [
+      "string",
+      "null"
+     ],
+     "application_activity_id": "string",
+     "application_interview_plan_stage_id": [
+      "string",
+      "null"
+     ],
+     "created_by_hris_organization_user_id": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/deel-com-openapi.yml#GET /ats/interviews"
+    ]
+   },
+   "greenhouse-io": {
+    "segments": [
+     "scheduled_interviews"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "application_id": "integer",
+     "interview": "object",
+     "starts_at": "string",
+     "ends_at": "string",
+     "location": "string",
+     "video_conferencing_url": "string",
+     "status": "string",
+     "interviewers": "array"
+    },
+    "evidence": [
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#DELETE /scheduled_interviews/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /applications/{id}/scheduled_interviews",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /scheduled_interviews",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#GET /scheduled_interviews/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#PATCH /scheduled_interviews/{id}",
+     "openapi/_original/greenhouse-harvest-api-openapi.yml#POST /scheduled_interviews"
+    ]
+   },
+   "kombo": {
+    "segments": [
+     "interviews"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "data": "object",
+     "title": "string",
+     "start_time": "string",
+     "end_time": "string",
+     "interviewer_user_ids": "array",
+     "organizer_user_id": "string",
+     "location": "object",
+     "interview_id": "string",
+     "id": "string",
+     "remote_id": [
+      "string",
+      "null"
+     ],
+     "starting_at": [
+      "string",
+      "null"
+     ],
+     "ending_at": [
+      "string",
+      "null"
+     ],
+     "video_conferencing_url": [
+      "string",
+      "null"
+     ],
+     "application_id": [
+      "string",
+      "null"
+     ],
+     "stage_id": [
+      "string",
+      "null"
+     ],
+     "canceled": [
+      "boolean",
+      "null"
+     ],
+     "remote_created_at": [
+      "string",
+      "null"
+     ],
+     "remote_updated_at": [
+      "string",
+      "null"
+     ],
+     "remote_data": [
+      "object",
+      "null"
+     ],
+     "changed_at": "string",
+     "remote_deleted_at": [
+      "string",
+      "null"
+     ],
+     "users": "array",
+     "application": [
+      "object",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/kombo-openapi.json#GET /ats/interviews",
+     "openapi/_original/kombo-openapi.json#PATCH /ats/applications/{application_id}/interviews",
+     "openapi/_original/kombo-openapi.json#POST /ats/applications/{application_id}/interviews"
+    ]
+   },
+   "lever-co": {
+    "segments": [
+     "interviews"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/lever-data-api-openapi.yml#DELETE /opportunities/{id}/interviews/{interviewId}",
+     "openapi/_original/lever-data-api-openapi.yml#GET /opportunities/{id}/interviews",
+     "openapi/_original/lever-data-api-openapi.yml#POST /opportunities/{id}/interviews",
+     "openapi/_original/lever-data-api-openapi.yml#PUT /opportunities/{id}/interviews/{interviewId}"
+    ]
+   },
+   "micro1": {
+    "segments": [
+     "interview",
+     "interviews"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "interview_id": "string",
+     "invite_url": "string",
+     "interview_name": "string",
+     "skills": "array",
+     "custom_question_list": "array",
+     "interview_language": "string",
+     "can_change_interview_language": "boolean",
+     "only_coding_round": "boolean",
+     "is_coding_round_required": "boolean",
+     "selected_coding_language": "string",
+     "coding_exercise_details": "string",
+     "is_proctoring_required": "boolean",
+     "custom_questions": "array",
+     "date_created": "string",
+     "date_modified": "string",
+     "status": "string",
+     "message": "string",
+     "skill": "string",
+     "questions": "array"
+    },
+    "evidence": [
+     "openapi/_original/micro1-ai-recruiter-openapi-original.json#DELETE /interview/{interviewId}",
+     "openapi/_original/micro1-ai-recruiter-openapi-original.json#GET /interviews",
+     "openapi/_original/micro1-ai-recruiter-openapi-original.json#POST /custom/interview",
+     "openapi/_original/micro1-ai-recruiter-openapi-original.json#POST /interview",
+     "openapi/_original/micro1-ai-recruiter-openapi-original.json#POST /mock/interview",
+     "openapi/_original/micro1-ai-recruiter-openapi-original.json#PUT /interview/{interviewId}",
+     "openapi/_original/micro1-ai-recruiter-openapi.yml#DELETE /interview/{interviewId}",
+     "openapi/_original/micro1-ai-recruiter-openapi.yml#GET /interviews",
+     "openapi/_original/micro1-ai-recruiter-openapi.yml#POST /custom/interview",
+     "openapi/_original/micro1-ai-recruiter-openapi.yml#POST /interview",
+     "openapi/_original/micro1-ai-recruiter-openapi.yml#POST /mock/interview",
+     "openapi/_original/micro1-ai-recruiter-openapi.yml#PUT /interview/{interviewId}"
+    ]
+   },
+   "talkpush": {
+    "segments": [
+     "interview"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "api_key": "string",
+     "answers": "array"
+    },
+    "evidence": [
+     "openapi/_original/talkpush-openapi.json#POST /campaign_invitations/{id}/interview"
+    ]
+   },
+   "trakstar": {
+    "segments": [
+     "interviews"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "candidate": "integer",
+     "scheduled_at": "string",
+     "interviewer": "string",
+     "notes": "string",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/trakstar-hire-api-openapi.yml#GET /interviews",
+     "openapi/_original/trakstar-hire-api-openapi.yml#GET /interviews/{id}"
+    ]
+   },
+   "vcv": {
+    "segments": [
+     "interviews"
+    ],
+    "operations": [
+     "GET item",
+     "PATCH item",
+     "POST item"
+    ],
+    "properties": {
+     "id": "integer",
+     "date_create": "string",
+     "token": "string",
+     "interview_stage_id": "integer",
+     "candidate_id": "integer",
+     "candidate": null,
+     "_embedded": "object",
+     "response_id": "integer",
+     "agreed_at": "string",
+     "utm_source": "string",
+     "utm_medium": "string",
+     "utm_campaign": "string",
+     "utm_content": "string",
+     "utm_term": "string",
+     "scenario_id": "integer",
+     "state_id": "integer",
+     "status": "boolean",
+     "timezone": "string",
+     "variables": "array"
+    },
+    "evidence": [
+     "openapi/_original/vcv-openapi.yml#GET /api/v3/public/interviews/{token}",
+     "openapi/_original/vcv-openapi.yml#PATCH /api/v3/public/interviews/{token}",
+     "openapi/_original/vcv-openapi.yml#POST /api/v3/chatbot/interviews/{interview_id}"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "affinda",
+    "bamboohr",
+    "bindbee",
+    "buk",
+    "checkr",
+    "codesignal",
+    "comeet",
+    "contra",
+    "deel-com",
+    "directhireagents-com",
+    "drippay",
+    "eightfold-ai",
+    "employ-inc",
+    "employment-hero",
+    "factorial-hr",
+    "fountain-com",
+    "freshteam",
+    "gatiflow",
+    "get-on-board",
+    "getmattered",
+    "google-cloud-talent-solution",
+    "greenhouse",
+    "greenhouse-io",
+    "harri",
+    "harver",
+    "heymilo",
+    "hr-partner",
+    "indeed",
+    "kolayik",
+    "kombo",
+    "lever-co",
+    "linkedin",
+    "litmus-hiring",
+    "micro1",
+    "microsoft-linkedin",
+    "namely",
+    "nobueno",
+    "nomad-health",
+    "offendersearch-api",
+    "paradox",
+    "peopleforce",
+    "personio",
+    "pinpoint",
+    "ploid",
+    "recal",
+    "recruitee",
+    "remote-com",
+    "rocketreach",
+    "sage-hr",
+    "sense-talent-labs",
+    "smartrecruiters",
+    "talkpush",
+    "teamohana",
+    "themuse",
+    "trakstar",
+    "truto",
+    "vcv",
+    "wizehire",
+    "workable",
+    "worklittle",
+    "workstream"
+   ],
+   "kebab-case": [
+    "bindbee",
+    "buk",
+    "codesignal",
+    "contra",
+    "deel-com",
+    "directhireagents-com",
+    "drippay",
+    "eightfold-ai",
+    "employ-inc",
+    "employment-hero",
+    "fountain-com",
+    "gatiflow",
+    "getmattered",
+    "harver",
+    "heymilo",
+    "hr-partner",
+    "kolayik",
+    "kombo",
+    "nobueno",
+    "nomad-health",
+    "offendersearch-api",
+    "paradox",
+    "personio",
+    "rocketreach",
+    "sage-hr",
+    "sense-talent-labs",
+    "smartrecruiters",
+    "truto",
+    "vcv",
+    "workable",
+    "worklittle"
+   ],
+   "snake_case": [
+    "affinda",
+    "bamboohr",
+    "bindbee",
+    "buk",
+    "checkr",
+    "deel-com",
+    "eightfold-ai",
+    "employment-hero",
+    "factorial-hr",
+    "freshteam",
+    "get-on-board",
+    "greenhouse",
+    "greenhouse-io",
+    "harri",
+    "kombo",
+    "lever-co",
+    "namely",
+    "nobueno",
+    "nomad-health",
+    "paradox",
+    "peopleforce",
+    "remote-com",
+    "rocketreach",
+    "talkpush",
+    "workable",
+    "workstream"
+   ],
+   "other": [
+    "ashby",
+    "ashby-hq",
+    "buk",
+    "checkr",
+    "deel-com",
+    "directhireagents-com",
+    "employment-hero",
+    "google-cloud-talent-solution",
+    "harver",
+    "linkedin",
+    "zoho-recruit"
+   ],
+   "camelCase": [
+    "buk",
+    "employment-hero",
+    "harver",
+    "linkedin",
+    "microsoft-linkedin",
+    "rocketreach",
+    "workday-recruiting"
+   ],
+   "PascalCase": [
+    "deel-com",
+    "eightfold-ai",
+    "employment-hero",
+    "teamohana",
+    "zoho-recruit"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "affinda",
+    "bamboohr",
+    "bindbee",
+    "buk",
+    "checkr",
+    "codesignal",
+    "comeet",
+    "contra",
+    "deel-com",
+    "directhireagents-com",
+    "drippay",
+    "eightfold-ai",
+    "employ-inc",
+    "employment-hero",
+    "factorial-hr",
+    "fountain-com",
+    "freshteam",
+    "gatiflow",
+    "get-on-board",
+    "getmattered",
+    "greenhouse",
+    "greenhouse-io",
+    "harri",
+    "harver",
+    "heymilo",
+    "hr-partner",
+    "indeed",
+    "kolayik",
+    "kombo",
+    "lever-co",
+    "linkedin",
+    "micro1",
+    "microsoft-linkedin",
+    "namely",
+    "nobueno",
+    "offendersearch-api",
+    "paradox",
+    "peopleforce",
+    "personio",
+    "pinpoint",
+    "ploid",
+    "recal",
+    "recruitee",
+    "remote-com",
+    "rocketreach",
+    "sage-hr",
+    "smartrecruiters",
+    "talkpush",
+    "teamohana",
+    "themuse",
+    "trakstar",
+    "truto",
+    "vcv",
+    "worklittle",
+    "workstream"
+   ],
+   "snake_case": [
+    "affinda",
+    "bindbee",
+    "buk",
+    "checkr",
+    "codesignal",
+    "deel-com",
+    "employ-inc",
+    "factorial-hr",
+    "fountain-com",
+    "freshteam",
+    "gatiflow",
+    "get-on-board",
+    "greenhouse",
+    "greenhouse-io",
+    "harri",
+    "harver",
+    "heymilo",
+    "hr-partner",
+    "kolayik",
+    "kombo",
+    "micro1",
+    "namely",
+    "nobueno",
+    "paradox",
+    "peopleforce",
+    "ploid",
+    "remote-com",
+    "rocketreach",
+    "sage-hr",
+    "talkpush",
+    "themuse",
+    "truto",
+    "vcv",
+    "worklittle",
+    "workstream"
+   ],
+   "camelCase": [
+    "bamboohr",
+    "contra",
+    "deel-com",
+    "drippay",
+    "eightfold-ai",
+    "employment-hero",
+    "getmattered",
+    "harver",
+    "indeed",
+    "kolayik",
+    "linkedin",
+    "microsoft-linkedin",
+    "nobueno",
+    "offendersearch-api",
+    "ploid",
+    "recal",
+    "teamohana",
+    "trakstar"
+   ],
+   "other": [
+    "buk",
+    "checkr",
+    "deel-com",
+    "linkedin",
+    "namely",
+    "nobueno",
+    "pinpoint",
+    "talkpush",
+    "trakstar",
+    "vcv",
+    "workstream"
+   ],
+   "PascalCase": [
+    "buk",
+    "employment-hero"
+   ],
+   "kebab-case": [
+    "teamohana"
+   ]
+  },
+  "pagination_param": {
+   "page": [
+    "buk",
+    "checkr",
+    "codesignal",
+    "employ-inc",
+    "factorial-hr",
+    "fountain-com",
+    "freshteam",
+    "get-on-board",
+    "getmattered",
+    "greenhouse",
+    "greenhouse-io",
+    "harri",
+    "kolayik",
+    "micro1",
+    "namely",
+    "nobueno",
+    "offendersearch-api",
+    "paradox",
+    "peopleforce",
+    "ploid",
+    "remote-com",
+    "sage-hr",
+    "talkpush",
+    "themuse",
+    "truto",
+    "vcv",
+    "workstream"
+   ],
+   "limit": [
+    "affinda",
+    "contra",
+    "deel-com",
+    "drippay",
+    "eightfold-ai",
+    "gatiflow",
+    "getmattered",
+    "harri",
+    "heymilo",
+    "kolayik",
+    "lever-co",
+    "micro1",
+    "namely",
+    "offendersearch-api",
+    "paradox",
+    "personio",
+    "ploid",
+    "smartrecruiters",
+    "trakstar",
+    "truto",
+    "vcv",
+    "worklittle"
+   ],
+   "per_page": [
+    "buk",
+    "checkr",
+    "codesignal",
+    "employ-inc",
+    "factorial-hr",
+    "fountain-com",
+    "get-on-board",
+    "greenhouse",
+    "greenhouse-io",
+    "namely",
+    "nobueno",
+    "offendersearch-api",
+    "peopleforce",
+    "sage-hr",
+    "talkpush",
+    "workstream"
+   ],
+   "offset": [
+    "affinda",
+    "contra",
+    "deel-com",
+    "drippay",
+    "getmattered",
+    "harri",
+    "lever-co",
+    "paradox",
+    "smartrecruiters",
+    "trakstar",
+    "worklittle"
+   ],
+   "cursor": [
+    "bindbee",
+    "deel-com",
+    "drippay",
+    "fountain-com",
+    "getmattered",
+    "kombo",
+    "personio",
+    "ploid",
+    "truto",
+    "worklittle"
+   ],
+   "page_size": [
+    "bindbee",
+    "buk",
+    "deel-com",
+    "employment-hero",
+    "kombo",
+    "microsoft-linkedin",
+    "pinpoint",
+    "remote-com"
+   ],
+   "start": [
+    "affinda",
+    "bamboohr",
+    "buk",
+    "eightfold-ai",
+    "kolayik",
+    "linkedin",
+    "recal"
+   ],
+   "count": [
+    "affinda",
+    "deel-com",
+    "linkedin",
+    "teamohana"
+   ],
+   "starting_after": [
+    "getmattered",
+    "heymilo"
+   ],
+   "after": [
+    "indeed",
+    "namely"
+   ],
+   "next": [
+    "deel-com"
+   ],
+   "before": [
+    "drippay"
+   ],
+   "skip": [
+    "lever-co"
+   ],
+   "page_token": [
+    "microsoft-linkedin"
+   ],
+   "size": [
+    "themuse"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "affinda",
+    "bamboohr",
+    "bindbee",
+    "buk",
+    "checkr",
+    "deel-com",
+    "directhireagents-com",
+    "drippay",
+    "employ-inc",
+    "employment-hero",
+    "factorial-hr",
+    "fountain-com",
+    "freshteam",
+    "get-on-board",
+    "getmattered",
+    "greenhouse",
+    "greenhouse-io",
+    "harri",
+    "hr-partner",
+    "kolayik",
+    "kombo",
+    "lever-co",
+    "litmus-hiring",
+    "namely",
+    "nobueno",
+    "nomad-health",
+    "offendersearch-api",
+    "paradox",
+    "peopleforce",
+    "pinpoint",
+    "ploid",
+    "recal",
+    "recruitee",
+    "sage-hr",
+    "sense-talent-labs",
+    "talkpush",
+    "teamohana",
+    "themuse",
+    "trakstar",
+    "truto",
+    "vcv",
+    "workable",
+    "worklittle",
+    "workstream"
+   ],
+   "snake_case": [
+    "affinda",
+    "bindbee",
+    "buk",
+    "checkr",
+    "comeet",
+    "deel-com",
+    "employment-hero",
+    "fountain-com",
+    "gatiflow",
+    "get-on-board",
+    "greenhouse",
+    "greenhouse-io",
+    "harri",
+    "heymilo",
+    "kombo",
+    "linkedin",
+    "nobueno",
+    "nomad-health",
+    "paradox",
+    "personio",
+    "recruitee",
+    "remote-com",
+    "sage-hr",
+    "talkpush",
+    "vcv",
+    "wizehire",
+    "workstream",
+    "zoho-recruit"
+   ],
+   "camelCase": [
+    "bamboohr",
+    "codesignal",
+    "contra",
+    "deel-com",
+    "directhireagents-com",
+    "drippay",
+    "eightfold-ai",
+    "employment-hero",
+    "getmattered",
+    "google-cloud-talent-solution",
+    "harri",
+    "harver",
+    "hr-partner",
+    "indeed",
+    "kolayik",
+    "lever-co",
+    "linkedin",
+    "micro1",
+    "microsoft-linkedin",
+    "offendersearch-api",
+    "ploid",
+    "recal",
+    "sense-talent-labs",
+    "smartrecruiters",
+    "trakstar",
+    "vcv",
+    "worklittle"
+   ],
+   "PascalCase": [
+    "linkedin"
+   ],
+   "other": [
+    "linkedin"
+   ],
+   "kebab-case": [
+    "namely"
+   ]
+  },
+  "property": {
+   "lower": [
+    "bindbee",
+    "buk",
+    "checkr",
+    "comeet",
+    "deel-com",
+    "eightfold-ai",
+    "employment-hero",
+    "fountain-com",
+    "freshteam",
+    "get-on-board",
+    "getmattered",
+    "google-cloud-talent-solution",
+    "greenhouse-io",
+    "harri",
+    "harver",
+    "heymilo",
+    "hr-partner",
+    "indeed",
+    "kombo",
+    "lever-co",
+    "micro1",
+    "namely",
+    "nobueno",
+    "paradox",
+    "pinpoint",
+    "sage-hr",
+    "sense-talent-labs",
+    "smartrecruiters",
+    "talkpush",
+    "themuse",
+    "trakstar",
+    "truto",
+    "vcv",
+    "worklittle",
+    "workstream"
+   ],
+   "snake_case": [
+    "bindbee",
+    "buk",
+    "checkr",
+    "comeet",
+    "deel-com",
+    "fountain-com",
+    "freshteam",
+    "get-on-board",
+    "greenhouse-io",
+    "harri",
+    "heymilo",
+    "hr-partner",
+    "kombo",
+    "micro1",
+    "namely",
+    "nobueno",
+    "paradox",
+    "sage-hr",
+    "sense-talent-labs",
+    "talkpush",
+    "themuse",
+    "trakstar",
+    "vcv",
+    "worklittle",
+    "workstream"
+   ],
+   "camelCase": [
+    "eightfold-ai",
+    "employment-hero",
+    "getmattered",
+    "google-cloud-talent-solution",
+    "harver",
+    "indeed",
+    "lever-co",
+    "smartrecruiters",
+    "truto"
+   ],
+   "other": [
+    "vcv"
+   ]
+  }
+ }
+}

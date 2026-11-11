@@ -1,0 +1,36 @@
+provider: greenhouse
+apis_io: https://apis.io/providers/greenhouse/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/greenhouse-harvest-openapi.yml#GET /jobs
+    - openapi/_original/greenhouse-harvest-openapi.yml#GET /jobs/{id}
+    - openapi/_original/greenhouse-harvest-openapi.yml#PATCH /jobs/{id}
+    - openapi/_original/greenhouse-ingestion-openapi.yml#GET /jobs
+    - openapi/_original/greenhouse-job-board-openapi.yml#GET /jobs
+  candidate:
+    path_segment:
+    - candidates
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/greenhouse-harvest-openapi.yml#DELETE /candidates/{id}
+    - openapi/_original/greenhouse-harvest-openapi.yml#GET /candidates
+    - openapi/_original/greenhouse-harvest-openapi.yml#GET /candidates/{id}
+    - openapi/_original/greenhouse-harvest-openapi.yml#PATCH /candidates/{id}
+    - openapi/_original/greenhouse-harvest-openapi.yml#POST /candidates
+  application:
+    path_segment:
+    - applications
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/greenhouse-harvest-openapi.yml#GET /applications
+    - openapi/_original/greenhouse-harvest-openapi.yml#GET /applications/{id}
+    - openapi/_original/greenhouse-harvest-openapi.yml#PATCH /applications/{id}

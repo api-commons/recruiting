@@ -1,0 +1,47 @@
+provider: getmattered
+apis_io: https://apis.io/providers/getmattered/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      name: title
+      status: status
+      description: description
+      created_at: createdAt
+      location: location
+      updated_at: updatedAt
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/getmattered-openapi.json#DELETE /jobs/{id}
+    - openapi/_original/getmattered-openapi.json#GET /jobs
+    - openapi/_original/getmattered-openapi.json#GET /jobs/{id}
+    - openapi/_original/getmattered-openapi.json#POST /jobs
+    - openapi/_original/getmattered-openapi.json#PUT /jobs/{id}
+  application:
+    path_segment:
+    - applications
+    properties:
+      id: id
+      updated_at: updatedAt
+      created_at:
+      - appliedAt
+      - createdAt
+      source: source
+      status: status
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/getmattered-openapi.json#GET /applications
+  stage:
+    path_segment:
+    - stage
+    properties:
+      id: id
+      updated_at: updatedAt
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/getmattered-openapi.json#PATCH /applications/{resultId}/stage
+    - openapi/_original/getmattered-openapi.json#PUT /jobs/{id}/stage

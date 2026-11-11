@@ -1,0 +1,46 @@
+provider: lever-co
+apis_io: https://apis.io/providers/lever-co/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - postings
+    - requisitions
+    properties:
+      id: id
+      status: state
+      created_at: createdAt
+      updated_at: updatedAt
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/lever-data-api-openapi.yml#DELETE /requisitions/{id}
+    - openapi/_original/lever-data-api-openapi.yml#GET /postings
+    - openapi/_original/lever-data-api-openapi.yml#GET /postings/{id}
+    - openapi/_original/lever-data-api-openapi.yml#GET /requisitions
+    - openapi/_original/lever-data-api-openapi.yml#POST /postings
+  application:
+    path_segment:
+    - applications
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/lever-data-api-openapi.yml#GET /opportunities/{id}/applications
+  stage:
+    path_segment:
+    - stages
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/lever-data-api-openapi.yml#GET /stages
+    - openapi/_original/lever-data-api-openapi.yml#GET /stages/{id}
+  interview:
+    path_segment:
+    - interviews
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/lever-data-api-openapi.yml#DELETE /opportunities/{id}/interviews/{interviewId}
+    - openapi/_original/lever-data-api-openapi.yml#GET /opportunities/{id}/interviews
+    - openapi/_original/lever-data-api-openapi.yml#POST /opportunities/{id}/interviews
+    - openapi/_original/lever-data-api-openapi.yml#PUT /opportunities/{id}/interviews/{interviewId}

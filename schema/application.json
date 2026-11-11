@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/recruiting/main/schema/application.json",
+  "title": "Application",
+  "description": "The common application in Recruiting, distilled from 11 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.909,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "id",
+        "remote_id",
+        "remoteId"
+      ]
+    },
+    "job_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.727,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "job_id",
+        "job",
+        "job_posting_id",
+        "jobId",
+        "vacancyId"
+      ]
+    },
+    "candidate_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.636,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "candidate",
+        "candidate_id",
+        "candidateId",
+        "applicant",
+        "applicant_id"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.636,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "custom_fields",
+        "attributes",
+        "custom_attributes"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.636,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "modified_at",
+        "last_activity_at"
+      ],
+      "format": "date-time"
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.545,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "applied_at",
+        "created_at",
+        "appliedAt",
+        "createdAt",
+        "remote_created_at"
+      ],
+      "format": "date-time"
+    },
+    "source": {
+      "type": "object",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.545,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "source"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.545,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "status",
+        "currentStatus"
+      ]
+    },
+    "rejected_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "rejected_at"
+      ],
+      "format": "date-time"
+    },
+    "stage": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "current_stage",
+        "stage_id"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "type"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "recruiting",
+    "concept": "application",
+    "providers": 11,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

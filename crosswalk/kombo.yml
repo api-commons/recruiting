@@ -1,0 +1,120 @@
+provider: kombo
+apis_io: https://apis.io/providers/kombo/
+context: recruiting
+generated: '2026-11-10'
+concepts:
+  job:
+    path_segment:
+    - job
+    - jobs
+    - postings
+    properties:
+      id:
+      - id
+      - remote_id
+      name: name
+      status: status
+      description: description
+      created_at:
+      - remote_created_at
+      - created_at
+      location: location
+      employment_type: employment_type
+      updated_at: updated_at
+      department: department
+      metadata:
+      - properties
+      - custom_fields
+      closed_at: closed_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/kombo-openapi.json#GET /ai-apply/postings
+    - openapi/_original/kombo-openapi.json#GET /ai-apply/unified-api/jobs
+    - openapi/_original/kombo-openapi.json#GET /ats/jobs
+    - openapi/_original/kombo-openapi.json#GET /hris/employments/{employment_id}/form/job
+    - openapi/_original/kombo-openapi.json#PATCH /hris/employments/{employment_id}/form/job
+  candidate:
+    path_segment:
+    - candidates
+    properties:
+      id:
+      - id
+      - remote_id
+      phone: phone_numbers
+      email: email_addresses
+      first_name: first_name
+      last_name: last_name
+      created_at: remote_created_at
+      resume_url: attachments
+      metadata: custom_fields
+      source: source
+      location: location
+      tags: tags
+      applications: applications
+      name: title
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/kombo-openapi.json#GET /ats/candidates
+    - openapi/_original/kombo-openapi.json#POST /ats/candidates
+  application:
+    path_segment:
+    - applications
+    properties:
+      id:
+      - id
+      - remote_id
+      job_id:
+      - job_id
+      - job
+      - job_posting_id
+      candidate_id:
+      - candidate_id
+      - candidate
+      metadata: custom_fields
+      updated_at: updated_at
+      created_at:
+      - remote_created_at
+      - created_at
+      source: source
+      status: status
+      rejected_at: rejected_at
+      stage:
+      - current_stage
+      - stage_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/kombo-openapi.json#GET /ai-apply/applications
+    - openapi/_original/kombo-openapi.json#GET /ats/applications
+    - openapi/_original/kombo-openapi.json#POST /ai-apply/unified-api/jobs/{job_id}/applications
+    - openapi/_original/kombo-openapi.json#POST /ats/jobs/{job_id}/applications
+  stage:
+    path_segment:
+    - stage
+    properties:
+      id: stage_id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/kombo-openapi.json#PUT /ats/applications/{application_id}/stage
+  interview:
+    path_segment:
+    - interviews
+    properties:
+      id:
+      - interview_id
+      - id
+      - remote_id
+      created_at: remote_created_at
+      start_at: start_time
+      status: status
+      application_id:
+      - application_id
+      - application
+      end_at: end_time
+      location:
+      - location
+      - video_conferencing_url
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/kombo-openapi.json#GET /ats/interviews
+    - openapi/_original/kombo-openapi.json#PATCH /ats/applications/{application_id}/interviews
+    - openapi/_original/kombo-openapi.json#POST /ats/applications/{application_id}/interviews
